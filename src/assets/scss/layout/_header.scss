@@ -1,0 +1,121 @@
+@use '../foundation/variables' as *;
+
+// ヘッダー上部
+.l-header {
+  background-color: $green;
+  box-shadow: 0 2px 4px 1px rgba(0, 0, 0, .2);
+  filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, .5));
+  
+  &-logo {
+    width: 100%;
+    background-color: $light-green;
+    &__inner {
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      align-items: center;
+      max-width: calc(1280px + 3rem);
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      height: 40px;
+      padding: .5rem 1.5rem;
+    }
+    &--right {
+      text-align: right;
+      font-size: 10px;
+    }
+  }
+
+}
+
+// メインヘッダー
+.l-header__wrapper {
+  max-width: calc(1280px + 3rem);
+  color: white;
+  display: grid;
+  grid-template-columns: 400px 1fr 1fr 1fr;
+  padding: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// 左のインフォーメーション
+.l-header__left {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: repeat(2, auto);
+}
+
+.l-header__left-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid white;
+  padding-bottom: 0.25rem;
+}
+
+// ラベル
+.l-header-admin-info__label {
+  display: inline-block;
+  background: white;
+  color: $green;
+  border-radius: 7px;
+  width: 44px;
+  height: 16px;
+  text-align: center;
+  font-size: 0.625rem;
+  line-height: 16px;
+  margin-right: 0.5rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+
+  &--lg {
+    @extend .l-header-admin-info__label;
+    width: 66px;
+  }
+}
+
+// 日付
+.l-header-admin-info__date {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+// 強調文字(日付と時刻)
+.l-header-admin-info__Emphasis {
+  font-size: 1.75rem;
+
+  &--time {
+    @extend .l-header-admin-info__Emphasis;
+    font-weight: 500;
+  }
+}
+
+// 曜日
+.l-header-admin-info__dayOfWeek {
+  font-size: 12.7px;
+  line-height: 20px;
+  border-radius: 50%;
+  background: white;
+  color: $green;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  text-align: center;
+  font-weight: 700;
+  // 文字の位置を調整
+  margin-top: 0.25rem;
+}
+
+// 営業時間
+.l-header-admin-info__open-close {
+  font-size: 0.875rem;
+  gap: 1rem;
+}
+
+.l-header-admin-info__open-close,
+.l-header-admin-info__loginUserName {
+  height: 2.25rem;
+  line-height: 2.25rem;
+  padding-top: 0.25rem;
+}
+

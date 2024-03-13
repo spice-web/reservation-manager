@@ -1,0 +1,31 @@
+@use 'foundation/variables' as *;
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: $text-color;
+  letter-spacing: 0.05em;
+}
+
+// ブロック
+.is-block {
+  display: block;
+}
+
+// テキスト
+.text-center {
+  text-align: center;
+}
+
+// form
+
+label {
+  display: block;
+}
+// input
+input {
+  background-color: $light-gray;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  &:not([type="submit"]) {
+    border: #B4B4B4 1px solid;
+  }
+}

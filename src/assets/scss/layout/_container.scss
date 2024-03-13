@@ -1,0 +1,17 @@
+@use 'foundation/variables' as *;
+
+.l-container {
+  width: 100%;
+  max-width: 960px;
+
+  // ログイン画面
+  &__admin {
+    max-width: 600px;
+    width: 100%;
+    border: 1px solid $dark-gray;
+    border-radius: 1.5rem;
+    margin: 7rem auto 0;
+    padding: 3.5rem 0;
+  }
+}
+

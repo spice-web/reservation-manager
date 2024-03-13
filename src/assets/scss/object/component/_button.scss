@@ -1,0 +1,20 @@
+@use 'foundation/variables' as *;
+.c-button {
+  &__submit {
+    width: 160px;
+    height: 40px;
+    border-radius: 0.5rem;
+    color: white;
+    background: $yellow;
+    text-align: center;
+    letter-spacing: .05em;
+  }
+  // 選択前のボタンのcss
+  &__normal {}
+
+  &__selected {}
+
+  &__reset {}
+
+  &__orange {}
+}
