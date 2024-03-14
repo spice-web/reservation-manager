@@ -1,0 +1,31 @@
+@use '../../foundation/variables' as *;
+
+.c-label {
+  text-align: center;
+  border-radius: 0.25rem;
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  display: inline-block;
+  line-height: 1;
+  &__dark-gray { // ラベル(入庫済)のBG色
+    @extend .c-label;
+    background-color: $dark-gray;
+  }
+  &__deep-gray { // ラベル(有)のBG色
+    @extend .c-label;
+    background-color: $deep-gray;
+    &.--status-yes {
+      width: 44px;
+      /* 有の場合のテキストカラー */
+    }
+  }
+  &__blue {
+    @extend .c-label;
+    background-color: $blue;
+  }
+  &__green {
+    @extend .c-label;
+    background-color: $green;
+  }
+}

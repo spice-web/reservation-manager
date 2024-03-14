@@ -1,17 +1,17 @@
 <!-- ナビゲーション -->
-<nav class="l-nav">
-  <ul class="l-nav__list">
-    <li class="l-nav__item">
-      <a href="index.php" class="l-nav__link">Home</a>
+<nav class="c-nav__wrap">
+  <ul class="c-nav__list">
+    <li class="c-nav__item">
+      <a href="index.php" class="c-nav__link --reserve">予約管理</a>
     </li>
-    <li class="l-nav__item l-nav__item--current">
-      <a href="about.php" class="l-nav__link">About</a>
+    <li class="c-nav__item c-nav__item--current">
+      <a href="inventory-transactions.php" class="c-nav__link --list">入出庫一覧</a>
     </li>
-    <li class="l-nav__item">
-      <a href="service.php" class="l-nav__link">Service</a>
+    <li class="c-nav__item">
+      <a href="service.php" class="c-nav__link --en">レジ</a>
     </li>
-    <li class="l-nav__item">
-      <a href="contact.php" class="l-nav__link">Contact</a>
+    <li class="c-nav__item">
+      <a href="setting.php" class="c-nav__link --setting">設定</a>
     </li>
   </ul>
 </nav>

@@ -5,6 +5,10 @@ body {
   letter-spacing: 0.05em;
 }
 
+body, html {
+  height: 100%;
+}
+
 // ブロック
 .is-block {
   display: block;
@@ -15,7 +19,11 @@ body {
   text-align: center;
 }
 
-// form
+// リンク
+a:link, a:visited, a:active {
+  color: inherit;
+}
+// フォーム
 
 label {
   display: block;

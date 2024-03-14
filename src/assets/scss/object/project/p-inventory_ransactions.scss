@@ -1,0 +1,78 @@
+// 出庫一覧、入庫一覧のスタイル
+@use '../../foundation/variables' as *;
+
+.p-inventoryTransactions-table {
+  border-spacing: 0;
+
+  &__wrapper {
+    width: 1100px;
+    overflow-x: auto;
+  }
+
+  th,
+  td {
+    height: 42px;
+    vertical-align: middle;
+    padding: 0 15px;
+    white-space: nowrap;
+    font-size: 0.75rem;
+    font-weight: 400;
+    border-left: 0.9px solid $text-color;
+  }
+  th {
+    color: #fff;
+    background: $green;
+  }
+  td {
+    background: #fff;
+  }
+  tr {
+    &:nth-child(2n+1) {
+      > td {
+        background: $light-gray;
+      }
+    }
+  }
+  tr {
+    &:first-child {
+      th{
+        border-top: 0.9px solid $text-color;
+      }
+      th:first-child {
+        border-radius: 0.75rem 0 0 0;
+        border-left: 0.9px solid $text-color;
+      }
+      th:last-child {
+        border-radius: 0 0.75rem 0 0;
+        border-right: 0.9px solid $text-color;
+      }
+    }
+    &:last-child {
+      td {
+        border-bottom: 0.9px solid $text-color;}
+      td:first-child {
+        border-radius: 0 0 0 0.75rem;
+        border-left: 0.9px solid $text-color;
+      }
+      td:last-child {
+        border-radius: 0 0 0.75rem 0;
+        border-right: 0.9px solid $text-color;
+      } 
+    }
+  }
+
+  th:first-child, th:last-child, td:first-child, td:last-child {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+  th:first-child, td:first-child {
+    left: 0;
+    border-left: 0.9px solid $text-color;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, .5));
+  }
+  th:last-child, td:last-child {
+    right: 0;
+    border-right: 0.9px solid $text-color;
+    filter: drop-shadow(-2px 2px 2px rgba(0, 0, 0, .5));
+  }
+}
