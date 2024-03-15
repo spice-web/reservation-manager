@@ -5,12 +5,17 @@
 @use 'layout/header';
 @use 'layout/footer';
 @use 'layout/container';
+@use 'layout/breadcrumb';
+@use 'layout/modal';
 
 @use 'object/component/nav';
 @use 'object/component/button';
 @use 'object/component/form';
 @use 'object/component/label';
+@use 'object/component/link';
 
-@use 'object/project/p-inventory_ransactions';
+@use 'object/project/p-index';
+@use 'object/project/p-inventory_transactions';
 
 @use 'object/utility/margin';
+@use 'object/utility/font';

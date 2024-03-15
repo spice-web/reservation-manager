@@ -1,4 +1,4 @@
-@use 'foundation/variables' as *;
+@use 'variables' as *;
 body {
   font-family: 'Noto Sans JP', sans-serif;
   color: $text-color;
@@ -10,6 +10,10 @@ body, html {
 }
 
 // ブロック
+li {
+  list-style: none;
+}
+
 .is-block {
   display: block;
 }
@@ -18,13 +22,22 @@ body, html {
 .text-center {
   text-align: center;
 }
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
 
 // リンク
 a:link, a:visited, a:active {
   color: inherit;
 }
-// フォーム
+a:hover {
+  opacity: 0.8;
+}
 
+// フォーム
 label {
   display: block;
 }
