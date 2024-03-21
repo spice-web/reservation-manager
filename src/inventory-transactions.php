@@ -36,22 +36,23 @@
             <tr>
               <th>ステータス</th>
               <th>出庫</th>
-              <th class="c-button-sort --active --desc test">整理<br>番号​</th>
-              <th>見出し</th>
-              <th>見出し</th>
-              <th>見出し</th>
-              <th>見出し</th>
-              <th>見出し</th>
-              <th>見出し</th>
-              <th>見出し</th>
-              <th>見出し</th>
-              <th>見出し</th>
-              <th>見出し</th>
-              <th>見出し</th>
-              <th>見出し</th>
-              <th>見出し</th>
-              <th>見出し</th>
-              <th>見出し</th>
+              <!-- ソートは「--desc」 と 「--asc」 で切替 -->
+              <th class="c-button-sort --desc test">整理<br>番号​</th>
+              <th>氏名​</th>
+              <th>利用<br>回数​</th>
+              <th>車番​</th>
+              <th>色​</th>
+              <th>駐車<br>位置</th>
+              <th>T​</th>
+              <th>到着<br>便​</th>
+              <th>出発<br>地​</th>
+              <th>運航</th>
+              <th>人数​</th>
+              <th>洗車<br>等​</th>
+              <th>顧客<br>メモ​</th>
+              <th>取扱<br>注意​</th>
+              <th>追/返​</th>
+              <th>受付ID​</th>
               <th>見出し</th>
               <th>見出し</th>
               <th>備考</th>
@@ -318,12 +319,10 @@
       </div>
 
 
-
-
     </div>
   </div>
 
-  <!-- // 表示を切り替えるECMAScript -->
+  <!-- // 入庫と出庫の表示を切り替えるJS -->
   <script>
     let buttonReceipt = document.getElementById('receipt');
     let buttonOutput = document.getElementById('output');
