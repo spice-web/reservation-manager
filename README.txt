@@ -1,5 +1,6 @@
 ## ファイル構成について
-B - 
+B - admin
+D -
 F - register
 G - master
 I - pricing_management
