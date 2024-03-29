@@ -1,0 +1,13 @@
+@use '../../foundation/variables' as *;
+
+.u-bg {
+  &--off-white {
+    background-color: $off-white;
+  }
+  &--green{
+    background-color: $green;
+  } 
+  &--blue {
+    background-color: $blue;
+  }
+}

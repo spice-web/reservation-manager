@@ -10,15 +10,222 @@
     background: $yellow;
     text-align: center;
     letter-spacing: .05em;
+    // margin-top: 3rem;
+    padding: 0 1rem;
+    white-space: nowrap;
+    &--gray {
+      @extend .c-button__submit;
+      background: #888888;
+    }
+    &--dark-gray {
+      @extend .c-button__submit;
+      background: $text-color;
+    }
+    &--deep-gray {
+      @extend .c-button__submit;
+      background: $deep-gray;
+    }
+    &.--disabled {
+      background: $light-gray;
+      cursor: not-allowed;
+    }
+  
+    &.--enable {
+      background: $yellow;
+      cursor: pointer;
+    }
   }
-  // 選択前のボタンのcss
-  &__normal {}
 
-  &__selected {}
+  &--white {
+    @extend .c-button__submit;
+    background-color: white;
+    color: $text-color;
+    border: 1px solid $gray;
+  } 
+  // オプション選択ボタン
+  &__select {
+    background: $green;
+    color: white;
+    border-radius: 0.5rem;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    &--h90 {
+      @extend .c-button__select;
+      height: 90px;
+    }
+    &.--unselected {
+      background: $light-gray;
+    }
+  }
 
-  &__reset {}
+  // 編集ボタン
+  &__edit {
+    background: $green;
+    text-align: center;
+    color: white;
+    border-radius: 0.5rem;
+    width: 100px;
+    height: 30px;
+    display: grid;
+    align-items: center;
+  }
 
-  &__orange {}
+  &__search {
+    background-color: $text-color;
+    color: white;
+    display: grid;
+    align-items: center;
+    border-radius: 0.5rem;
+    width: 90px;
+    height: 40px;
+    letter-spacing: 0.05em;
+  }
+
+  // アップロード　ダウンロード共通ボタン
+  &__load {
+    @extend .c-button__submit;
+    background: $light-deep-gray;
+  }
+
+  // 追加ボタン（＋）のアイコン
+  &__add {
+    position: relative;
+    padding-right: 35px;
+    font-size: 0.75rem;
+    line-height: 30px;
+    &::after {
+      content: "+";
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: $yellow;
+      color: white;
+      border-radius:6px;
+      width: 30px;
+      height: 30px;
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+  }
+
+  &__memo {
+    @extend .c-button__edit;
+    width: 65px;
+    background-color: $deep-gray;
+  }
+
+  // フォームの「次のページ」「前のページ」系ボタン
+  &__pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: $light-gray;
+    cursor: pointer;
+
+    &--next {
+      background: $yellow;
+      color: white;
+      text-align: center;
+      display: grid;
+      place-items: center;
+      width: 170px;
+      height: 50px;
+      cursor: pointer;
+      position: relative;
+    
+      // 右に三角形を表示
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: -25px;
+        transform: translateY(-50%);
+        // 高さ50pxの三角形を作成
+        border-top: 25px solid transparent;
+        border-left: 25px solid $yellow;
+        border-bottom: 25px solid transparent;
+      }
+    }
+
+
+    &--return {
+      background-color: $deep-gray;
+      color: white;
+      text-align: center;
+      display: grid;
+      place-items: center;
+      width: 170px;
+      height: 50px;
+      cursor: pointer;
+      position: relative;
+    
+      // 右に三角形を表示
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: -25px;
+        transform: translateY(-50%);
+        // 高さ50pxの三角形を作成
+        border-top: 25px solid transparent;
+        border-right: 25px solid $deep-gray;
+        border-bottom: 25px solid transparent;
+      }
+    }
+  }
+
+  // 計算するボタン
+  &__calculate {
+    background: $blue;
+    color: white;
+    border-radius: 0.5rem;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    width: 80px;
+    height: 30px;
+  }
+}
+
+// 複数選択のオプションボタン
+.c-button-optionSelect {
+  label {
+    border-radius: 0.5rem;
+    border: 1px solid $gray;
+    background: $light-gray;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+  // チェックされたら背景色を変える
+  input[type="checkbox"]:checked+label {
+    background: $green;
+    color: white;
+  }
+  // チェックされたら背景色を変える
+  input[type="radio"]:checked+label {
+    background: $green;
+    color: white;
+  }
+
+  input[type="checkbox"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    display: contents;
+  }
+  input[type="radio"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    display: contents;
+  }
 }
 
 // 入出庫一覧用のトグルボタン
@@ -96,6 +303,46 @@
       padding-top: 0.1rem;
       font-size: 0.625rem;
       content: "▼";
+    }
+  }
+}
+
+// 表示非表示ボタン
+.c-button {
+  &__close {
+    position: relative;
+    font-size: 0.875rem;
+    font-weight: 300;
+    padding-right: 1rem;
+    &::after {
+      position: absolute;
+      top: 6px;
+      right: 0;
+      content: "";
+      width: 0;
+      height: 0;
+      // 上向きの三角形をborderで作成
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-bottom: 10px solid white;
+      display: inline-block;
+    }
+  }
+  &__open {
+    @extend .c-button__close;
+    &::after {
+      position: absolute;
+      top: 6px;
+      right: 0;
+      content: "";
+      width: 0;
+      height: 0;
+      // 上向きの三角形をborderで作成
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-top: 10px solid white;
+      border-bottom: 0;
+      display: inline-block;
     }
   }
 }

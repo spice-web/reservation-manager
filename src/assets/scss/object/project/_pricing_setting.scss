@@ -1,0 +1,16 @@
+@use '../../foundation/variables' as *;
+
+.p-pricing_setting {
+  &__registration-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+
+    &__right {
+      align-self: flex-end;
+      display: flex;
+      flex-direction: column;
+      gap: .5rem;
+    }
+  }
+}

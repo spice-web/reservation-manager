@@ -1,0 +1,13 @@
+@use '../../foundation/variables' as *;
+
+.c-title {
+  &__lv2 {
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: $text-color;
+    color: white;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+  }
+}
