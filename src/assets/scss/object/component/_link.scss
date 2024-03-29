@@ -1,3 +1,22 @@
+@use '../../foundation/variables' as *;
 .c-link-no-border {
   text-decoration: none;
+}
+
+.c-link--update {
+  color: $red;
+  font-weight: 600;
+  text-decoration: none;
+  &:visited {
+    color: $red;
+  }
+}
+
+.c-link--return {
+  color: $blue;
+  font-weight: 600;
+  text-decoration: none;
+  &:visited {
+    color: $blue;
+  }
 }

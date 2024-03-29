@@ -1,0 +1,40 @@
+@use '../../foundation/variables' as *;
+
+.u-border {
+  &--radius {
+    border-radius: 0.5rem;
+  }
+  &--radius-tl {
+    border-radius: 0.5rem 0 0 0;
+  }
+  &--radius-tr {
+    border-radius: 0 0.5rem 0 0;
+  }
+  &--radius-bl {
+    border-radius: 0 0 0 0.5rem;
+  }
+  &--radius-br {
+    border-radius: 0 0 0.5rem 0;
+  }
+  &--circle {
+    border-radius: 50%;
+  }
+  &--none {
+    border: none;
+  }
+  &--bottom {
+    border-bottom: 1px solid $gray;
+  }
+  &--top {
+    border-top: 1px solid $gray;
+  }
+  &--left {
+    border-left: 1px solid $gray;
+  }
+  &--right {
+    border-right: 1px solid $gray;
+  }
+  &--all {
+    border: 1px solid $gray;
+  }
+}
