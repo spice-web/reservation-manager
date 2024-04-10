@@ -8,10 +8,10 @@
     <?php include_once 'include/header.php'; ?>
     <?php include_once 'include/nav.php'; ?>
 
-    <main class="l-wrap__main l-container__main">
+    <main class="l-wrap__main">
 
       <!-- パンくず -->
-      <ul class="l-breadcrumb">
+      <ul class="l-wrap__breadcrumb l-breadcrumb">
         <li class="l-breadcrumb__list">入出庫一覧</li>
       </ul>
 
@@ -24,14 +24,14 @@
             <span class="c-button-toggle__slider"></span>
           </label>
         </div>
-        <ul class="p-inventoryTransactions-table__tab">
-          <li id="receipt" class="p-inventoryTransactions-table__tab-item is-active" onclick="">入庫</li>
-          <li id="output" class="p-inventoryTransactions-table__tab-item" onclick="">出庫</li>
+        <ul class="l-table-list--scroll__tab">
+          <li id="buttonOne" class="l-table-list--scroll__tab-item is-active" onclick="">入庫</li>
+          <li id="buttonTwo" class="l-table-list--scroll__tab-item" onclick="">出庫</li>
         </ul>
 
-        <div class="p-inventoryTransactions-table__wrapper">
+        <div class="l-table-list--scroll__wrapper">
           <!-- 入庫一覧リスト -->
-          <table class="p-inventoryTransactions-table incoming-inventory-list is-active">
+          <table class="l-table-list--scroll contentOne is-active">
             <tr>
               <th>ステータス</th>
               <th>出庫</th>
@@ -174,7 +174,7 @@
           </table>
 
           <!-- 出庫一覧リスト -->
-          <table class="p-inventoryTransactions-table outgoing-inventory-list --blue">
+          <table class="l-table-list--scroll --blue contentTwo is-none">
             <tr>
               <th>ステータス</th>
               <th>出庫</th>
@@ -314,7 +314,7 @@
               <td>見出し</td>
             </tr>
           </table>
-        </div><!-- /.p-inventoryTransactions-table__wrapper -->
+        </div><!-- /.l-table-list--scroll__wrapper -->
       </div>
 
 
@@ -322,28 +322,7 @@
   </div>
 
   <!-- // 入庫と出庫の表示を切り替えるJS -->
-  <script>
-    let buttonReceipt = document.getElementById('receipt');
-    let buttonOutput = document.getElementById('output');
-    let receipt = document.querySelector('.incoming-inventory-list');
-    let output = document.querySelector('.outgoing-inventory-list');
-
-    buttonReceipt.addEventListener('click', function() {
-      // receiptに is-active を追加
-      buttonReceipt.classList.add('is-active');
-      receipt.classList.add('is-active');
-      output.classList.remove('is-active');
-      buttonOutput.classList.remove('is-active');
-    });
-
-    buttonOutput.addEventListener('click', function() {
-      // outputに is-active を追加
-      buttonOutput.classList.add('is-active');
-      output.classList.add('is-active');
-      receipt.classList.remove('is-active');
-      buttonReceipt.classList.remove('is-active');
-    });
-  </script>
+  <script src="./js/toggle_display.js"></script>
 
 </body>
 

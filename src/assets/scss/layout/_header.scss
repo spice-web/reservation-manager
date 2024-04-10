@@ -24,6 +24,9 @@
     &--right {
       text-align: right;
       font-size: 10px;
+      display: grid;
+      grid-template-columns: auto auto;
+      justify-content: right;
     }
   }
 }

@@ -1,6 +1,7 @@
 @use '../../foundation/variables' as *;
 
 .u-border {
+  border: 1px solid $gray;
   &--radius {
     border-radius: 0.5rem;
   }
@@ -24,6 +25,9 @@
   }
   &--bottom {
     border-bottom: 1px solid $gray;
+    &-green {
+      border-bottom: 1px solid $green;
+    }
   }
   &--top {
     border-top: 1px solid $gray;
@@ -36,5 +40,11 @@
   }
   &--all {
     border: 1px solid $gray;
+  }
+}
+
+.u-bgc {
+  &--gray {
+    border-color: $gray;
   }
 }

@@ -1,5 +1,41 @@
 @use '../../foundation/variables' as *;
 
+.u-p1 {
+  padding: 1rem;
+}
+.u-p2 {
+  padding: 2rem;
+}
+.u-p3 {
+  padding: 3rem;
+}
+
+.u-pt0 {
+  padding-top: 0;
+}
+.u-pt025 {
+  padding-top: .25rem;
+}
+.u-pt05 {
+  padding-top: .5rem;
+}
+.u-pt1 {
+  padding-top: 1rem;
+}
+.u-pt2 {
+  padding-top: 2rem;
+}
+.u-pt4 {
+  padding-top: 4rem;
+}
+
+
+.u-pb0 {
+  padding-bottom: 0;
+}
+.u-pb025 {
+  padding-bottom: .25rem;
+}
 .u-pb05 {
   padding-bottom: .5rem;
 }
@@ -9,11 +45,56 @@
 .u-pb2 {
   padding-bottom: 2rem;
 }
+.u-pb3 {
+  padding-bottom: 3rem;
+}
 .u-pb4 {
   padding-bottom: 4rem;
 }
+.u-pb5 {
+  padding-bottom: 5rem;
+}
+.u-pb6 {
+  padding-bottom: 6rem;
+}
 
+.u-pl0 {
+  padding-left: 0;
+}
+.u-pl025 {
+  padding-left: .25rem;
+}
+.u-pl05 {
+  padding-left: .5rem;
+}
+.u-pl1 {
+  padding-left: 1rem;
+}
+.u-pl2 {
+  padding-left: 2rem;
+}
+.u-pl4 {
+  padding-left: 4rem;
+}
 
+.u-pr0 {
+  padding-right: 0;
+}
+.u-pr025 {
+  padding-right: .25rem;
+}
+.u-pr05 {
+  padding-right: .5rem;
+}
+.u-pr1 {
+  padding-right: 1rem;
+}
+.u-pr2 {
+  padding-right: 2rem;
+}
+.u-pr4 {
+  padding-right: 4rem;
+}
 
 
 #webslides {

@@ -16,6 +16,10 @@
   @extend .l-flex;
   justify-content: space-between;
 }
+.l-flex--start {
+  @extend .l-flex;
+  justify-content: flex-start;
+}
 .l-flex--end {
   @extend .l-flex;
   justify-content: flex-end;

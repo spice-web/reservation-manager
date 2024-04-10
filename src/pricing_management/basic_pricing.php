@@ -10,19 +10,19 @@
   <div class="l-wrap">
     <?php include_once '../include/header.php'; ?>
     <?php include_once '../include/nav.php'; ?>
-    <main class="l-wrap__main l-container__main">
+    <main class="l-wrap__main">
       <!-- パンくず -->
-      <ul class="l-breadcrumb">
+      <ul class="l-wrap__breadcrumb l-breadcrumb">
         <li class="l-breadcrumb__list">設定</li>
         <li class="l-breadcrumb__list">基本料金設定</li>
         </li>
       </ul>
 
-
-      <form action="" method="POST" class="p-pricing_setting__registration-form u-mb4">
+      <div class="l-container__inner">
+        <form action="" method="POST" class="p-pricing_setting__registration-form u-mb4">
         <!-- 入力フォーム -->
         <div class="c-form__input">
-          <h2 class="c-title__lv2 l-flex--sb">料金設定登録<span class="close_button c-button__close">閉じる</span></h2>
+          <h2 class="c-title__lv2 l-flex--sb u-w-full-wide">料金設定登録<span class="close_button c-button__close">閉じる</span></h2>
 
           <div class="is-active">
             <div class="l-grid--col2 l-grid--gap2">
@@ -55,7 +55,7 @@
 
             <!-- MEMO -->
             <label for="memo">メモ</label>
-            <textarea name="memo" id="memo" cols="100" rows="1"></textarea>
+            <textarea name="memo" id="memo" cols="50" rows="1"></textarea>
 
             <!-- 1日目～15日まで料金を入力するinput -->
             <div class="l-grid--pricing l-grid--input u-mb2 u-pb2 u-border--bottom">
@@ -162,7 +162,7 @@
           <button type="button" class="c-button__load u-mt0">CSVアップロード</button>
         </div>
       </form>
-
+      </div>
     </main><!-- /.l-container__main -->
   </div><!-- /.l-wrap -->
 

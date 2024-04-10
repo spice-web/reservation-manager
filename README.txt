@@ -1,5 +1,6 @@
 ## ファイル構成について
-B - admin
+B-1系 - user_input
+B-2系 - admin
 D -
 F - register
 G - master

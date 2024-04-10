@@ -8,9 +8,9 @@
     <?php include_once '../include/header.php'; ?>
 
     <?php include_once '../include/nav.php'; ?>
-    <main class="l-wrap__main l-container__main">
+    <main class="l-wrap__main">
       <!-- パンくず -->
-      <ul class="l-breadcrumb">
+      <ul class="l-wrap__breadcrumb l-breadcrumb">
         <li class="l-breadcrumb__list">入出庫グラフ</li>
         </li>
       </ul>
@@ -36,10 +36,10 @@
 
           <!-- 月別 週別 時間別 任意の期間 button-->
           <div class="l-grid--col4-auto l-grid--gap05 u-mb1">
-            <button class="c-button__submit u-w90">月別</button>
-            <button class="c-button__submit u-w90">週別</button>
-            <button class="c-button__submit u-w-auto">時間別</button>
-            <button class="c-button__submit u-w-auto">任意の期間</button>
+            <button class="c-button__apply u-w90">月別</button>
+            <button class="c-button__apply u-w90">週別</button>
+            <button class="c-button__apply u-w-auto">時間別</button>
+            <button class="c-button__apply u-w-auto">任意の期間</button>
           </div>
         </div>
 
@@ -72,7 +72,7 @@
             <!-- Slide 2 -->
             <section class="bg-primary">
               <div class="wrap">
-                <h2>.wrap = container (width: 90%)</h2>
+                <h2>これはタイトル.wrap = container (width: 90%)</h2>
 
                 <!-- グラフの描画先を指定 --- (*2) -->
                 <div id="mlp" align="center"></div>

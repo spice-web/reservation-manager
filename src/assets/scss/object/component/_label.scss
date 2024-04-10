@@ -25,10 +25,29 @@
   text-align: center;
   border-radius: 0.25rem;
   color: #fff;
+  background-color: $yellow;
   font-size: 0.75rem;
   padding: 0.25rem 0.5rem;
   display: inline-block;
   line-height: 1;
+  &--delay {
+    @extend .c-label;
+    margin-left: 0.25rem;
+  }
+  &--lg {
+    @extend .c-label;
+    font-size: 0.875rem;
+    padding: 5px 1rem;
+  }
+  &__light-deep-gray {
+    // ラベル(入庫済)のBG色
+    @extend .c-label;
+    background-color: $light-deep-gray;
+    &--lg {
+      @extend .c-label--lg;
+      background-color: $light-deep-gray;
+    }
+  }
   &__dark-gray { // ラベル(入庫済)のBG色
     @extend .c-label;
     background-color: $dark-gray;

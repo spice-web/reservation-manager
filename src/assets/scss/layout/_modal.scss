@@ -12,6 +12,7 @@
   align-items: center;
   // .5sでmodalがフェードイン
   transition: background-color 1s;
+  z-index: 101;
 
   // display: none;
   &.is-active {
@@ -19,7 +20,7 @@
     height: 100vh;
     opacity: 1;
     display: flex;
-    background-color: rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, 0.8);
 
     .l-modal__inner {
       display: grid;
@@ -71,19 +72,23 @@
       margin-right: auto;
       grid-area: content;
       overflow-y: auto;
+      &.p-register {
+        height: 85%;
+        width: 85%;
+      }
     }
   }
 
+  // closeボタン
   &__close {
     position: absolute;
     top: 1rem;
     right: 1rem;
     font-size: 2rem;
     cursor: pointer;
-    width: 50px;
-    height: 50px;
-    // 本番環境では背景色を透明にする
-    background: #000;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
   }
 
 }
