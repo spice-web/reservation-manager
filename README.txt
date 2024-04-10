@@ -12,6 +12,9 @@ L - marketing_support
 scssで記述
 BEM・FLOCSSでCSS設計
 
+※※例外
+is-none is-active系はu-block.scssに記述
+
 gulpfile.js・package.jsonがあるので、
 
 $ yarn install
