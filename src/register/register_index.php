@@ -162,7 +162,7 @@
                         <option value="3">クーポンコード3</option>
                       </select>
                     </div>
-                    <button type="button" class="c-button__apply--green u-mb1" disabled>適用</button>
+                    <button type="button" class="c-button__apply--green --disabled u-mb1" disabled>適用</button>
                   </div>
                   <div class="p-register__adjustment c-button-optionSelect-light l-grid--col4 l-grid--gap05">
                     <div>
@@ -260,12 +260,11 @@
                   </div>
                 </div><!-- ./p-register__settlement--right -->
               </div>
-
-
             </div>
 
             <div class="l-modal__footer p-register__settlement--foot">
-              <button type="submit" class="is-block c-button__submit--light-gray2 u-horizontal-auto">決済する</button>
+              <!-- disablesの時のクラス付与[--disabled2] -->
+              <button type="submit" class="is-block c-button__submit --disabled2 u-horizontal-auto" disabled>決済する</button>
             </div>
           </form>
 

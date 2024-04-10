@@ -1,4 +1,5 @@
 // 入出庫の表示切り替え等
+//　最初から[.contentOne]が表示されるようにしている
 
 const buttonOne = document.getElementById('buttonOne');
 const buttonTwo = document.getElementById('buttonTwo');

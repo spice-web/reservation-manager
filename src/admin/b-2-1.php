@@ -105,8 +105,8 @@
                 <div>
                   <!-- セレクト（取扱注意メモ） -->
                   <label for="memo">取扱注意メモ</label>
-                  <div class="c-form-select-wrap">
-                    <select name="memo" id="memo" class="u-mb0">
+                  <div class="c-form-select-color">
+                    <select name="memo" id="memo" class="u-mb0" multiple>
                       <option value="1">MT車</option>
                       <option value="2">取扱注意メモ2</option>
                       <option value="3">取扱注意メモ3</option>

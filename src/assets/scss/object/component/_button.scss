@@ -79,6 +79,10 @@
       background: $light-gray;
       cursor: not-allowed;
     }
+    &.--disabled2 {
+      background: $light-gray2;
+      cursor: not-allowed;
+    }
   
     &.--enable {
       background: $yellow;
@@ -102,7 +106,7 @@
     &--green {
       @extend .c-button__apply;
       background: $green;
-      &:disabled {
+      &.--disabled {
         background: $light-green;
       }
     }

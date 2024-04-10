@@ -1,4 +1,5 @@
 // close_buttonをクリックしたらis-activeをremoveしてis-noneをaddする
+// 最初は非表示で、close_buttonをクリックすると表示されるようにする
 
 const closeButtons = document.querySelectorAll('.close_button');
 const toggleArea = document.querySelectorAll('.is-active');

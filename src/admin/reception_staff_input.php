@@ -25,10 +25,10 @@
               </div>
               <div>
                 <!-- 割引クーポン　セレクト -->
-                <div class="l-grid--col3 l-grid--gap1 l-flex--item-end">
+                <div class="l-grid--col2 l-grid--gap1 l-flex--item-end">
                   <div>
                     <label for="coupon" class="u-d-none">割引クーポン</label>
-                    <div class="c-form-select-wrap">
+                    <div class="c-form-select-color">
                       <select id="coupon" name="coupon" class="u-w-full-wide">
                         <option value="0">割引クーポン</option>
                         <option value="1">クーポンコード1</option>
@@ -134,6 +134,8 @@
         </div><!-- /.l-container__inner -->
       </div>
     </main>
+
+    <script src="../js/close_button_toggle.js"></script>
 </body>
 
 </html>

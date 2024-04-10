@@ -21,7 +21,7 @@
           <div>
             <label for="maker">メーカー</label>
             <!-- 車メーカーのselect -->
-            <div class="c-form-select-wrap">
+            <div class="c-form-select-color">
               <select name="maker" id="maker">
                 <option value="トヨタ">トヨタ</option>
                 <option value="日産">日産</option>
@@ -32,7 +32,7 @@
           </div>
           <div>
             <label for="car">車種</label>
-            <div class="c-form-select-wrap">
+            <div class="c-form-select-color">
               <select id="car" name="car">
                 <option value="選択してください" selected disabled>選択してください</option>
                 <option value="ダミーダミー">ダミーダミー</option>
@@ -41,7 +41,7 @@
           </div>
           <div>
             <label for="color">色</label>
-            <div class="c-form-select-wrap">
+            <div class="c-form-select-color">
               <select id="color" name="color">
                 <option value="選択してください" selected disabled>選択してください</option>
                 <option value="ダミーダミー">ダミーダミー</option>

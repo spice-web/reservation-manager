@@ -101,12 +101,24 @@
                 <div class="l-grid--col2 l-grid--gap1">
                   <div>
                     <label for="maker">メーカー</label>
-                    <input type="text" id="maker" name="maker" class="c-form-input--w100">
+                    <div class="c-form-select-color">
+                      <select name="maker" id="maker" class="u-mb0">
+                        <option value="1">メーカー1</option>
+                        <option value="2">メーカー2</option>
+                        <option value="3">メーカー3</option>
+                      </select>
+                    </div>
                   </div>
                   <div>
                     <!-- 車種 -->
                     <label for="car">車種</label>
-                    <input type="text" id="car" name="car" class="c-form-input--w100">
+                    <div class="c-form-select-color">
+                      <select name="car" id="car" class="u-mb0">
+                        <option value="1">車種1</option>
+                        <option value="2">車種2</option>
+                        <option value="3">車種3</option>
+                      </select>
+                    </div>
                   </div>
                   <div>
                     <label for="number">ナンバー（※４桁の数字）</label>
@@ -118,15 +130,14 @@
                     <input type="text" id="color" name="color" class="c-form-input--w100">
                   </div>
                   <div>
-                    <!-- ご利用人数 -->
-                    <label for="people">ご利用人数</label>
+                    <label for="people">ご利用人数（ご本人含む）</label>
                     <input type="number" id="people" name="people" class="c-form-input--w100">
                   </div>
                 </div>
                 <div>
                   <!-- セレクト（取扱注意メモ） -->
                   <label for="memo">取扱注意メモ</label>
-                  <div class="c-form-select-wrap">
+                  <div class="c-form-select-color">
                     <select name="memo" id="memo" class="u-mb0">
                       <option value="1">MT車</option>
                       <option value="2">取扱注意メモ2</option>
