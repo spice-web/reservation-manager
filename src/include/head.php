@@ -6,11 +6,14 @@
   <meta name="description" content="" />
   <!-- favicon -->
   <link rel="icon" href="" type="image/svg+xml">
-  
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="preload" as="style" />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+
+  <!-- 電卓で使用 -->
+  <link href="https://fonts.googleapis.com/css?family=Reem+Kufi" rel="stylesheet">
 
   <!-- css -->
   <link rel="stylesheet" href="/css/style.css">

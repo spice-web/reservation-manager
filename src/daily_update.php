@@ -9,14 +9,13 @@
     <?php include_once 'include/header.php'; ?>
     <?php include_once 'include/nav.php'; ?>
 
-    <main class="l-wrap__main l-container__main">
+    <main class="l-wrap__main">
       <!-- パンくず -->
-      <ul class="l-breadcrumb">
+      <ul class="l-wrap__breadcrumb l-breadcrumb">
         <li class="l-breadcrumb__list">予約管理TOP</li>
-        </li>
       </ul>
 
-      <div>
+      <div class="l-container__inner">
         <p>現在のサーバ日付:2024-02-23 09:16</p>
         <table class="l-table-date u-mb2">
           <thead class="l-table-date__head">
@@ -32,8 +31,8 @@
             <tr>
               <td>サンパーキング成田店</td>
               <td>2023-11-15</td>
-              <td>日付を更新</td>
-              <td>前日に戻す</td>
+              <td><a href="" class="c-link--update">日付を更新</a></td>
+              <td><a href="" class="c-link--return">前日に戻す</a></td>
             </tr>
             <tr>
               <td>サンパーキング成田店</td>
@@ -44,7 +43,7 @@
           </tbody>
         </table>
 
-        <ul>
+        <ul class="u-font--14">
           <li>· 事業所ごとにシステムの日付を更新します。</li>
           <li>· 更新時には、先に該当する事業所の全てのレジを落として下さい。</li>
           <li>· 保留車両の保留日数を更新し、同時に利用料金、合計料金等を計算し直します。</li>

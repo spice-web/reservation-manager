@@ -16,7 +16,18 @@ $light-gray: #ECECEC; // サイドバーのBG色 ipnutのBG色
 $dark-gray: #7F7F7F;  // ラベル(入庫済)のBG色
 $deep-gray: #666666;  // ラベル(有)のBG色
 $light-deep-gray: #888888; // ラベル(無)のBG色
+
+$light-gray2: #BEBEBE;
+
 // $orange: #ff6d00;
 
-$red: #FF0000;
+// $red: #FF0000;
+$red: #C1272D;
 $blue: #4696DC;
+
+
+:root {
+  --gap-s: 12px;
+  --caution-color: #FF0000;
+  --note-color: #FF0000;
+}

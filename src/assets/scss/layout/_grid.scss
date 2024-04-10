@@ -47,6 +47,12 @@
   &--gap2 {
     gap: 2rem;
   }
+  &--cgap025 {
+    gap: .25rem;
+  }
+  &--cgap05 {
+    gap: .5rem;
+  }
   &--cgap1 {
     column-gap: 1rem;
   }
@@ -61,32 +67,29 @@
   }
 }
 
-// column span
-.l-grid--rowspan1 {
-  grid-row: span 1;
-}
-
-.l-grid--rowspan2 {
-  grid-row: span 2;
-}
-
-.l-grid--rowspan3 {
-  grid-row: span 3;
-}
-
-.l-grid--colspan1 {
-  grid-column: span 1;
-}
-
-.l-grid--colspan2 {
-  grid-column: span 2;
-}
-
-.l-grid--colspan3 {
-  grid-column: span 3;
-}
-.l-grid--colspan4 {
-  grid-column: span 4;
+// column 
+.l-grid {
+  &--rowspan1 {
+    grid-row: span 1;
+  }
+  &--rowspan2 {
+    grid-row: span 2;
+  }
+  &--rowspan3 {
+    grid-row: span 3;
+  }
+  &--colspan1 {
+    grid-column: span 1;
+  }
+  &--colspan2 {
+    grid-column: span 2;
+  }
+  &--colspan3 {
+    grid-column: span 3;
+  }
+  &--colspan4 {
+    grid-column: span 4;
+  }
 }
 
 // input と label のgrid
@@ -97,22 +100,6 @@
   gap: 1rem;
   align-items: center;
   }
-} 
-
-// 日別の料金設定
-.l-grid--pricing {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: repeat(7, auto);
-  grid-auto-flow: column;
-  align-items: center;
-  label {
-    white-space: nowrap;
-    text-align: right;
-  }
-  input {
-    width: 155px;
-  }
 }
 
 .l-grid__radio {
@@ -122,5 +109,66 @@
   align-items: center;
   label {
     white-space: nowrap;
+  }
+}
+
+.l-grid-input {
+  display: grid;
+  gap: var(--gap-s);
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  box-sizing: border-box;
+  // // border重なり回避
+  // margin-left: -1px;
+  // margin-bottom: -1px;
+  // > * {
+  //   font-size: 0.875rem;
+  // }
+  // > div:not(.l-grid--col4-auto) {
+  //   display: grid;
+  //   grid-template-columns: 100px auto;
+  //   align-items: center;
+  // }
+  // > div:not(:last-child) {
+  //   input {
+  //     border-right: none;
+  //   }
+  // }
+  // label {
+  //   border: 1px solid #B4B4B4;
+  //   border-radius: none;
+  //   padding: .5rem;
+  //   margin-bottom: 0;
+  // }
+
+  // input, select {
+  //   width: calc(100% - 1rem);
+  //   padding: 0.5rem;
+  //   margin-bottom: 0;
+  //   border-radius: 0;
+  //   border-left: 0;
+  //   width: 100%;
+  // }
+  // select {
+  //   font-size: 0.875rem;
+  // }
+
+}
+
+// 個別レイアウト
+// 日別の料金設定
+.l-grid--pricing {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: repeat(7, auto);
+  grid-auto-flow: column;
+  align-items: center;
+
+  label {
+    white-space: nowrap;
+    text-align: right;
+  }
+
+  input {
+    width: 155px;
   }
 }

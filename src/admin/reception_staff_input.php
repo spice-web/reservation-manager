@@ -11,65 +11,124 @@
     <main class="l-wrap__main l-container__main">
       <div class="l-container__main">
         <!-- パンくず -->
-        <ul class="l-breadcrumb">
-          <li class="l-breadcrumb__list">受付入力</li>
+        <ul class="l-wrap__breadcrumb l-breadcrumb">
+          <li class="l-breadcrumb__list">受付入力1</li>
         </ul>
         <div class="l-container__inner">
 
           <form action="/admin/b-2-1.php" method="POST">
-            <div class="p-reception-entry__box u-border--none">
-              <div class="u-font--20 u-font--medium u-font--green">入出庫日確認</div>
-
+            <div class="l-grid--col2-auto l-grid--gap2 u-mb4">
               <div>
-                <div class="l-grid l-grid--col2 l-grid--gap2 u-mb3">
-                  <div>
-                    <label for="date">入庫日</label>
-                    <input type="date" id="date" name="date" class="c-form-input--w100">
-                  </div>
-                  <div>
-                    <label for="time">入庫時間</label>
-                    <input type="time" id="time" name="time" class="c-form-input--w100">
-                  </div>
-                  <div>
-                    <label for="date">出庫日</label>
-                    <input type="date" id="date" name="date" class="c-form-input--w100">
-                  </div>
-                  <div>
-                    <label for="time">代理店コード</label>
-                    <input type="text" id="code" name="code" class="c-form-input--w100">
-                  </div>
-                </div>
-
-                <button type="button" value="" class="c-button__submit--gray is-block u-horizontal-auto">料金を確認</button>
-
-                <!-- 駐車場利用料金 -->
-                <div class="p-reception-entry-fee u-border--bottom u-horizontal-auto  u-mb4">
-                  <p class="u-font-medium">駐車場利用料金</p>
-                  <div class="p-reception-entry-fee__item l-grid l-grid--col2 u-border--top u-border--bottom">
-                    <div>10月10日（水）</div>
-                    <div>1,000<span>円</span></div>
-                    <div>10月11日（木）</div>
-                    <div>1,000<span>円</span></div>
-                    <div>10月12日（金）</div>
-                    <div>1,500<span>円</span></div>
-                    <div>10月13日（土）</div>
-                    <div>2,000<span>円</span></div>
-                    <div>10月14日（日）</div>
-                    <div>2,000<span>円</span></div>
-                    <div>10月15日（月）</div>
-                    <div>300<span>円</span></div>
-                  </div>
-                  <!-- 合計 -->
-                  <div class="p-reception-entry-fee__sum l-grid l-grid--col2">
-                    <div>6日間 合計</div>
-                    <div>7,800<span>円</span></div>
-                  </div>
-                </div>
-                <!-- 駐車場利用料金 -->
-
-                <button type="submit" value="" class="c-button__submit u-horizontal-auto is-block">受付入力へ進む</button>
+                <!-- 代理店コード -->
+                <label for="agency_code" class="u-d-none">代理店コード</label>
+                <input type="text" id="agency_code" class="u-w-full-wide" name="agency_code" value="0000" />
               </div>
-            </div><!-- /.l-reception-input__box -->
+              <div>
+                <!-- 割引クーポン　セレクト -->
+                <div class="l-grid--col3 l-grid--gap1 l-flex--item-end">
+                  <div>
+                    <label for="coupon" class="u-d-none">割引クーポン</label>
+                    <div class="c-form-select-wrap">
+                      <select id="coupon" name="coupon" class="u-w-full-wide">
+                        <option value="0">割引クーポン</option>
+                        <option value="1">クーポンコード1</option>
+                        <option value="2">クーポンコード2</option>
+                        <option value="3">クーポンコード3</option>
+                      </select>
+                    </div>
+                  </div>
+                  <button type="button" class="c-button__apply u-mb1">適用</button>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- カレンダー選択 -->
+            <div class="u-mb6">
+              <p class="text-center u-mb2 u-font--medium">入庫日を指定してください</p>
+              <div class="l-grid--col2 l-grid--gap2">
+                <div>
+                  <div class="c-title__calendar">2021年1月</div>
+                </div>
+                <div>
+                  <div class="c-title__calendar">2024年2月</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="u-mb6">
+              <p class="text-center u-mb2 u-font--medium">入庫予定時間を指定してください</p>
+              <div class="c-title__calendar">2024年2月</div>
+            </div>
+
+            <div class="u-mb6">
+              <p class="text-center u-mb2 u-font--medium">出庫日を指定してください</p>
+              <div class="l-grid--col2 l-grid--gap2">
+                <div>
+                  <div class="c-title__calendar">2021年1月</div>
+                </div>
+                <div>
+                  <div class="c-title__calendar">2024年2月</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 駐車料金合計 -->
+            <div class="u-border--all u-border--radius p-input-user-total-parking-charges">
+              <p class="u-font--24 text-center">駐車料金合計</p>
+              <div class="p-input-user-total-parking-charges__inner">
+                <div class="p-input-user-total-parking-charges__head">
+                  <div>入庫日</div>
+                  <div>:</div>
+                  <div>10/10(水)</div>
+                  <div>出庫日</div>
+                  <div>:</div>
+                  <div>10/10(水)</div>
+                  <div>利用日数</div>
+                  <div>:</div>
+                  <div>6日間</div>
+                </div>
+
+                <button type="button" id="open_button" class="c-label__light-deep-gray--lg is-block u-horizontal-auto u-mb1">内訳を表示</button>
+
+                <div class="is-none p-input-user-total-parking-charges__detail" id="toggle_element">
+                  <div class="p-input-user-total-parking-charges__detail-title">
+                    <div>駐車料金明細（税込）</div>
+                    <div type="button" class="p-input-user-total-parking-charges__detail-close-button" id="close_button"><img src="../images/icon/closeButton.svg" width="15" height="15" /></div>
+                  </div>
+                  <div class="p-input-user-total-parking-charges__detail-list">
+                    <div>10/10(水)</div>
+                    <div>¥1,000-</div>
+                    <div>10/11(木)</div>
+                    <div>¥1,000-</div>
+                    <div>10/12(金)</div>
+                    <div>¥1,500-</div>
+                    <div>10/13(土)</div>
+                    <div>¥2,000-</div>
+                    <div>10/14(日)</div>
+                    <div>¥2,000-</div>
+                    <div>10/15(月)</div>
+                    <div>¥300-</div>
+                  </div>
+                  <div class="p-input-user-total-parking-charges__detail-total">
+                    <div>6日間</div>
+                    <div>￥7,800-</div>
+                  </div>
+                </div>
+
+                <!-- 料金明細 -->
+                <div class="u-mt3 u-pt3 u-border--top p-input-user-total-parking-charges__detail-total">
+                  <div>消費税(10%)</div>
+                  <div>¥780-</div>
+                  <div>駐車料金合計</div>
+                  <div>¥8,580(税込)</div>
+                </div>
+
+              </div><!-- /.p-input-user-total-parking-charges__inner -->
+
+              <button type="submit" class="c-button__submit u-horizontal-auto">予約に進む</button>
+            </div><!-- /.p-input-user-total-parking-charges -->
+
           </form>
 
         </div><!-- /.l-container__inner -->

@@ -17,8 +17,11 @@
 
   &__main {
     grid-area: main;
-    padding: 2rem 0 0 3rem;
-    min-width: 1040px;
     margin-bottom: 3rem;
+  }
+
+  &__breadcrumb {
+    padding: 2rem 2rem 0 3rem;
+    margin-bottom: 2.25rem;
   }
 }

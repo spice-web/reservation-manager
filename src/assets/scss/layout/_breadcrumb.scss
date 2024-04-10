@@ -3,7 +3,6 @@
 .l-breadcrumb {
   font-weight: 500;
   font-size: 1.5rem;
-  margin-bottom: 2.25rem;
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -23,13 +22,14 @@
     }
   }
 
-  // モーダルの場合（お客様）
-  &-modal {
+  // 予約フォームのステップ表示
+  &-step {
     &__wrap {
       display: flex;
       justify-content: center;
       gap: 10px;
       margin-right: 27.5px;
+      margin-bottom: 4rem;
     }
     &__item {
       position: relative;
@@ -72,6 +72,14 @@
       }
       &:last-child {
         z-index: 1;
+      }
+
+      &-gray {
+        @extend .l-breadcrumb-step__item;
+        background-color: $light-gray;
+        &::before {
+          border-left: 27.5px solid $light-gray;
+        }
       }
 
       // カレントの場合

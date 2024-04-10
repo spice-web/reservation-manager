@@ -2,7 +2,7 @@
 <nav class="l-wrap__nav c-nav__wrap">
   <ul class="c-nav__list">
     <li class="c-nav__item">
-      <a href="/index.php" class="c-nav__link --reserve">予約管理</a>
+      <a href="/admin/index.php" class="c-nav__link --reserve">予約管理</a>
     </li>
     <li class="c-nav__item c-nav__item--current">
       <a href="/inventory_transaction.php" class="c-nav__link --list --current">入出庫一覧</a>

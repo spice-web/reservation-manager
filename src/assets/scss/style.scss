@@ -20,12 +20,12 @@
 @use 'object/component/title';
 @use 'object/component/balloon';
 @use 'object/component/graph';
+@use 'object/component/pager';
 
-@use 'object/project/p-index';
-@use 'object/project/p-inventory_transactions';
-@use 'object/project/p-reception-entry';
-@use 'object/project/p-user-input';
-@use 'object/project/p-resister';
+@use 'object/project/index';
+@use 'object/project/inventory_transactions';
+@use 'object/project/user-input';
+@use 'object/project/register';
 @use 'object/project/pricing_setting'; 
 
 @use 'object/utility/margin';
