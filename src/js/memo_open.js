@@ -1,4 +1,6 @@
-document.addEventListener('DOMContentLoaded', function() {
+// 対象をクリックしたら、吹き出しを表示する
+
+document.addEventListener('DOMContentLoaded', function () {
   const buttonOpenList = document.querySelectorAll('.button_open');
   const buttonCloseList = document.querySelectorAll('.button_close');
   const balloonBoxList = document.querySelectorAll('.c-balloon-memo__box');

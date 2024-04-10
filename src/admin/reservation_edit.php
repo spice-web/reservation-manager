@@ -172,8 +172,8 @@
 
             <div class="p-input-user-option__box--col3__right">
               <div>
-                <div class="c-button__remove"><img src="../images/icon/removeButton.svg" width="16" height="16" class="button_remove">手洗いWAX洗車 ¥2,500</div>
-                <div class="c-button__remove"><img src="../images/icon/removeButton.svg" width="16" height="16" class="button_remove">iPhone充電ケーブル ¥1,200</div>
+                <div class="c-button__remove item-container"><img src="../images/icon/removeButton.svg" width="16" height="16" class="button_remove">手洗いWAX洗車 ¥2,500</div>
+                <div class="c-button__remove item-container"><img src="../images/icon/removeButton.svg" width="16" height="16" class="button_remove">iPhone充電ケーブル ¥1,200</div>
               </div>
             </div>
           </div><!-- /.l-reception-input__box -->
