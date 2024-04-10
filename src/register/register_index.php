@@ -43,6 +43,8 @@
                   <div class="">駐車料金（税抜）</div>
                   <div class="p-register__optionPrice">0,000<span class="u-font-yen">円</span></div>
                 </div>
+
+                <!-- ここのJSは</body>直前にあり -->
                 <div class="p-register__optionItem">
                   <div>オプション1オプション1オプション1オプション1オプション1オプション1</div>
                   <div class="p-register__optionItem--right">
@@ -50,8 +52,19 @@
                       <button type="button" class="button c-button-quantity" data-operation="up">＋</button>
                       <button type="button" class="button c-button-quantity" data-operation="down">－</button>
                     </div>
-                    <div>2点</div>
-                    <div class="p-register__optionPrice">0,000<span class="u-font-yen">円</span></div>
+                    <div><span class="count">1</span>点</div>
+                    <div class="p-register__optionPrice optionPrice">4,000<span class="u-font-yen">円</span></div>
+                  </div>
+                </div>
+                <div class="p-register__optionItem">
+                  <div>オプション2</div>
+                  <div class="p-register__optionItem--right">
+                    <div>
+                      <button type="button" class="button c-button-quantity" data-operation="up">＋</button>
+                      <button type="button" class="button c-button-quantity" data-operation="down">－</button>
+                    </div>
+                    <div><span class="count">1</span>点</div>
+                    <div class="p-register__optionPrice optionPrice">1,500<span class="u-font-yen">円</span></div>
                   </div>
                 </div>
               </div>
@@ -78,7 +91,7 @@
               </div>
 
               <div class="l-flex--end l-grid--cgap1">
-                これより先、変更はできません。
+                <p class="u-font--14">これより先、変更はできません。</p>
                 <button type="button" id="modal_open" class="c-button__submit">決済画面へ</button>
               </div>
 
@@ -156,13 +169,13 @@
                     <label for="coupon" class="c-button__apply--auto c-button__apply--green u-mb1">割引クーポン</label>
                     <div class="c-form-select-wrap">
                       <select id="coupon" name="coupon" class="">
-                        <option value="0" selected disabled>割引クーポンを選択して下さい</option>
+                        <option value="0" selected>割引クーポンを選択して下さい</option>
                         <option value="1">クーポンコード1</option>
                         <option value="2">クーポンコード2</option>
                         <option value="3">クーポンコード3</option>
                       </select>
                     </div>
-                    <button type="button" class="c-button__apply--green --disabled u-mb1" disabled>適用</button>
+                    <button type="button" class="apply_button c-button__apply--green --disabled u-mb1" disabled>適用</button>
                   </div>
                   <div class="p-register__adjustment c-button-optionSelect-light l-grid--col4 l-grid--gap05">
                     <div>
@@ -232,12 +245,18 @@
                   <div class="p-register-checkout">
                     <div class="p-register-checkout__subtotal">
                       <div class="p-register-checkout__head">
-                        <div>小計</div>
-                        <div class="p-register-checkout__price">0,000<span class="u-font-yen">円</span></div>
-                        <div class="c-button__remove">値引き</div>
-                        <div class="p-register-checkout__price">0,000<span class="u-font-yen">円</span></div>
-                        <div>消費税</div>
-                        <div class="p-register-checkout__price">0,000<span class="u-font-yen">円</span></div>
+                        <div class="p-register-checkout__item">
+                          <div>小計</div>
+                          <div class="p-register-checkout__price">0,000<span class="u-font-yen">円</span></div>
+                        </div>
+                        <div class="p-register-checkout__item item-container">
+                          <div class="c-button__remove"><img src="../images/icon/removeButton.svg" width="16" height="16" class="button_remove">値引き</div>
+                          <div class="p-register-checkout__price">-0,000<span class="u-font-yen">円</span></div>
+                        </div>
+                        <div class="p-register-checkout__item item-container">
+                          <div>消費税</div>
+                          <div class="p-register-checkout__price">0,000<span class="u-font-yen">円</span></div>
+                        </div>
                       </div>
                       <div class="p-register-checkout__total-payment">
                         お支払い合計（税込）
@@ -245,10 +264,15 @@
                       </div>
                     </div>
                     <div class="p-register-checkout__amount-received">
-                      <div>お預かり</div>
+                      <div class="u-pl1">お預かり</div>
                       <div class="p-register-checkout__head">
-                        <div class="c-button__remove">現金</div>
-                        <div class="p-register-checkout__price">0,000<span class="u-font-yen">円</span></div>
+                        <div class="item-container p-register-checkout__item">
+                          <div class="c-button__remove ">
+                            <img src="../images/icon/removeButton.svg" width="16" height="16" class="button_remove">現金
+                          </div>
+                          <div class="p-register-checkout__price">0,000<span class="u-font-yen">円</span></div>
+                        </div>
+
                         <!-- <div>JCB</div>
                         <div class="p-register-checkout__price">0,000<span class="u-font-yen">円</span></div> -->
                       </div>
@@ -275,7 +299,53 @@
 
   <!-- モーダル -->
   <!-- 決済画面をモーダルで表示するスクリプト-->
+  <script src="../js/removeButton.js"></script>
   <script src="../js/modal.js"></script>
+
+  <script>
+    // 数量変更ボタンのイベントリスナーを設定
+    document.querySelectorAll('.c-button-quantity').forEach(function(button) {
+      button.addEventListener('click', function() {
+        // オプションアイテムの要素を取得
+        let optionItem = button.closest('.p-register__optionItem');
+        // 数量と価格の要素を取得
+        let countElement = optionItem.querySelector('.count');
+        let priceElement = optionItem.querySelector('.optionPrice');
+        // 数量と価格の初期値を取得
+        let count = parseInt(countElement.textContent);
+        let pricePerItem = parseInt(priceElement.textContent.replace(',', '').replace('円', '')) / count;
+        // ボタンの操作に基づいて数量を増減
+        if (button.getAttribute('data-operation') === 'up') {
+          count++;
+        } else if (button.getAttribute('data-operation') === 'down' && count > 1) {
+          count--;
+        }
+        // 数量と価格を更新
+        countElement.textContent = count;
+        priceElement.textContent = (pricePerItem * count).toLocaleString() + '円';
+      });
+    });
+  </script>
+  <script>
+    // クーポンの選択要素を取得
+    let couponSelect = document.getElementById('coupon');
+    // 適用ボタンの要素を取得
+    let applyButton = document.querySelector('.apply_button');
+
+    // クーポンの選択肢が変更されたときのイベントリスナーを設定
+    couponSelect.addEventListener('change', function() {
+      // 選択肢が選ばれている場合、適用ボタンのdisabled属性と--disabledクラスを削除
+      if (couponSelect.value !== '0') {
+        applyButton.disabled = false;
+        applyButton.classList.remove('--disabled');
+      }
+      // 選択肢が選ばれていない場合、適用ボタンにdisabled属性と--disabledクラスを追加
+      else {
+        applyButton.disabled = true;
+        applyButton.classList.add('--disabled');
+      }
+    });
+  </script>
 </body>
 
 </html>

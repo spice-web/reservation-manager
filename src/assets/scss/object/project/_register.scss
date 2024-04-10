@@ -19,7 +19,7 @@
     }
     &--right {
       display: grid;
-      grid-template-columns: 75px 35px 100px;
+      grid-template-columns: 60px 40px 120px;
       align-items: center;
       gap: 0.5rem;
 
@@ -141,13 +141,16 @@
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
   &__head {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
     padding-left: 1rem;
     padding-bottom: 1rem;
     margin-bottom: 1rem;
     border-bottom: 1px solid $gray;
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
   }
 
   &__price {
