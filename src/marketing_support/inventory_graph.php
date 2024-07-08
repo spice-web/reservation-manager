@@ -44,45 +44,11 @@
         </div>
 
         <!-- グラフ -->
-        <!-- PyScriptの読み込み  -->
-        <link rel="stylesheet" href="https://pyscript.net/releases/2023.11.2/core.css" />
-        <script type="module" src="https://pyscript.net/releases/2023.11.2/core.js"></script>
-        <py-config>packages = ["matplotlib"]</py-config>
-        <script type="py">
-          from pyscript import display
-          import matplotlib.pyplot as plt
-          import numpy as np
-
-          x = np.linspace(0,10,100)
-          y = np.sin(x)
-          fig = plt.figure()
-          plt.plot(x,y,c="r",label=r"sine")
-          plt.grid()
-          plt.legend()
-
-          display(plt, target="mlp")
-        </script>
         <div class="c-graph__wrap">
-          <!-- <article id="webslides"></article>の中にグラフ挿入 -->
-          <article id="webslides">
-            <!-- Slide 1 -->
-            <section>
-              <!-- それぞれを<section>で囲む -->
-            </section>
-            <!-- Slide 2 -->
-            <section class="bg-primary">
-              <div class="wrap">
-                <h2>これはタイトル.wrap = container (width: 90%)</h2>
-
-                <!-- グラフの描画先を指定 --- (*2) -->
-                <div id="mlp" align="center"></div>
-
-              </div>
-            </section>
-          </article>
-
-
+          <div class="c-button__next"></div>
         </div>
+        <!-- グラフ -->
+
       </div>
     </main><!-- /.l-container__main -->
   </div>
