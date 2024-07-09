@@ -20,7 +20,8 @@
     "gulp-rename": "^2.0.0",
     "gulp-sass-parent": "^2.0.2",
     "gulp-sourcemaps": "^3.0.0",
-    "gulp-webp": "^4.0.1"
+    "gulp-webp": "^4.0.1",
+    "tailwindcss": "^3.4.4"
   },
   "resolutions": {
     "sass-graph": "git+https://github.com/macropygia/sass-graph.git"

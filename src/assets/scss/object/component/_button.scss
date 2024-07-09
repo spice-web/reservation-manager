@@ -311,7 +311,7 @@
   }
 
   // グラフの「次のページ」「前のページ」系ボタン
-  &__next {
+  &__prev {
     background: $text-color;
     color: white;
     text-align: center;
@@ -320,23 +320,36 @@
     width: 20px;
     height: 38px;
     cursor: pointer;
-    position: relative;
     border-radius: 6px;
-    &:visited {
-      color: white;
-    }
-  
     // 右に三角形を表示
     &::after {
       content: "";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      display: block;
       // 高さ50pxの三角形を作成
       border-top: 7px solid transparent;
       border-right: 7px solid white;
       border-bottom: 7px solid transparent;
+    }
+    &.absolute-VerticalCenter {
+      left: -25px;
+    }
+  }
+
+  &__next {
+    @extend .c-button__prev;
+  
+    // 左に三角形を表示
+    &::after {
+      content: "";
+      display: block;
+      // 高さ50pxの三角形を作成
+      border-top: 7px solid transparent;
+      border-left: 7px solid white;
+      border-right: 0px solid transparent;
+      border-bottom: 7px solid transparent;
+    }
+    &.absolute-VerticalCenter--right {
+      right: -25px;
     }
   }
   // 「計算する」ボタン
