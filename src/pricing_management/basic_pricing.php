@@ -19,7 +19,7 @@
       </ul>
 
       <div class="l-container__inner">
-        <form action="" method="POST" class="p-pricing_setting__registration-form u-mb4">
+        <form action="" method="POST" class="l-grid__right-submitButton u-mb4">
           <!-- 入力フォーム -->
           <div class="c-form__input">
             <h2 class="c-title__lv2 l-flex--sb u-w-full-wide">料金設定登録<span class="close_button c-button__close">閉じる</span></h2>
@@ -127,31 +127,27 @@
                 </div>
 
                 <!-- add button -->
-                <button class="c-button__add"></button>
+                <div class="c-button__add--lg"></div>
               </div>
             </div>
 
             <!-- 下段 -->
-            <div>
+            <div class="l-grid__basicPricing--bottom">
               <h2 class="c-title__lv2 l-flex--sb">車両サイズによる割引・割増設定<span class="close_button c-button__close">閉じる</span></h2>
               <div class="l-grid--col2 is-active">
-                <!-- 二輪 -->
-                <div>
+                <div class="l-grid__basicPricing--bottom__item l-grid__basicPricing--bottom--left">
+                  <!-- 二輪 -->
                   <label for="two_wheeler">二輪</label>
                   <input type="text" id="two_wheeler" name="two_wheeler">
-                </div>
-                <!-- マイクロバス -->
-                <div>
-                  <label for="micro_bus">マイクロバス</label>
-                  <input type="text" id="micro_bus" name="micro_bus">
-                </div>
-                <!-- 大型 -->
-                <div>
+                  <!-- 大型 -->
                   <label for="large_size">大型</label>
                   <input type="text" id="large_size" name="large_size">
                 </div>
-                <!-- キャンピングカー -->
-                <div>
+                <div class="l-grid__basicPricing--bottom__item l-grid__basicPricing--bottom--right">
+                  <!-- マイクロバス -->
+                  <label for="micro_bus">マイクロバス</label>
+                  <input type="text" id="micro_bus" name="micro_bus">
+                  <!-- キャンピングカー -->
                   <label for="camping_car">キャンピングカー</label>
                   <input type="text" id="camping_car" name="camping_car">
                 </div>
@@ -161,7 +157,7 @@
 
           </div>
           <!-- button -->
-          <div class="p-pricing_setting__registration-form__right u-mb1">
+          <div class="l-grid__right-submitButton--button u-mb1">
             <button type="submit" class="c-button__submit u-mt0">登録</button>
             <button type="button" class="c-button__load u-mt0">CSVダウンロード</button>
             <button type="button" class="c-button__load u-mt0">CSVアップロード</button>

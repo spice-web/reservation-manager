@@ -1,4 +1,5 @@
-.u-w-auto {
+.u-w-auto,
+input.u-w-auto {
   width: auto;
 }
 .u-w-full-wide {
@@ -19,6 +20,9 @@
 .u-w90 {
   width: 90px;
 }
+.u-w100 {
+  width: 100px;
+}
 .u-w120 {
   width: 120px;
 }
@@ -35,10 +39,14 @@
   width: 240px;
 }
 
-
-
+.u-w-full {
+  height: 100%;
+}
 .u-h30 {
   height: 30px;
+}
+.u-h38 {
+  height: 38px;
 }
 .u-h40 {
   height: 40px;
@@ -46,3 +54,10 @@
 .u-h50 {
   height: 50px;
 }
+
+// line-hight
+.u-lh38 {
+  line-height: 38px;
+}
+
+

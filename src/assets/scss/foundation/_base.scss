@@ -20,6 +20,10 @@ li {
   list-style: none;
 }
 
+.is-block {
+  display: block;
+}
+
 // テキスト
 .text-center {
   text-align: center;
@@ -33,6 +37,9 @@ li {
 
 .note {
   color: var(--note-color);
+  &--blue {
+    color: #4696DC;
+  }
 }
 
 // リンク
@@ -51,9 +58,9 @@ label {
 // input
 input {
   background-color: $light-gray;
-  padding: 0.5rem;
+  padding: 0.4375rem;
   border-radius: 0.5rem;
-  &:not([type="submit"],[type="checkbox"]), {
+  &:not([type="submit"],[type="checkbox"],[type="radio"]) {
     outline: #B4B4B4 1px solid;
     outline-offset: -1px;
   }

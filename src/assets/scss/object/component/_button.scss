@@ -97,7 +97,8 @@
   }
 
   // 割引クーポンなどの適用ボタン
-  &__apply {
+  // CSVアップロードダウンロードボタン
+  &__apply, &__csv {
     @extend .c-button__submit;
     width: 88px;
     height: 40px;
@@ -122,6 +123,14 @@
     &--auto {
       @extend .c-button__apply;
       width: auto;
+    }
+  }
+
+  &__csv {
+    width: 160px;
+    &--download {
+      @extend .c-button__csv;
+      background: $gray;
     }
   }
 
@@ -152,6 +161,10 @@
   &--light-deep-gray {
     @extend .c-button;
     background-color: $light-deep-gray;
+  }
+  &--deep-gray {
+    @extend .c-button;
+    background-color: $text-color;
   }
 
   // selection選択ボタン
@@ -258,7 +271,7 @@
       &:visited {
         color: white;
       }
-    
+      
       // 右に三角形を表示
       &::after {
         content: "";
@@ -270,6 +283,18 @@
         border-top: 25px solid transparent;
         border-left: 25px solid $yellow;
         border-bottom: 25px solid transparent;
+      }
+
+      &-green {
+        background: $green;
+        height: 38px;
+        margin-right: 19px;
+        &::after {
+          right: -19px;
+          border-top: 19px solid transparent;
+          border-left: 19px solid $green;
+          border-bottom: 19px solid transparent;
+        }
       }
     }
 
@@ -421,7 +446,20 @@
   line-height: 30px;
   width: 30px;
   height: 30px;
+  &.--text {
+    width: auto;
+  }
 
+  &.--add-day {
+    justify-self: end;
+  }
+
+  &.--textColor {
+    &::after {
+      background-color: $text-color;
+    }
+  }
+  
   &::after {
     content: "+";
     position: absolute;
@@ -436,6 +474,18 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+  }
+  &--lg {
+    @extend .c-button__add;
+    width: 45px;
+    height: 38px;
+    line-height: 38px;
+    &::after {
+      width: 45px;
+      height: 38px;
+      background: $text-color;
+      font-size: 1.5rem;
+    }
   }
 }
 
@@ -481,6 +531,12 @@
     display: contents;
   }
 }
+label.c-button-optionSelect__radioLabel {
+  background: $gray;
+  color: white;
+  font-size: 1rem;
+}
+
 // 複数選択のセレクトボタン
 .c-button-optionSelect-light {
   label {
@@ -519,12 +575,66 @@
   }
 }
 
+// オプション選択の1以上なら色変化
+.c-button-optionSelect {
+  &__head {
+     padding: 2rem 0;
+     border-radius: 0.5rem;
+     border: 1px solid $gray;
+     background: $light-gray;
+     display: grid;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     &.background-green {
+      background: $green;
+      color: white;
+    }
+  }
+}
+
+// オプション選択の数量ボタン
+.c-button-optionQuantity {
+  &__wrap {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: .5rem;
+    margin-top: 10px;
+
+    input {
+      width: 40px;
+      height: 30px;
+      text-align: center;
+      background: #FFF;
+      border: 1px solid #ccc;
+      margin: 0 5px;
+    }
+  }
+
+  // 増減ボタン
+  font-size: 1rem;
+  width: 40px;
+  height: 1.5rem;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 1.5rem;
+  background-color: #B4B4B4;
+  cursor: pointer;
+  color: #FFF;
+  &--down {
+  }
+  &--up {
+  }
+}
+
 // 入出庫一覧用のトグルボタン
 .c-button-toggle {
   position: relative;
   display: inline-block;
   width: 30px;
   height: 16px;
+  margin-bottom: 0;
 
   &__input {
     opacity: 0;
@@ -573,7 +683,7 @@
 // ソートボタン
 // 入出庫リストのソートボタン
 .c-button-sort {
-  line-height: 1.25;
+  // line-height: 1.25;
   display: flex;
   flex-direction: column;
   // gap: 0.15rem;
@@ -644,4 +754,22 @@
     align-items: center;
     justify-content: center;
   }
+}
+
+/* アップロード用ファイルボタン */
+.c-button-file::file-selector-button {
+  // 「ファイルを選択」ボタンのスタイル
+  font-weight: bold;
+  color: white;
+  background: red;
+  font-size: 14px;
+  border: 0;
+  border-radius: 10em;
+  padding: 8px 16px;
+  text-align: center;
+}
+
+.c-button-file::file-selector-button {
+  // ボタンとテキストの間で改行もできる
+  display: block;
 }

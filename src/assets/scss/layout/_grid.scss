@@ -37,6 +37,71 @@
   &--end {
     align-items: end;
   }
+
+  &__right-submitButton {
+    display: grid;
+    grid-template-columns: 1fr 160px;
+    gap: 3.5rem;
+    align-items: end;
+    &--button {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      font-size: 1rem;
+    }
+  }
+
+  // 代理店設定・代理店料金表設定
+  &__agency {
+    label {
+      font-size: 0.875rem;
+    }
+
+    &--up {
+      input {
+        width: 100%;
+      }
+    }
+
+    &--center {
+      display: grid;
+      grid-template-columns: 120px 120px 120px 1fr;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+    
+    &--bottom {
+      display: grid;
+      grid-template-columns: 1fr 160px 160px;
+      gap: 2rem;
+      input {
+        width: 100%;
+      }
+    }
+  }
+
+  // 基本料金設定(basic_pricing)
+  &__basicPricing {
+    &--bottom {
+      input {
+        width: 150px;
+      }
+
+      &--left {
+        display: grid;
+        column-gap: 1rem;
+        align-items: center;
+        grid-template-columns: auto 1fr;
+      }
+      &--right {
+        text-align: right;
+        display: grid;
+        column-gap: 1rem;
+        align-items: center;
+        grid-template-columns: 1fr 150px;
+      }
+    }
+  }
 }
 
 // gap
@@ -64,6 +129,9 @@
   }
   &--cgap2 {
     column-gap: 2rem;
+  }
+  &--cgap2-half {
+    column-gap: 2.5rem;
   }
   &--rgap1 {
     row-gap: 1rem;

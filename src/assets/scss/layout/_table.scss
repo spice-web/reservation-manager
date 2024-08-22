@@ -1,5 +1,15 @@
 @use '../foundation/variables' as *;
 
+// テーブル共通
+.l-table {
+  &__checkbox {
+    text-align: center;
+    input {
+      margin-bottom: 0;
+    }
+  }
+}
+
 // 一覧系テーブル
 .l-table-list {
   border-radius: 8px;
@@ -99,6 +109,34 @@
     background: $green;
   }
 
+  &.--in, &.--out {
+    tr[data-href]:nth-of-type(n+2):hover {
+      // background-color: #f0f0f0;
+      cursor: pointer;
+    }
+  }
+  &.--in {
+    tr[data-href]:nth-of-type(n+2):hover {
+        >td {
+          background: rgba(210, 248, 245, 1);
+        }
+      }
+    }
+  &.--out {
+    tr[data-href]:nth-of-type(n+2):hover {
+      >td {
+          background: rgba(230, 240, 255, 1);
+        }
+    }
+  }
+  //   tr[data-href]:nth-of-type(2n) {
+  //     background-color: #FFF;
+  //     /* 好みの色に変更 */
+  //   }
+  // tr[data-href]:nth-of-type(2n+1) {
+  //   background-color: #ececec;
+  //   /* 好みの色に変更 */
+  // }
   tr {
     &:nth-child(2n+1) {
       >td {
@@ -157,9 +195,9 @@
 
   th:last-child,
   td:last-child {
-    right: 0;
+    // right: 0;
     border-right: 0.9px solid $text-color;
-    filter: drop-shadow(-2px 2px 2px rgba(0, 0, 0, .5));
+    // filter: drop-shadow(-2px 2px 2px rgba(0, 0, 0, .5));
   }
 
   &.--blue {
@@ -209,14 +247,14 @@
   }
 }
 
-
 // 日次更新テーブル
 .l-table-date {
   @extend .l-table-list;
-  border: 1px solid $text-color;
   &__head {
     @extend .l-table-list__head;
-    background: $green;
+    th {
+      background: $green;
+    }
   }
   &__body {
     @extend .l-table-list__body;

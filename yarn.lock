@@ -2021,7 +2021,7 @@ gulp-rename@^2.0.0:
 
 gulp-sass-parent@^2.0.2:
   version "2.0.2"
-  resolved "https://registry.npmjs.org/gulp-sass-parent/-/gulp-sass-parent-2.0.2.tgz"
+  resolved "https://registry.yarnpkg.com/gulp-sass-parent/-/gulp-sass-parent-2.0.2.tgz#fe17e3741d46d57ce3dfd9a0bd63de478c522bd9"
   integrity sha512-tITJItzmMUyxym7n3tCWlK0qi2dpPo5xlBopmrLD8DqOwBxgvU/itOF7KFWX573FoFAqcvGkAtreJXaR8lJN+g==
   dependencies:
     event-stream "4.0.1"

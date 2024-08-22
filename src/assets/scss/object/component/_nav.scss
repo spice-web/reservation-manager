@@ -5,6 +5,9 @@
     width: 160px;
     background: $light-gray;
     padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   &__list {
@@ -59,7 +62,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
-    margin-top: 2rem;
+    margin-bottom: 2rem;
     width: 100%;
     align-items: center;
     background-image: url('../images/icon/qr_bg.png');

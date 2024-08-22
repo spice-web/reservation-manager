@@ -18,11 +18,15 @@
   &--10 {
     font-size: 0.625rem;
   }
-  &--12 {
+  &--12, &--sm {
     font-size: 0.75rem;
   }
-  &--14 {
+  &--14,
+  &--md {
     font-size: 0.875rem;
+  }
+  &--normal {
+    font-size: 1rem;
   }
   &--18 {
     font-size: 1.125rem;
@@ -46,6 +50,9 @@
 
 // フォントウェイト
 .u-font {
+  &--normal {
+    font-weight: normal;
+  }
   &--medium {
     font-weight: 500;
   }
@@ -63,4 +70,13 @@
 
 .u-font-yen {
   font-size: 0.75em;
+}
+
+// 文字詰め
+.palt {
+  font-feature-settings: "palt";
+}
+
+.u-font-nowrap {
+  white-space: nowrap;
 }

@@ -18,36 +18,38 @@
       </ul>
 
       <div class="l-container__inner">
-        <h2 class="c-title__lv2">新規設定</h2>
-        <form action="" method="POST" class="l-grid--col5 l-flex--item-end">
-          <div>
+        <h2 class="c-title__lv2 l-flex--sb">新規設定<span class="close_button c-button__close">閉じる</span></h2>
+        <form action="" method="POST" class="p-dynamic-pricing__head is-active u-mb3">
+          <div class="u-mb1 u-font--md">
             <!-- 設定範囲 -->
             <label for="option">設定範囲</label>
-            <input type="text" name="" id="">%以上
+            <div class="l-flex l-grid--gap05 l-flex--item-end">
+              <input type="text" name="" id="" class="u-w100 u-mb0"><span class="u-font-nowrap">%以上</span>
+              <span class="u-lh38">-</span>
+              <input type="text" name="" id="" class="u-w100 u-mb0"><span class="u-font-nowrap">%未満</span>
+            </div>
           </div>
   
-          <div>
-            <input type="text" name="" id="">%未満
-          </div>
-  
-          <div>
+          <div class="u-mb1 u-font--md">
             <!-- 変動金額 -->
             <label for="option">変動金額</label>
-            <input type="text" name="" id="option">円
+            <div class="l-flex l-grid--gap05 l-flex--item-end">
+              <input type="text" name="" id="option" class="u-mb0">円
+            </div>
           </div>
   
-          <div class="l-grid--col2">
+          <div class="l-flex l-flex--center l-grid--cgap05">
             <div class="c-button-optionSelect">
               <input type="radio" name="option" value="option1" id="option1" checked>
-              <label for="option1" class="u-w80 u-h40 u-mb1">割引</label>
+              <label for="option1" class="u-w80 u-h38 u-mb1">割引</label>
             </div>
             <div class="c-button-optionSelect">
               <input type="radio" name="option" value="option2" id="option2">
-              <label for="option2" class="u-w80 u-h40 u-mb1">割増</label>
+              <label for="option2" class="u-w80 u-h38 u-mb1">割増</label>
             </div>
           </div>
   
-          <button type="submit" class="c-button__submit u-mb1">登録</button>
+          <button type="submit" class="c-button__submit u-h38 u-mb1">登録</button>
         </form>
   
         <div class="l-grid--col2 l-grid--gap2">
@@ -76,7 +78,7 @@
                 <tr>
                   <td></td>
                   <td></td>
-                  <td><button type="button" class="c-button__add">割引を追加</button></td>
+                  <td><button type="button" class="c-button__add --text">割引を追加</button></td>
                 </tr>
                 <tr>
                   <td>20％以上～80％未満</td>
@@ -86,7 +88,7 @@
                 <tr>
                   <td></td>
                   <td></td>
-                  <td><button type="button" class="c-button__add">割増を追加</button></td>
+                  <td><button type="button" class="c-button__add --text">割増を追加</button></td>
                 </tr>
                 <tr>
                   <td>90％以上～95％未満</td>
@@ -137,7 +139,8 @@
 
     </main><!-- /.l-container__main -->
   </div><!-- /.l-container__wrap -->
-
+  
+  <script src="../js/close_button_toggle.js"></script>
 </body>
 
 </html>

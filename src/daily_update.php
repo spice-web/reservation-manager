@@ -16,12 +16,12 @@
       </ul>
 
       <div class="l-container__inner">
-        <p>現在のサーバ日付:2024-02-23 09:16</p>
+        <p class="u-mb1">現在のサーバ日付:2024-02-23 09:16</p>
         <table class="l-table-date u-mb2">
           <thead class="l-table-date__head">
             <tr>
               <th>事業所名</th>
-              <th>最終更新日</th>
+              <th>更新日</th>
               <th>操作</th>
               <th>操作</th>
             </tr>
@@ -31,14 +31,14 @@
             <tr>
               <td>サンパーキング成田店</td>
               <td>2023-11-15</td>
-              <td><a href="" class="c-link--update">日付を更新</a></td>
-              <td><a href="" class="c-link--return">前日に戻す</a></td>
+              <td><span class="c-link--update">日付を更新</span></td>
+              <td><span class="c-link--return">前日に戻す</span></td>
             </tr>
             <tr>
               <td>サンパーキング成田店</td>
               <td>2023-11-15</td>
-              <td><a href="" class="c-link--update">日付を更新</a></td>
-              <td><a href="" class="c-link--return">前日に戻す</a></td>
+              <td><span class="c-link--update">日付を更新</span></td>
+              <td><span class="c-link--return">前日に戻す</span></td>
             </tr>
           </tbody>
         </table>

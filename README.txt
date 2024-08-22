@@ -15,13 +15,22 @@ BEM・FLOCSSでCSS設計
 ※※例外
 is-none is-active系はu-block.scssに記述
 
+
+## sassについて
+gulpでコンパイルしてます。
+gulpがわからなければ、「gulp sass」などで検索して下さい
 gulpfile.js・package.jsonがあるので、
 
 $ yarn install
+
 で「node_modules」をインストールしてください
+node.jsがローカルにない場合、まずnodeをインストールしてください
+そして、gulpをglobalかdevにインストールしてください
+インストール後に
 
 $ gulp watch
-でscssを監視できます。style.cssに全部まとめてますが、ファイルを変更して保存すると
+
+でscssを監視できます。src/assets/style.cssに全部まとめてますが、ファイルを変更して保存すると
 自動でstyle.cssにまとまられます。
 
 

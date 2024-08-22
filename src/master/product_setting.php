@@ -1,7 +1,6 @@
-<!-- G-8 マスタ登録 -->
+<!-- G-8 商品設定 -->
 <!DOCTYPE html>
 <html lang="ja">
-
 <?php include_once '../include/head.php'; ?>
 
 <body>
@@ -12,24 +11,23 @@
 
     <main class="l-wrap__main l-container__main">
       <!-- パンくず -->
-      <ul class="l-breadcrumb">
+      <ul class="l-wrap__breadcrumb l-breadcrumb">
         <li class="l-breadcrumb__list">商品設定</li>
-        </li>
       </ul>
 
       <div class="l-container__inner">
         <h2 class="c-title__lv2">新規登録 および 検索</h2>
-        <form method="POST" action="" class="l-grid--col3-auto l-grid--gap2 u-mb3">
+        <form method="POST" action="" class="l-grid--col3-auto l-grid--start l-grid--gap2 u-mb3">
           <div>
             <div>
               <!-- 商品名 -->
               <label for="product_name">商品名</label>
-              <input type="text" name="product_name" id="product_name" class="u-w100">
+              <input type="text" name="product_name" id="product_name" class="u-w-full-wide">
             </div>
             <div>
               <!-- 略称 -->
               <label for="abbreviation">略称</label>
-              <input type="text" name="abbreviation" id="abbreviation" class="u-w100">
+              <input type="text" name="abbreviation" id="abbreviation" class="u-w-full-wide">
             </div>
             <div>
               <!-- メモ -->

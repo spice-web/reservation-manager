@@ -14,7 +14,6 @@
       <!-- パンくず -->
       <ul class="l-breadcrumb">
         <li class="l-breadcrumb__list">割引クーポン設定</li>
-        </li>
       </ul>
 
       <div class="l-container__inner">

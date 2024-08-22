@@ -47,7 +47,7 @@
           </div>
         </div>
 
-        <div class="l-table-list__wrapper u-mb3">
+        <div class="l-table-list--scroll__wrapper u-mb3">
           <table class="l-table-list--scroll --blue">
             <tr>
               <th>
@@ -70,7 +70,7 @@
               <th>詳細</th>
             </tr>
             <tr>
-              <td>
+              <td class="l-table__checkbox">
                 <input type="checkbox" name="select" value="1">
               </td>
               <td>テキスト</td>
@@ -87,7 +87,9 @@
               <td><a href="/admin/reservation_detail.php">表示</a></td>
             </tr>
             <tr>
-              <td><input type="checkbox" name="select" value="1"></td>
+              <td class="l-table__checkbox">
+                <input type="checkbox" name="select" value="1">
+              </td>
               <td>テキスト</td>
               <td>テキスト</td>
               <td>テキスト</td>
@@ -102,7 +104,8 @@
               <td>テキスト</td>
             </tr>
             <tr>
-              <td><input type="checkbox" name="select" value="1"></td>
+            <td class="l-table__checkbox">
+                <input type="checkbox" name="select" value="1"></td>
               <td>テキスト</td>
               <td>テキスト</td>
               <td>テキスト</td>
@@ -117,7 +120,8 @@
               <td>テキスト</td>
             </tr>
             <tr>
-              <td><input type="checkbox" name="select" value="1"></td>
+              <td class="l-table__checkbox">
+                <input type="checkbox" name="select" value="1"></td>
               <td>テキスト</td>
               <td>テキスト</td>
               <td>テキスト</td>
@@ -132,7 +136,8 @@
               <td>テキスト</td>
             </tr>
             <tr>
-              <td><input type="checkbox" name="select" value="1"></td>
+              <td class="l-table__checkbox">
+                <input type="checkbox" name="select" value="1"></td>
               <td>テキスト</td>
               <td>テキスト</td>
               <td>テキスト</td>

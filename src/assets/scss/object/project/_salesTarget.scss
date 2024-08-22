@@ -1,0 +1,18 @@
+@use '../../foundation/variables' as *;
+
+.p-salesTarget {
+  &__wrap {
+    display: flex;
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid $text-color;
+    }
+  }
+  &__dttl {
+    background-color: $green;
+    color: white;
+    padding: 0.5rem;
+    margin-bottom: 0.625rem;
+  }
+}
