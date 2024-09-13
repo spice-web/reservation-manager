@@ -23,4 +23,6 @@
   <!-- Optional - CSS SVG Icons (Font Awesome) -->
   <link rel="stylesheet" type='text/css' media='all' href="/css/svg-icons.css">
 
+  <!-- FullCalendar CSS -->
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.css">
 </head>
