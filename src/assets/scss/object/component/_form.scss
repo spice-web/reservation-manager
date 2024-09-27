@@ -25,6 +25,15 @@
   width: 100%;
 }
 
+// label
+.c-form-label {
+  &--md {
+    label {
+      font-size: 0.875rem;
+    }
+  }
+}
+
 // 画像アップロード
 .c-form-input__upload-image {
   border: 1px solid #B4B4B4;

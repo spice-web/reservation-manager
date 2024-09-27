@@ -47,8 +47,8 @@
         </div><!-- ./left -->
         <!-- 登録ボタン -->
         <div class="l-grid__right-submitButton--button c-button__csv--upload">
-          <button type="button" class="c-button__register button_select">新規登録</button>
-          <button type="submit" class="c-button__register --gray">検索</button>
+          <button type="submit" class="c-button__register">検索</button>
+          <button type="button" class="c-button__register  --gray button_select">新規登録</button>
           <!-- <a href="" download="" class="c-button__load" style="text-decoration: none;">CSVダウンロード</a> -->
           <button type="button" class="c-button__load upload">CSVアップロード</button>
           <input type="file" id="csvFileInput" />
@@ -105,7 +105,7 @@
       <!-- close button -->
       <div class="l-modal__close modal_optionClose">×</div>
       <div class="l-modal__content">
-        <form action="" method="post" enctype="multipart/form-data" class="u-font--md l-flex--column l-flex--sb u-w-full">
+        <form action="" method="post" enctype="multipart/form-data" class="l-flex--column l-flex--sb u-w-full">
         <!-- <form class="l-grid__right-submitButton l-grid__agency "> -->
         <div>
           <div class="c-title__modal--lv3">代理店情報編集</div>
@@ -114,15 +114,15 @@
             <!-- 一段目 -->
             <div class="l-grid--col3 l-grid--cgap2-half">
               <div>
-                <label for="agency_code">代理店コード</label>
+                <label for="agency_code" class="u-font--md">代理店コード</label>
                 <input type="text" id="agency_code" name="agency_code">
               </div>
               <div>
-                <label for="company_name">社名</label>
+                <label for="company_name" class="u-font--md">社名</label>
                 <input type="text" id="company_name" name="company_name">
               </div>
               <div>
-                <label for="branch_name">支店名</label>
+                <label for="branch_name" class="u-font--md">支店名</label>
                 <input type="text" id="branch_name" name="branch_name">
               </div>
             </div>
@@ -130,37 +130,37 @@
             <!-- 2段目 -->
             <div class="l-grid--col3 l-grid--cgap2-half">
               <div>
-                <label for="postal_code">住所 〒</label>
+                <label for="postal_code" class="u-font--md">住所 〒</label>
                 <input type="text" id="postal_code" name="postal_code">
               </div>
               <div>
-                <label for="address1">住所1</label>
+                <label for="address1" class="u-font--md">住所1</label>
                 <input type="text" id="address1" name="address1">
               </div>
               <div>
-                <label for="address2">住所2</label>
+                <label for="address2" class="u-font--md">住所2</label>
                 <input type="text" id="address2" name="address2">
               </div>
             </div>
             
             <!-- 3段目 -->
             <div style="width: 33%;padding-right:1.25rem;">
-              <label for="tel">電話番号</label>
+              <label for="tel" class="u-font--md">電話番号</label>
               <input type="text" id="tel" name="tel">
             </div>
             
             <!-- 4段目 -->
             <div class="l-grid--col3 l-grid--cgap2-half">
               <div>
-                <label for="department">担当者部署</label>
+                <label for="department" class="u-font--md">担当者部署</label>
                 <input type="text" id="department" name="department">
               </div>
               <div>
-                <label for="position">担当者役職</label>
+                <label for="position" class="u-font--md">担当者役職</label>
                 <input type="text" id="position" name="position">
               </div>
               <div>
-                <label for="contact_name">担当者氏名</label>
+                <label for="contact_name" class="u-font--md">担当者氏名</label>
                 <input type="text" id="contact_name" name="contact_name">
               </div>
             </div>
@@ -168,28 +168,28 @@
             <!-- 5段目 -->
             <div class="l-grid--col3 l-grid--cgap2-half">
               <div>
-                <label for="email">担当者メールアドレス</label>
+                <label for="email" class="u-font--md">担当者メールアドレス</label>
                 <input type="text" id="email" name="email">
               </div>
               <div>
-                <label for="payment_terms">支払いサイト</label>
+                <label for="payment_terms" class="u-font--md">支払いサイト</label>
                 <input type="text" id="payment_terms" name="payment_terms">
               </div>
               <div>
-                <label for="bank_info">振込先情報</label>
+                <label for="bank_info" class="u-font--md">振込先情報</label>
                 <input type="text" id="bank_info" name="bank_info">
               </div>
             </div>
             
             <!-- 6段目 -->
             <div>
-              <label for="memo">社内共有メモ</label>
+              <label for="memo" class="u-font--md">社内共有メモ</label>
               <input type="text" id="memo" name="memo" class="c-form-input--w100">
             </div>
             
             <!-- LAST -->
             <div>
-              <label for="search_keywords">検索用キーワード</label>
+              <label for="search_keywords" class="u-font--md">検索用キーワード</label>
               <input type="text" id="search_keywords" name="search_keywords">
             </div>
           </div>
@@ -225,13 +225,13 @@
 
           <div class="l-grid__agency--bottom">
             <div>
-              <label for="">バナーコメントの設定</label>         
+              <label for="" class="u-font--md">バナーコメントの設定</label>         
               <input type="text" name="" id="">
-              <label for="">タイトルの設定</label>
+              <label for="" class="u-font--md">タイトルの設定</label>
               <input type="text" name="" id="" class="u-mb0">
             </div>
             <div class="l-flex--column">
-              <label for="logo">ロゴ画像の登録</label>
+              <label for="logo" class="u-font--md">ロゴ画像の登録</label>
               <div class="c-form-input__upload-image u-mb025 p-master-agency-setting__upload-image l-position__upload">
                 <img id="logoImageDisplay" style="display:none; max-width:100px;">
               </div>
@@ -239,7 +239,7 @@
               <input type="file" id="logoFileInput" name="logo" accept="image/*" style="display: none;">
             </div>
             <div class="l-flex--column">
-              <label for="campaign" class="u-font-nowrap">キャンペーン画像の登録</label>
+              <label for="campaign" class="u-font-nowrap u-font--md">キャンペーン画像の登録</label>
               <div class="c-form-input__upload-image u-mb025 p-master-agency-setting__upload-image l-position__upload">
                 <img id="campaignImageDisplay" style="display:none;">
               </div>
@@ -252,7 +252,8 @@
         <!-- 登録ボタン -->
         <div class="l-flex--center l-grid--gap1 u-mt2 u-mb2 c-button__csv--upload">
           <!-- <button type="submit" class="c-button__submit--dark-gray">新規保存</button> -->
-          <button type="submit" id="modal_add" class="c-button__submit">上書き保存</button>
+          <button type="submit" id="modal_add" class="c-button__submit">保存</button>
+          <!-- CSVダウンロードボタンは新規登録の場合非表示 -->
           <a href="" download="" class="c-button__submit--dark-gray" style="text-decoration: none;">CSVダウンロード</a>
         </div>
       </form>

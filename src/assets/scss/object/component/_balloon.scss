@@ -89,3 +89,11 @@
     }
   }
 }
+
+// メモの吹き出しマスターのテーブル用
+.c-balloon-memo--master {
+  &__text {
+    @extend .c-balloon-memo__text;
+  }
+
+}

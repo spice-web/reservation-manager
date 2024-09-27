@@ -17,8 +17,9 @@
     grid-template-rows: repeat(4, auto);
     grid-template-columns: 1fr;
     justify-items: center;
-    place-items: top;
+    // place-items: top;
     gap: 0.625rem;
+    padding: 0 1rem;
     &:nth-child(2) {
       border-left: 1px solid #B4B4B4;
       border-right: 1px solid #B4B4B4;

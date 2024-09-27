@@ -17,11 +17,12 @@
 
       <div class="l-container__inner">
         <form action="" class="u-mb2">
-          <div class="l-flex--end l-grid--gap1 c-button__csv--upload">
+          <div class="l-flex--end l-grid--gap1 upload c-button__csv--upload">
             <div class="c-button__register button_select">設定</div>
             <a href="" class="c-button__load link-white u-mt0">CSVダウンロード</a>
-            <button type="button" class="c-button__load upload u-mt0">CSVアップロード</button>
+            <button type="button" class="c-button__load --gray upload u-mt0 uploadButton">CSVアップロード</button>
             <input type="file" id="csvFileInput" />
+            <input type="submit" value="CSV登録" class="c-button__register register u-mb0" disabled>
           </div>
           <div id="csvFileNameDisplay" class="text-right u-mt1"></div>
         </form>
@@ -533,7 +534,7 @@
           <div>
             <!-- 1列目 -->
              <div class="l-grid--col3 l-grid--cgap1 l-grid--sales-target-setting">
-               <div>
+               <div class="l-grid--sales-target-setting__category">
                  月間総売上
                </div>
                <div class="l-grid--col3 l-grid--gap05 u-font-nowrap">
@@ -547,7 +548,7 @@
              </div>
             <!-- 2列目 -->
             <div class="l-grid--col3 l-grid--cgap1 l-grid--sales-target-setting">
-              <div>
+              <div class="l-grid--sales-target-setting__category">
                 駐車料金
               </div>
               <div class="l-grid--col3 l-grid--gap05 u-font-nowrap">
@@ -614,29 +615,47 @@
 
   <!-- ファイルアップロードの時スクリプト -->
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        setupCsvUpload('csvFileInput', 'csvFileNameDisplay');
-    });
+    let uploadedFiles = 0;
 
-    function setupCsvUpload(inputId, fileNameDisplayId) {
-      const fileInput = document.getElementById(inputId);
+    function setupForm(itemClass, fileInputId, fileNameDisplayId) {
+      const item = document.querySelector(itemClass);
+      const fileInput = document.getElementById(fileInputId);
       const fileNameDisplay = document.getElementById(fileNameDisplayId);
-      const uploadButton = document.querySelector('.c-button__load.upload');
+      const uploadButton = item.querySelector('.uploadButton');
+      const registerButton = document.querySelector('.register');
 
-      uploadButton.addEventListener('click', function() {
-          fileInput.click();
+      uploadButton.addEventListener('click', () => {
+        fileInput.click();
       });
 
       fileInput.addEventListener('change', function(event) {
-          const file = event.target.files[0];
-          if (file) {
-              fileNameDisplay.textContent = `選択されたファイル: ${file.name}`;
-              // ここでCSVファイルの処理を追加できます（例：アップロード処理など）
-          } else {
-              fileNameDisplay.textContent = 'ファイルが選択されていません';
+        const file = event.target.files[0];
+        if (file) {
+          const fileName = file.name;
+          fileNameDisplay.innerHTML = `
+            <span>${fileName}</span>
+            <img src="../images/icon/closeButton.svg" width="15px" height="15px" alt="削除" class="pointer delete-button">
+          `;
+          if (uploadedFiles === 0) {
+            registerButton.removeAttribute('disabled');
           }
+          uploadedFiles++;
+
+          const deleteButton = fileNameDisplay.querySelector('.delete-button');
+          deleteButton.addEventListener('click', function() {
+            fileInput.value = '';
+            fileNameDisplay.innerHTML = '';
+            uploadedFiles--;
+            if (uploadedFiles === 0) {
+              registerButton.setAttribute('disabled', '');
+            }
+          });
+        } else {
+          fileNameDisplay.innerHTML = '';
+        }
       });
     }
+    setupForm('.upload', 'csvFileInput', 'csvFileNameDisplay');
   </script>
 
   <!-- 表をずらすスクリプト -->

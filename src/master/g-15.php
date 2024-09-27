@@ -18,7 +18,7 @@
 
       <div class="l-container__inner">
         <h2 class="c-title__lv2">新規登録 および 検索</h2>
-        <form method="POST" action="" class="l-grid--col2-auto l-grid--gap2 u-mb3">
+        <form method="POST" action="" class="l-grid--col2-auto l-grid--gap2 u-mb3 c-form-label--md">
           <div><!-- left side -->
             <div class="l-grid--col3-auto l-grid--gap1">
               <div>
@@ -53,11 +53,11 @@
                   <div class="l-grid__radio">
                     <div class="c-button-optionSelect">
                       <input type="radio" name="use_limit" value="1回" id="use_limit_once" checked>
-                      <label for="use_limit_once" class="u-w70 u-h40 u-mb1">1回</label>
+                      <label for="use_limit_once" class="u-w70 u-h40 u-mb1 u-font--normal">1回</label>
                     </div>
                     <div class="c-button-optionSelect">
                       <input type="radio" name="use_limit" value="複数回" id="use_limit_multiple">
-                      <label for="use_limit_multiple" class="u-w70 u-h40 u-mb1">複数回</label>
+                      <label for="use_limit_multiple" class="u-w70 u-h40 u-mb1 u-font--normal">複数回</label>
                     </div>
                   </div>
                 </div>
@@ -68,11 +68,11 @@
                   <div class="l-grid__radio">
                     <div class="c-button-optionSelect">
                       <input type="radio" name="allow_combine" value="可" id="allow_combine_yes" checked>
-                      <label for="allow_combine_yes" class="u-w70 u-h40 u-mb1">可</label>
+                      <label for="allow_combine_yes" class="u-w70 u-h40 u-mb1 u-font--normal">可</label>
                     </div>
                     <div class="c-button-optionSelect">
                       <input type="radio" name="allow_combine" value="不可" id="allow_combine_no">
-                      <label for="allow_combine_no" class="u-w70 u-h40 u-mb1">不可</label>
+                      <label for="allow_combine_no" class="u-w70 u-h40 u-mb1 u-font--normal">不可</label>
                     </div>
                   </div>
                 </div>
@@ -92,84 +92,118 @@
             </div>
           </div>
           <div class="l-flex--column l-flex--self-end">
-            <button type="button" class="c-button__register u-mb05 button_select">登録</button>
             <button type="submit" class="c-button__register --gray u-mb1">検索</button>
+            <button type="button" class="c-button__register u-mb05 button_select">新規登録</button>
           </div>
         </form>
 
         <h2 class=" c-title__lv2">登録済み割引クーポン一覧</h2>
-        <div class="l-table-list--scroll__container">
-          <table class="l-table-list">
-            <thead class="l-table-list__head l-table-list--scroll__head">
-              <tr>
-                <th><div class="c-button-sort">クーポンコード</div></th>
-                <th><div class="c-button-sort">クーポン名</div></th>
-                <th><div class="c-button-sort">割引</div></th>
-                <th><div class="c-button-sort">併用</div></th>
-                <th><div class="c-button-sort">対象カテゴリ</div></th>
-                <th><div class="c-button-sort --desc">割引対象となる入庫日時</div></th>
-                <th>メモ</th>
-                <th></th>
-              </tr>
-            </thead>
-            <tbody class="l-table-list__body">
-              <tr>
-                <td>2023thankyou</td>
-                <td>2023年感謝割引クーポン</td>
-                <td class="text-center">5%</td>
-                <td class="text-center">不可</td>
-                <td>駐車料金</td>
-                <td>2023/12/1（木）00:00 ～<br />2024/1/31（木）23:59</td>
-                <td class="c-balloon-memo">
-                  <button type="button" class="button_open c-button__memo">メモ</button>
-                  <!-- 吹き出し -->
-                  <div class="c-balloon-memo__box">
-                    <div class="c-balloon-memo__text">メモ内容が入ります。メモ内容が入ります。
-                      <div class="button_close c-balloon-memo__close">閉じる</div>
-                    </div>
+        <table class="l-table-list">
+          <thead class="l-table-list__head l-table-list--scroll__head">
+            <tr>
+              <th><div class="c-button-sort">クーポンコード</div></th>
+              <th><div class="c-button-sort">クーポン名</div></th>
+              <th><div class="c-button-sort">利用回数</div></th>
+              <th><div class="c-button-sort">併用</div></th>
+              <th><div class="c-button-sort">対象カテゴリ</div></th>
+              <th><div class="c-button-sort --desc">割引対象となる入庫日時</div></th>
+              <th>メモ</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody class="l-table-list__body">
+            <tr>
+              <td>2023thankyou</td>
+              <td>2023年感謝割引クーポン</td>
+              <td class="text-center">1回</td>
+              <td class="text-center">不可</td>
+              <td>駐車料金</td>
+              <td>2023/12/1（木）00:00 ～<br />2024/1/31（木）23:59</td>
+              <td class="c-balloon-memo">
+                <button type="button" class="button_open c-button__memo">メモ</button>
+                <!-- 吹き出し -->
+                <div class="c-balloon-memo__box">
+                  <div class="c-balloon-memo__text">メモ内容が入ります。メモ内容が入ります。
+                    <div class="button_close c-balloon-memo__close">閉じる</div>
                   </div>
-                </td>
-                <td><button class="c-button__edit">編集</button></td>
-              </tr>
-              <tr>
-                <td>2023thankyou</td>
-                <td>2023年感謝割引クーポン</td>
-                <td class="text-center">5%</td>
-                <td class="text-center">不可</td>
-                <td>洗車</td>
-                <td>2023/12/1（木）00:00 ～<br />2024/1/31（木）23:59</td>
-                <td class="c-balloon-memo">
-                  <button type="button" class="button_open c-button__memo">メモ</button>
-                  <!-- 吹き出し -->
-                  <div class="c-balloon-memo__box">
-                    <div class="c-balloon-memo__text">メモ内容が入ります。メモ内容が入ります。
-                      <div class="button_close c-balloon-memo__close">閉じる</div>
-                    </div>
+                </div>
+              </td>
+              <td><button class="c-button__edit button_select">編集</button></td>
+            </tr>
+            <tr>
+              <td>2023thankyou</td>
+              <td>2023年感謝割引クーポン</td>
+              <td class="text-center">1回</td>
+              <td class="text-center">不可</td>
+              <td>洗車</td>
+              <td>2023/12/1（木）00:00 ～<br />2024/1/31（木）23:59</td>
+              <td class="c-balloon-memo">
+                <button type="button" class="button_open c-button__memo">メモ</button>
+                <!-- 吹き出し -->
+                <div class="c-balloon-memo__box">
+                  <div class="c-balloon-memo__text">メモ内容が入ります。メモ内容が入ります。
+                    <div class="button_close c-balloon-memo__close">閉じる</div>
                   </div>
-                </td>
-                <td><button class="c-button__edit">編集</button></td>
-              </tr>
-              <tr>
-                <td>2023thankyou</td>
-                <td>2023年感謝割引クーポン</td>
-                <td class="text-center">1000円</td>
-                <td class="text-center">不可</td>
-                <td>駐車料金</td>
-                <td>2023/12/1（木）00:00～<br />2024/1/31（木）23:59</td>
-                <td class="c-balloon-memo">
-                  <button type="button" class="button_open c-button__memo">メモ</button>
-                  <!-- 吹き出し -->
-                  <div class="c-balloon-memo__box">
-                    <div class="c-balloon-memo__text">メモ内容が入ります。メモ内容が入ります。
-                      <div class="button_close c-balloon-memo__close">閉じる</div>
-                    </div>
+                </div>
+              </td>
+              <td><button class="c-button__edit button_select">編集</button></td>
+            </tr>
+            <tr>
+              <td>2023thankyou</td>
+              <td>2023年感謝割引クーポン</td>
+              <td class="text-center">複数回</td>
+              <td class="text-center">不可</td>
+              <td>駐車料金</td>
+              <td>2023/12/1（木）00:00～<br />2024/1/31（木）23:59</td>
+              <td class="c-balloon-memo">
+                <button type="button" class="button_open c-button__memo">メモ</button>
+                <!-- 吹き出し -->
+                <div class="c-balloon-memo__box">
+                  <div class="c-balloon-memo__text">メモ内容が入ります。メモ内容が入ります。
+                    <div class="button_close c-balloon-memo__close">閉じる</div>
                   </div>
-                </td>
-                <td><button class="c-button__edit button_select">編集</button></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+                </div>
+              </td>
+              <td><button class="c-button__edit button_select">編集</button></td>
+            </tr>
+            <tr>
+              <td>2023thankyou</td>
+              <td>2023年感謝割引クーポン</td>
+              <td class="text-center">複数回</td>
+              <td class="text-center">不可</td>
+              <td>駐車料金</td>
+              <td>2023/12/1（木）00:00～<br />2024/1/31（木）23:59</td>
+              <td class="c-balloon-memo">
+                <button type="button" class="button_open c-button__memo">メモ</button>
+                <!-- 吹き出し -->
+                <div class="c-balloon-memo__box">
+                  <div class="c-balloon-memo__text">メモ内容が入ります。メモ内容が入ります。
+                    <div class="button_close c-balloon-memo__close">閉じる</div>
+                  </div>
+                </div>
+              </td>
+              <td><button class="c-button__edit button_select">編集</button></td>
+            </tr>
+            <tr>
+              <td>2023thankyou</td>
+              <td>2023年感謝割引クーポン</td>
+              <td class="text-center">複数回</td>
+              <td class="text-center">不可</td>
+              <td>駐車料金</td>
+              <td>2023/12/1（木）00:00～<br />2024/1/31（木）23:59</td>
+              <td class="c-balloon-memo">
+                <button type="button" class="button_open c-button__memo">メモ</button>
+                <!-- 吹き出し -->
+                <div class="c-balloon-memo__box">
+                  <div class="c-balloon-memo__text">メモ内容が入ります。メモ内容が入ります。
+                    <div class="button_close c-balloon-memo__close">閉じる</div>
+                  </div>
+                </div>
+              </td>
+              <td><button class="c-button__edit button_select">編集</button></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
 
     </main><!-- /.l-wrap__main -->
@@ -237,12 +271,12 @@
                       <!-- 「1回」「複数回」ラジオボタン -->
                       <div class="l-grid__radio">
                         <div class="c-button-optionSelect">
-                          <input type="radio" name="use_limit" value="1回" id="use_limit_once" checked>
-                          <label for="use_limit_once" class="u-w70 u-h40 u-mb1">1回</label>
+                          <input type="radio" name="use_limit" value="1回" id="register_use_limit_once" checked>
+                          <label for="register_use_limit_once" class="u-w70 u-h40 u-mb1">1回</label>
                         </div>
                         <div class="c-button-optionSelect">
-                          <input type="radio" name="use_limit" value="複数回" id="use_limit_multiple">
-                          <label for="use_limit_multiple" class="u-w70 u-h40 u-mb1">複数回</label>
+                          <input type="radio" name="use_limit" value="複数回" id="register_use_limit_multiple">
+                          <label for="register_use_limit_multiple" class="u-w70 u-h40 u-mb1">複数回</label>
                         </div>
                       </div>
                     </div>
@@ -253,12 +287,12 @@
                       <!-- 「可」「不可」ラジオボタン -->
                       <div class="l-grid__radio">
                         <div class="c-button-optionSelect">
-                          <input type="radio" name="allow_combine" value="可" id="allow_combine_yes" checked>
-                          <label for="allow_combine_yes" class="u-w70 u-h40 u-mb1">可</label>
+                          <input type="radio" name="allow_combine" value="可" id="register_allow_combine_yes" checked>
+                          <label for="register_allow_combine_yes" class="u-w70 u-h40 u-mb1">可</label>
                         </div>
                         <div class="c-button-optionSelect">
-                          <input type="radio" name="allow_combine" value="不可" id="allow_combine_no">
-                          <label for="allow_combine_no" class="u-w70 u-h40 u-mb1">不可</label>
+                          <input type="radio" name="allow_combine" value="不可" id="register_allow_combine_no">
+                          <label for="register_allow_combine_no" class="u-w70 u-h40 u-mb1">不可</label>
                         </div>
                       </div>
                     </div>
@@ -292,8 +326,7 @@
               </div>
   
               <div class="l-flex--center l-grid--gap1">
-                <button type="button" class="c-button__submit--dark-gray">新規保存</button>
-                <button type="button" id="modal_add" class="c-button__submit">上書き保存</button>
+                <button type="button" class="c-button__submit">保存</button>
               </div>
 
         </form>
@@ -308,9 +341,6 @@
   </div>
   <!-- button_openを押したらbutton_closeにis-blockを付与 -->
   <script src="../js/memo_open.js"></script>
-  <!-- 計算 -->
-  <!-- button_calculatorをクリックしたらtax_division × price してtotalに値を入れる  -->
-  <script src="../js/calculator.js"></script>
 
   <!-- モーダル -->
   <script src="../js/modalOption.js"></script>
@@ -318,48 +348,6 @@
   <!-- テーブルのヘッダ部分ソートスクリプト -->
   <script src="../js/tableHeaderSort.js"></script>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const editButtons = document.querySelectorAll('.c-button__edit');
-      const modalArea = document.getElementById('modalArea');
-      const modalClose = document.getElementById('modal_close');
-      const modalContent = document.getElementById('modal_content');
-
-      editButtons.forEach(function(editButton) {
-        editButton.addEventListener('click', function() {
-          const row = editButton.closest('tr');
-          const couponCode = row.querySelector('td:nth-child(1)').textContent;
-          const couponName = row.querySelector('td:nth-child(2)').textContent;
-          const discount = row.querySelector('td:nth-child(3)').textContent;
-          const allowCombine = row.querySelector('td:nth-child(4)').textContent;
-          const targetCategory = row.querySelector('td:nth-child(5)').textContent;
-          const effectiveDate = row.querySelector('td:nth-child(6)').textContent;
-          const memo = row.querySelector('.c-balloon-memo__text').textContent;
-
-          // モーダルに値を表示する
-          modalContent.innerHTML = `
-          <form method="POST" action="">
-            <p>割引クーポンコード: ${couponCode}</p>
-            <p>割引クーポン名: ${couponName}</p>
-            <p>割引: ${discount}</p>
-            <p>併用: ${allowCombine}</p>
-            <p>対象カテゴリ: ${targetCategory}</p>
-            <p>割引対象となる入庫日時: ${effectiveDate}</p>
-            <p>メモ: ${memo}</p>
-            <button type="submit" name="action" value="new">新規登録</button>
-            <button type="submit" name="action" value="overwrite">上書き保存</button>
-          </form>
-        `;
-          // モーダルを表示する
-          modalArea.classList.add('is-active');
-        });
-      });
-    });
-
-    modalClose.addEventListener('click', function() {
-      modalArea.classList.remove('is-active');
-    });
-  </script>
 </body>
 
 </html>

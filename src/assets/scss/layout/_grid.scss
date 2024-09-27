@@ -9,6 +9,10 @@
     display: grid;
     grid-template-columns: repeat(2, auto);
   }
+  &--col2-1fr_auto {
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
   &--col2-1fr_120 {
     display: grid;
     grid-template-columns: 1fr 120px;
@@ -303,5 +307,6 @@
   }
   &__category {
     display: block;
+    font-size: 1rem;
   }
 }

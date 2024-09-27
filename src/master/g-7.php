@@ -42,60 +42,59 @@
             </div>
           </div>
 
-          <button type="button" class="c-button__register is-block u-horizontal-auto u-mt2 u-font--normal button_select">登録</button>
+          <button type="button" class="
+          c-button__register is-block u-horizontal-auto u-mt2 u-font--normal button_select">新規登録</button>
         </form>
 
         <h2 class="c-title__lv2">登録済みカテゴリー一覧</h2>
-        <div class="l-table-list--category_setting__container">
-          <table class="l-table-list">
-            <thead class="l-table-list__head l-table-list--category_setting__head">
-              <tr>
-                <th><div class="c-button-sort --asc">カテゴリー名</div></th>
-                <th><div class="c-button-sort">区分</div></th>
-                <th>メモ</th>
-                <th> </th>
-              </tr>
-            </thead>
-            <tbody class="l-table-list__body">
-              <tr>
-                <td>洗車</td>
-                <td>出庫までに作業が必要</td>
-                <td>MEMOメモめも</td>
-                <td><button class="c-button__edit button_select">編集</button></td>
-              </tr>
-              <tr>
-                <td>洗車</td>
-                <td>出庫までに作業が必要</td>
-                <td>MEMOメモめも</td>
-                <td><button class="c-button__edit button_select">編集</button></td>
-              </tr>
-              <tr>
-                <td>洗車</td>
-                <td>出庫までに作業が必要</td>
-                <td>MEMOメモめも</td>
-                <td><button class="c-button__edit button_select">編集</button></td>
-              </tr>
-              <tr>
-                <td>洗車</td>
-                <td>出庫までに作業が必要</td>
-                <td>MEMOメモめも</td>
-                <td><button class="c-button__edit button_select">編集</button></td>
-              </tr>
-              <tr>
-                <td>洗車</td>
-                <td>出庫までに作業が必要</td>
-                <td>MEMOメモめも</td>
-                <td><button class="c-button__edit button_select">編集</button></td>
-              </tr>
-              <tr>
-                <td>洗車</td>
-                <td>出庫までに作業が必要</td>
-                <td>MEMOメモめも</td>
-                <td><button class="c-button__edit button_select">編集</button></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+        <table class="l-table-list">
+          <thead class="l-table-list__head l-table-list--category_setting__head">
+            <tr>
+              <th><div class="c-button-sort --asc">カテゴリー名</div></th>
+              <th><div class="c-button-sort">区分</div></th>
+              <th>メモ</th>
+              <th> </th>
+            </tr>
+          </thead>
+          <tbody class="l-table-list__body">
+            <tr>
+              <td>洗車</td>
+              <td>出庫までに作業が必要</td>
+              <td>MEMOメモめも</td>
+              <td><button class="c-button__edit button_select">編集</button></td>
+            </tr>
+            <tr>
+              <td>洗車</td>
+              <td>出庫までに作業が必要</td>
+              <td>MEMOメモめも</td>
+              <td><button class="c-button__edit button_select">編集</button></td>
+            </tr>
+            <tr>
+              <td>洗車</td>
+              <td>出庫までに作業が必要</td>
+              <td>MEMOメモめも</td>
+              <td><button class="c-button__edit button_select">編集</button></td>
+            </tr>
+            <tr>
+              <td>洗車</td>
+              <td>出庫までに作業が必要</td>
+              <td>MEMOメモめも</td>
+              <td><button class="c-button__edit button_select">編集</button></td>
+            </tr>
+            <tr>
+              <td>洗車</td>
+              <td>出庫までに作業が必要</td>
+              <td>MEMOメモめも</td>
+              <td><button class="c-button__edit button_select">編集</button></td>
+            </tr>
+            <tr>
+              <td>洗車</td>
+              <td>出庫までに作業が必要</td>
+              <td>MEMOメモめも</td>
+              <td><button class="c-button__edit button_select">編集</button></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </main>
 
@@ -140,8 +139,7 @@
           </div>
 
           <div class="l-flex--center l-grid--gap1 u-mt2 u-mb2">
-            <button type="button" class="c-button__submit--dark-gray">新規保存</button>
-            <button type="button" id="modal_add" class="c-button__submit">上書き保存</button>
+            <button type="button" id="modal_add" class="c-button__submit">保存</button>
           </div>
         </form>
       </div><!-- ./l-modal__content -->

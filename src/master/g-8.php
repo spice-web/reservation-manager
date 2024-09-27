@@ -18,156 +18,154 @@
       <div class="l-container__inner">
         <h2 class="c-title__lv2 l-flex--sb u-w-full-wide">新規登録 および 検索<span class="close_button c-button__close">閉じる</span></h2>
         <form method="POST" action="" class="u-mb3 is-active">         
-            <div class="l-grid--col2 l-grid--gap1 u-mb2">
-              <div>
-                <!-- 商品名 -->
-                <label for="product_name">商品名</label>
-                <input type="text" name="product_name" id="product_name" class="u-w-full-wide">
-              </div>
-              <div>
-                <!-- カテゴリーselect -->
-                <label for="category">カテゴリー</label>
-                <div class="c-form-select-color">
-                  <select name="category" id="category">
-                    <option value="" disabled selected>選択してください</option>
-                    <option value="category1">カテゴリ1</option>
-                    <option value="category2">カテゴリ2</option>
-                    <option value="category3">カテゴリ3</option>
-                  </select>
+            <div class="l-grid--col2-1fr_auto l-grid--end l-grid--gap1 u-mb2">
+              <div class="l-grid--col2 l-grid--gap1">
+                <div>
+                  <!-- 商品名 -->
+                  <label for="product_name" class="u-font--md">商品名</label>
+                  <input type="text" name="product_name" id="product_name" class="u-w-full-wide u-mb0">
+                </div>
+                <div>
+                  <!-- カテゴリーselect -->
+                  <label for="category" class="u-font--md">カテゴリー</label>
+                  <div class="c-form-select-color u-mb0">
+                    <select name="category" id="category">
+                      <option value="" disabled selected>選択してください</option>
+                      <option value="category1">カテゴリ1</option>
+                      <option value="category2">カテゴリ2</option>
+                      <option value="category3">カテゴリ3</option>
+                    </select>
+                  </div>
                 </div>
               </div>
+              <button class="c-button__register --gray u-mb0">検索</button>
           </div>
 
           <div class="l-flex l-flex--center l-grid--gap1">
-            <button type="button" class="c-button__register button_select">登録</button>
-            <button class="c-button__register --gray">検索</button>
+            <button type="button" class="c-button__register button_select">新規登録</button>
           </div>
         </form>
 
         <!-- 登録済み商品一覧 -->
         <h2 class=" c-title__lv2">登録済み商品一覧</h2>
-        <div class="l-table-list--scroll-vertical__container">
-          <table class="l-table-list">
-            <thead class="l-table-list__head l-table-list__head--sort l-table-list--scroll-vertical__head">
-              <tr>
-                <th><div class="c-button-sort --asc">商品名</div></th>
-                <th><div class="c-button-sort">略称</div></th>
-                <th><div class="c-button-sort">商品カテゴリ</div></th>
-                <th><div class="c-button-sort">税区分</div></th>
-                <th><div class="c-button-sort">金額（税抜）</div></th>
-                <th>メモ</th>
-                <th></th>
-              </tr>
-            </thead>
-  
-            <tbody class="l-table-list__body">
-              <tr>
-                <td>洗車</td>
-                <td>S洗</td>
-                <td>洗車</td>
-                <td class="text-right">10%</td>
-                <td class="text-right">20,000円</td>
-                <td class="c-balloon-memo">
-                  <button type="button" class="button_open c-button__memo">メモ</button>
-                  <!-- 吹き出し -->
-                  <div class="c-balloon-memo__box">
-                    <div class="c-balloon-memo__text">メモ内容が入ります。メモ内容が入ります。
-                      <div class="button_close c-balloon-memo__close">閉じる</div>
-                    </div>
-                  </div>
-                </td>
-                <td><button class="c-button__edit button_select">編集</button></td>
-              </tr>
-              <tr>
-                <td>洗車</td>
-                <td>S洗</td>
-                <td>洗車</td>
-                <td class="text-right">10%</td>
-                <td class="text-right">00,000円</td>
-                <td class="c-balloon-memo">
-                  <button type="button" class="button_open c-button__memo">メモ</button>
-                  <!-- 吹き出し -->
-                  <div class="c-balloon-memo__box">
-                    <div class="c-balloon-memo__text">メモ内容が入ります。メモ内容が入ります。
-                      <div class="button_close c-balloon-memo__close">閉じる</div>
-                    </div>
-                  </div>
-                </td>
-                <td><button class="c-button__edit button_select">編集</button></td>
-              </tr>
-              <tr>
-                <td>洗車</td>
-                <td>S洗</td>
-                <td>洗車</td>
-                <td class="text-right">10%</td>
-                <td class="text-right">00,000円</td>
-                <td class="c-balloon-memo text-center">
-                  <button type="button" class="button_open c-button__memo">メモ</button>
-                  <!-- 吹き出し -->
-                  <div class="c-balloon-memo__box">
-                    <div class="c-balloon-memo__text">メモ内容が入ります。メモ内容が入ります。
-                      <div class="button_close c-balloon-memo__close">閉じる</div>
-                    </div>
-                  </div>
-                </td>
-                <td><button class="c-button__edit button_select">編集</button></td>
-              </tr>
-              <tr>
-                <td>洗車</td>
-                <td>S洗</td>
-                <td>洗車</td>
-                <td class="text-right">10%</td>
-                <td class="text-right">00,000円</td>
-                <td class="c-balloon-memo text-center">
-                  <button type="button" class="button_open c-button__memo">メモ</button>
-                  <!-- 吹き出し -->
-                  <div class="c-balloon-memo__box">
-                    <div class="c-balloon-memo__text">メモ内容が入ります。メモ内容が入ります。
-                      <div class="button_close c-balloon-memo__close">閉じる</div>
-                    </div>
-                  </div>
-                </td>
-                <td><button class="c-button__edit button_select">編集</button></td>
-              </tr>
-              <tr>
-                <td>洗車</td>
-                <td>S洗</td>
-                <td>洗車</td>
-                <td class="text-right">10%</td>
-                <td class="text-right">00,000円</td>
-                <td class="c-balloon-memo text-center">
-                  <button type="button" class="button_open c-button__memo">メモ</button>
-                  <!-- 吹き出し -->
-                  <div class="c-balloon-memo__box">
-                    <div class="c-balloon-memo__text">メモ内容が入ります。メモ内容が入ります。
-                      <div class="button_close c-balloon-memo__close">閉じる</div>
-                    </div>
-                  </div>
-                </td>
-                <td><button class="c-button__edit button_select">編集</button></td>
-              </tr>
-              <tr>
-                <td>洗車</td>
-                <td>S洗</td>
-                <td>洗車</td>
-                <td class="text-right">10%</td>
-                <td class="text-right">00,000円</td>
-                <td class="c-balloon-memo text-center">
-                  <button type="button" class="button_open c-button__memo">メモ</button>
-                  <!-- 吹き出し -->
-                  <div class="c-balloon-memo__box">
-                    <div class="c-balloon-memo__text">メモ内容が入ります。メモ内容が入ります。
-                      <div class="button_close c-balloon-memo__close">閉じる</div>
-                    </div>
-                  </div>
-                </td>
-                <td><button class="c-button__edit button_select">編集</button></td>
-              </tr>
+        <table class="l-table-list">
+          <thead class="l-table-list__head l-table-list__head--sort l-table-list--scroll-vertical__head">
+            <tr>
+              <th><div class="c-button-sort --asc">商品名</div></th>
+              <th><div class="c-button-sort">略称</div></th>
+              <th><div class="c-button-sort">商品カテゴリ</div></th>
+              <th><div class="c-button-sort">税区分</div></th>
+              <th><div class="c-button-sort">金額（税抜）</div></th>
+              <th>メモ</th>
+              <th></th>
+            </tr>
+          </thead>
 
-
-            </tbody>
-          </table>
-        </div>
+          <tbody class="l-table-list__body">
+            <tr>
+              <td>洗車</td>
+              <td>S洗</td>
+              <td>洗車</td>
+              <td class="text-right">10%</td>
+              <td class="text-right">20,000円</td>
+              <td class="c-balloon-memo">
+                <button type="button" class="button_open c-button__memo">メモ</button>
+                <!-- 吹き出し -->
+                <div class="c-balloon-memo__box">
+                  <div class="c-balloon-memo__text">メモ内容が入ります。メモ内容が入ります。
+                    <div class="button_close c-balloon-memo__close">閉じる</div>
+                  </div>
+                </div>
+              </td>
+              <td><button class="c-button__edit button_select">編集</button></td>
+            </tr>
+            <tr>
+              <td>洗車</td>
+              <td>S洗</td>
+              <td>洗車</td>
+              <td class="text-right">10%</td>
+              <td class="text-right">00,000円</td>
+              <td class="c-balloon-memo">
+                <button type="button" class="button_open c-button__memo">メモ</button>
+                <!-- 吹き出し -->
+                <div class="c-balloon-memo__box">
+                  <div class="c-balloon-memo__text">メモ内容が入ります。メモ内容が入ります。
+                    <div class="button_close c-balloon-memo__close">閉じる</div>
+                  </div>
+                </div>
+              </td>
+              <td><button class="c-button__edit button_select">編集</button></td>
+            </tr>
+            <tr>
+              <td>洗車</td>
+              <td>S洗</td>
+              <td>洗車</td>
+              <td class="text-right">10%</td>
+              <td class="text-right">00,000円</td>
+              <td class="c-balloon-memo text-center">
+                <button type="button" class="button_open c-button__memo">メモ</button>
+                <!-- 吹き出し -->
+                <div class="c-balloon-memo__box">
+                  <div class="c-balloon-memo__text">メモ内容が入ります。メモ内容が入ります。
+                    <div class="button_close c-balloon-memo__close">閉じる</div>
+                  </div>
+                </div>
+              </td>
+              <td><button class="c-button__edit button_select">編集</button></td>
+            </tr>
+            <tr>
+              <td>洗車</td>
+              <td>S洗</td>
+              <td>洗車</td>
+              <td class="text-right">10%</td>
+              <td class="text-right">00,000円</td>
+              <td class="c-balloon-memo text-center">
+                <button type="button" class="button_open c-button__memo">メモ</button>
+                <!-- 吹き出し -->
+                <div class="c-balloon-memo__box">
+                  <div class="c-balloon-memo__text">メモ内容が入ります。メモ内容が入ります。
+                    <div class="button_close c-balloon-memo__close">閉じる</div>
+                  </div>
+                </div>
+              </td>
+              <td><button class="c-button__edit button_select">編集</button></td>
+            </tr>
+            <tr>
+              <td>洗車</td>
+              <td>S洗</td>
+              <td>洗車</td>
+              <td class="text-right">10%</td>
+              <td class="text-right">00,000円</td>
+              <td class="c-balloon-memo text-center">
+                <button type="button" class="button_open c-button__memo">メモ</button>
+                <!-- 吹き出し -->
+                <div class="c-balloon-memo__box">
+                  <div class="c-balloon-memo__text">メモ内容が入ります。メモ内容が入ります。
+                    <div class="button_close c-balloon-memo__close">閉じる</div>
+                  </div>
+                </div>
+              </td>
+              <td><button class="c-button__edit button_select">編集</button></td>
+            </tr>
+            <tr>
+              <td>洗車</td>
+              <td>S洗</td>
+              <td>洗車</td>
+              <td class="text-right">10%</td>
+              <td class="text-right">00,000円</td>
+              <td class="c-balloon-memo text-center">
+                <button type="button" class="button_open c-button__memo">メモ</button>
+                <!-- 吹き出し -->
+                <div class="c-balloon-memo__box c-balloon-memo--master__box">
+                  <div class="c-balloon-memo--master__text">メモ内容が入ります。メモ内容が入ります。
+                    <div class="button_close c-balloon-memo__close">閉じる</div>
+                  </div>
+                </div>
+              </td>
+              <td><button class="c-button__edit button_select">編集</button></td>
+            </tr>
+          </tbody>
+        </table>
       </div><!-- ./l-container__inner -->
     </main><!-- /.l-container__main -->
   </div><!-- /.l-container__wrap -->
@@ -238,17 +236,15 @@
                 </dd>          
               </dl>
 
-              <!-- 計算するボタン -->
-              <div class="l-grid--col3 u-border--bottom u-pb05">
-                <button type="button" class="c-button__calculate" id="button_calculator">計算</button>
+              <div class="l-flex l-flex--space-between u-border--bottom u-pb05">
                 <label for="total">税込価格</label>
                 <span id="total" class="u-font--24 text-right">0円</span>
               </div>
             </div>
           </div>
 
-          <div class="l-flex--center l-grid--gap1 u-mt2 u-mb2">
-            <button type="submit" id="modal_add" class="c-button__submit">上書き保存</button>
+          <div class="l-flex--center l-grid--gap1 u-mt4 u-mb2">
+            <button type="submit" id="modal_add" class="c-button__submit">保存</button>
           </div>
         </form>
       </div><!-- ./l-modal__content -->
@@ -287,10 +283,6 @@
       });
     });
   </script>
-
-  <!-- 計算 -->
-  <!-- button_calculatorをクリックしたらtax_division × price してtotalに値を入れる  -->
-  <script src="../js/calculator.js"></script>
 
   <!-- テーブルヘッダー用ソートのスクリプト -->
   <script src="../js/tableHeaderSort.js"></script>

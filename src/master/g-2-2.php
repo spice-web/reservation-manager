@@ -24,6 +24,7 @@
                 <div class="c-form-select-color">
                   <select name="" id="">
                     <option value="" selected disabled>---</option>
+                    <option value="" selected>NRT</option>
                   </select>
                 </div>
                 <div class="c-form-select-color">
