@@ -19,5 +19,4 @@
     <img src="../images/dummy/dummy_qr.jpg" alt="" width="100%" height="auto">
     <figcaption>予約QR読込</figcaption>
   </figure>
-
 </nav>

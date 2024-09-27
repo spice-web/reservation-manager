@@ -154,46 +154,185 @@
           </div>
         </form>
 
-
-
-
-        <table class="l-table-list l-table-list--master">
-          <!-- 空港 T 便名 到着日 時刻 出発地 会社名 出発地-->
-          <thead class="l-table-list__head">
-            <tr>
-              <th>空港</th>
-              <th>便名</th>
-              <th>到着日</th>
-              <th>時刻</th>
-              <th>出発地</th>
-              <th>会社名</th>
-              <th>出発地</th>
-              <th>ソート</th>
-            </tr>
-          </thead>
-          <tbody class="l-table-list__body">
-            <tr>
-              <td>成田</td>
-              <td>T1</td>
-              <td>2023/11/15</td>
-              <td>09:00</td>
-              <td>TPE</td>
-              <td>アメリカン航空</td>
-              <td>ロサンゼルス</td>
-              <td>1</td>
-            </tr>
-            <tr>
-              <td>成田</td>
-              <td>T1</td>
-              <td>2023/11/15</td>
-              <td>09:00</td>
-              <td>TPE</td>
-              <td>アメリカン航空</td>
-              <td>ロサンゼルス</td>
-              <td>1</td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="p-master-flight__table-container">
+          <table class="l-table-list l-table-list--master l-table-list--scroll-vertical">
+            <!-- 空港 T 便名 到着日 時刻 出発地 会社名 出発地-->
+            <thead class="l-table-list__head l-table-list--scroll-vertical__head">
+              <tr>
+                <th><div class="c-button-sort">空港</div></th>
+                <th><div class="c-button-sort">便名</div></th>
+                <th><div class="c-button-sort --asc">到着日</div></th>
+                <th><div class="c-button-sort">時刻</div></th>
+                <th><div class="c-button-sort">出発地</div></th>
+                <th><div class="c-button-sort">会社名</div></th>
+                <th><div class="c-button-sort">出発地</div></th>
+                <th><div class="c-button-sort">ソート</div></th>
+              </tr>
+            </thead>
+            <tbody class="l-table-list__body">
+              <tr>
+                <td>成田</td>
+                <td>T1</td>
+                <td>2023/11/15</td>
+                <td>09:00</td>
+                <td>TPE</td>
+                <td>アメリカン航空</td>
+                <td>ロサンゼルス</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>成田</td>
+                <td>T1</td>
+                <td>2023/11/15</td>
+                <td>09:00</td>
+                <td>TPE</td>
+                <td>アメリカン航空</td>
+                <td>ロサンゼルス</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>成田</td>
+                <td>T1</td>
+                <td>2023/11/15</td>
+                <td>09:00</td>
+                <td>TPE</td>
+                <td>アメリカン航空</td>
+                <td>ロサンゼルス</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>成田</td>
+                <td>T1</td>
+                <td>2023/11/15</td>
+                <td>09:00</td>
+                <td>TPE</td>
+                <td>アメリカン航空</td>
+                <td>ロサンゼルス</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>成田</td>
+                <td>T1</td>
+                <td>2023/11/15</td>
+                <td>09:00</td>
+                <td>TPE</td>
+                <td>アメリカン航空</td>
+                <td>ロサンゼルス</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>成田</td>
+                <td>T1</td>
+                <td>2023/11/15</td>
+                <td>09:00</td>
+                <td>TPE</td>
+                <td>アメリカン航空</td>
+                <td>ロサンゼルス</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>成田</td>
+                <td>T1</td>
+                <td>2023/11/15</td>
+                <td>09:00</td>
+                <td>TPE</td>
+                <td>アメリカン航空</td>
+                <td>ロサンゼルス</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>成田</td>
+                <td>T1</td>
+                <td>2023/11/15</td>
+                <td>09:00</td>
+                <td>TPE</td>
+                <td>アメリカン航空</td>
+                <td>ロサンゼルス</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>成田</td>
+                <td>T1</td>
+                <td>2023/11/15</td>
+                <td>09:00</td>
+                <td>TPE</td>
+                <td>アメリカン航空</td>
+                <td>ロサンゼルス</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>成田</td>
+                <td>T1</td>
+                <td>2023/11/15</td>
+                <td>09:00</td>
+                <td>TPE</td>
+                <td>アメリカン航空</td>
+                <td>ロサンゼルス</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>成田</td>
+                <td>T1</td>
+                <td>2023/11/15</td>
+                <td>09:00</td>
+                <td>TPE</td>
+                <td>アメリカン航空</td>
+                <td>ロサンゼルス</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>成田</td>
+                <td>T1</td>
+                <td>2023/11/15</td>
+                <td>09:00</td>
+                <td>TPE</td>
+                <td>アメリカン航空</td>
+                <td>ロサンゼルス</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>成田</td>
+                <td>T1</td>
+                <td>2023/11/15</td>
+                <td>09:00</td>
+                <td>TPE</td>
+                <td>アメリカン航空</td>
+                <td>ロサンゼルス</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>成田</td>
+                <td>T1</td>
+                <td>2023/11/15</td>
+                <td>09:00</td>
+                <td>TPE</td>
+                <td>アメリカン航空</td>
+                <td>ロサンゼルス</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>成田</td>
+                <td>T1</td>
+                <td>2023/11/15</td>
+                <td>09:00</td>
+                <td>TPE</td>
+                <td>アメリカン航空</td>
+                <td>ロサンゼルス</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>成田</td>
+                <td>T1</td>
+                <td>2023/11/15</td>
+                <td>09:00</td>
+                <td>TPE</td>
+                <td>アメリカン航空</td>
+                <td>ロサンゼルス</td>
+                <td>1</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
         <!-- 登録ボタン -->
         <div class="l-flex--end">
@@ -204,6 +343,9 @@
 
     </main>
   </div>
+
+  <!-- ソートのスクリプト -->
+  <script src="../js/tableHeaderSort.js"></script>
 </body>
 
 </html>

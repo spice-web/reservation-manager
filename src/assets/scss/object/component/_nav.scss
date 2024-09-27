@@ -79,5 +79,10 @@
       letter-spacing: 0;
       font-weight: 500;
     }
+
+    &.--sticky {
+      position: sticky;
+      bottom: 2rem;
+    }
   }
 }

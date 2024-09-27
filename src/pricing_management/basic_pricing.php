@@ -41,14 +41,10 @@
                 <!-- 料金の適用期間 -->
                 <div>
                   <p class="u-mb025">料金の適用期間</p>
-                  <div class="l-grid l-grid--col3 l-grid--gap2">
-                    <div>
-                      <input type="date" id="start_date" name="start_date">
-                    </div>
+                  <div class="l-grid l-grid--col3 l-grid--gap05">
+                    <input type="date" id="start_date" name="start_date" class="u-w-full-wide">
                     <p class="u-mb1">～</p>
-                    <div>
-                      <input type="date" id="end_date" name="end_date">
-                    </div>
+                    <input type="date" id="end_date" name="end_date" class="u-w-full-wide">
                   </div>
                 </div>
               </div>
@@ -157,16 +153,46 @@
 
           </div>
           <!-- button -->
-          <div class="l-grid__right-submitButton--button u-mb1">
-            <button type="submit" class="c-button__submit u-mt0">登録</button>
+          <div class="l-grid__right-submitButton--button c-button__csv--upload u-mb1">
+            <button type="submit" class="c-button__register u-mt0">登録</button>
             <button type="button" class="c-button__load u-mt0">CSVダウンロード</button>
-            <button type="button" class="c-button__load u-mt0">CSVアップロード</button>
+            <button type="button" class="c-button__load upload">CSVアップロード</button>
+            <input type="file" id="csvFileInput" />
+            <div id="csvFileNameDisplay"></div>
           </div>
         </form>
       </div>
     </main><!-- /.l-container__main -->
   </div><!-- /.l-wrap -->
 
+  <!-- ファイルアップロードの時スクリプト -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        setupCsvUpload('csvFileInput', 'csvFileNameDisplay');
+    });
+
+    function setupCsvUpload(inputId, fileNameDisplayId) {
+      const fileInput = document.getElementById(inputId);
+      const fileNameDisplay = document.getElementById(fileNameDisplayId);
+      const uploadButton = document.querySelector('.c-button__load.upload');
+
+      uploadButton.addEventListener('click', function() {
+          fileInput.click();
+      });
+
+      fileInput.addEventListener('change', function(event) {
+          const file = event.target.files[0];
+          if (file) {
+              fileNameDisplay.textContent = `選択されたファイル: ${file.name}`;
+              // ここでCSVファイルの処理を追加できます（例：アップロード処理など）
+          } else {
+              fileNameDisplay.textContent = 'ファイルが選択されていません';
+          }
+      });
+    }
+  </script>
+
+  <!-- 閉じる・開く切替 -->
   <script src="../js/close_button_toggle.js"></script>
 </body>
 

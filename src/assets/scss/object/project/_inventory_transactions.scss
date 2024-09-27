@@ -19,6 +19,23 @@
   font-size: 0.75rem;
 }
 
+.p-inventoryTransactions-bulk-date {
+  @extend .p-inventoryTransactions-toggle;
+  column-gap: 2rem;
+  // シンプルな日付選択
+  &__simple-select-date {
+    margin-left: 0.25rem;
+    padding: 0.5rem 0;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    input {
+      background: white;
+      margin-bottom: 0;
+    }
+  }
+}
+
 .p-inventoryTransactions-date {
   position: relative;
   margin-left: 0.25rem;
@@ -86,6 +103,4 @@
     margin-top: 10px;
     margin-bottom: 10px;
   }
-  
-
 }

@@ -20,9 +20,16 @@
 
   &__head {
     color: white;
+    &--sort {
+      th {
+        padding-top: 0;
+        padding-bottom: 0;
+        height: 42px;
+      }
+    }
     th {
       font-size: 11px;
-      padding: 1rem;
+      padding: .5rem 1rem;
       font-weight: normal;
       background: $dark-gray;
       border-top: 1px solid $text-color;
@@ -67,6 +74,28 @@
       }
     }
   }
+
+  // 代理店設定
+  // headを固定してスクロール
+  &--scroll-vertical,
+  &--agency_setting,
+  &--category_setting {
+    &__container {
+      max-height: 278px;
+      overflow: auto;
+    }
+    &__head {
+      position: sticky;
+      top: 0;
+      height: 42px;
+      width: 100%;
+      z-index: 1;
+      th {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+    }
+  }
 }
 
 .l-table-list--master {
@@ -90,6 +119,7 @@
     width: calc(100vw - (160px + 5rem));
     min-width: 1040px;
     overflow-x: auto;
+    overflow-y: hidden;
     position: relative;
   }
 

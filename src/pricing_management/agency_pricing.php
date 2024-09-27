@@ -25,20 +25,22 @@
           <!-- 入力フォーム -->
           <div class="c-form__input u-font--md">
             <label for="agency">適用する代理店</label>
-            <div class="c-form-select-wrap">
-              <select name="agency" id="agency">
-                <!-- 選択不可 -->
-                <option value="" disabled selected>選択してください</option>
-                <option value="agency1">代理店1</option>
-                <option value="agency2">代理店2</option>
-                <option value="agency3">代理店3</option>
-              </select>
+            <div class=" u-w-half u-pr1">
+              <div class="c-form-select-color">
+                <select name="agency" id="agency">
+                  <!-- 選択不可 -->
+                  <option value="" disabled selected>選択してください</option>
+                  <option value="agency1">代理店1</option>
+                  <option value="agency2">代理店2</option>
+                  <option value="agency3">代理店3</option>
+                </select>
+              </div>
             </div>
 
             <div class="l-grid--col2 l-grid--gap2">
               <div>
                 <label for="price_list">料金表選択</label>
-                <div class="c-form-select-wrap">
+                <div class="c-form-select-color">
                   <select name="price_list" id="price_list">
                     <option value="" disabled selected>選択してください</option>
                     <option value="price_list1">料金表1</option>
@@ -51,13 +53,13 @@
               <!-- 料金の適用期間 -->
               <div>
                 <p class="u-mb025">料金の適用期間</p>
-                <div class="l-grid l-grid--col3 l-grid--gap2">
+                <div class="l-grid l-grid--col3-1fr_auto_1fr l-grid--gap1">
                   <div>
-                    <input type="date" id="start_date" name="start_date">
+                    <input type="date" id="start_date" name="start_date" class="u-w-full-wide">
                   </div>
-                  <p class="u-mb1">～</p>
+                  <p class="u-mb1 u-font-lh--38px">～</p>
                   <div>
-                    <input type="date" id="end_date" name="end_date">
+                    <input type="date" id="end_date" name="end_date" class="u-w-full-wide">
                   </div>
                 </div>
               </div>
@@ -148,13 +150,14 @@
 
               <!-- 料金の適用期間 -->
               <div>
-                <div class="l-grid l-grid--col2 l-flex--item-end l-grid--gap2">
+                <div class="l-grid l-grid--col3-1fr_auto_1fr l-flex--item-end l-grid--gap1">
                   <div>
                     <label for="start_date2">料金の適用期間</label>
-                    <input type="date" id="start_date2" name="start_date2">
+                    <input type="date" id="start_date2" name="start_date2" class="u-w-full-wide">
                   </div>
+                  <div class="u-font-lh--38px u-mb1">～</div>
                   <div>
-                    <input type="date" id="end_date2" name="end_date2">
+                    <input type="date" id="end_date2" name="end_date2" class="u-w-full-wide">
                   </div>
                 </div>
               </div>
@@ -164,10 +167,12 @@
             <textarea name="memo2" id="memo2" cols="100" rows="1" class="u-w-full-wide u-mb0"></textarea>
           </div>
           <!-- button -->
-          <div class="l-grid__right-submitButton--button">
-            <button type="submit" class="c-button__submit u-mt0">登録</button>
-            <button type="button" class="c-button__load u-mt0">CSVダウンロード</button>
-            <button type="button" class="c-button__load u-mt0">CSVアップロード</button>
+          <div class="l-grid__right-submitButton--button c-button__csv--upload">
+            <button type="submit" class="c-button__register u-mt0">登録</button>
+            <a href="" class="c-button__load link-white u-mt0">CSVダウンロード</a>
+            <button type="button" class="c-button__load upload u-mt0">CSVアップロード</button>
+            <input type="file" id="csvFileInput" />
+            <div id="csvFileNameDisplay"></div>
           </div>
         </form>
 
@@ -177,7 +182,7 @@
           <!-- 代理店コード -->
           <div>
             <label for="price_list">代理店コード</label>
-            <div class="c-form-select-wrap">
+            <div class="c-form-select-color">
               <select name="price_list" id="price_list">
                 <option value="" disabled selected>選択してください</option>
                 <option value="price_list1">代理店コード1</option>
@@ -196,53 +201,53 @@
         </form>
 
         <!-- 料金一覧テーブル -->
-        <table class="l-table-list">
-          <thead>
-            <tr class="l-table-list__head">
-              <th>代理店</th>
-              <th>料金表名称</th>
-              <th>適用期間</th>
-              <th>メモ</th>
-              <th>操作</th>
-            </tr>
-          </thead>
-          <tbody class="l-table-list__body">
-            <tr>
-              <td>代理店1</td>
-              <td>料金表1</td>
-              <td>2021/01/01～2021/12/31</td>
-              <td>メモメモメモ</td>
-              <td>
-                <button type="button" class="c-button__edit button_select">編集</button>
-              </td>
-            </tr>
-            <tr>
-              <td>代理店2</td>
-              <td>料金表2</td>
-              <td>2021/01/01～2021/12/31</td>
-              <td>メモメモメモ</td>
-              <td>
-                <button type="button" class="c-button__edit button_select">編集</button>
-              </td>
-            </tr>
-            <tr>
-              <td>代理店3</td>
-              <td>料金表3</td>
-              <td>2021/01/01～2021/12/31</td>
-              <td>メモメモメモ</td>
-              <td>
-                <button type="button" class="c-button__edit button_select">編集</button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="c-table-list--scroll__container">
+          <table class="l-table-list">
+            <thead>
+              <tr class="l-table-list__head l-table-list--scroll__head">
+                <th><div class="c-button-sort --asc">代理店</div></th>
+                <th><div class="c-button-sort">料金表名称</div></th>
+                <th><div class="c-button-sort">適用期間</div></th>
+                <th>メモ</th>
+                <th>操作</th>
+              </tr>
+            </thead>
+            <tbody class="l-table-list__body">
+              <tr>
+                <td>代理店1</td>
+                <td>料金表1</td>
+                <td>2021/01/01～2021/12/31</td>
+                <td>メモメモメモ</td>
+                <td>
+                  <button type="button" class="c-button__edit button_select">編集</button>
+                </td>
+              </tr>
+              <tr>
+                <td>代理店2</td>
+                <td>料金表2</td>
+                <td>2021/01/01～2021/12/31</td>
+                <td>メモメモメモ</td>
+                <td>
+                  <button type="button" class="c-button__edit button_select">編集</button>
+                </td>
+              </tr>
+              <tr>
+                <td>代理店3</td>
+                <td>料金表3</td>
+                <td>2021/01/01～2021/12/31</td>
+                <td>メモメモメモ</td>
+                <td>
+                  <button type="button" class="c-button__edit button_select">編集</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
       </div>
 
     </main><!-- /.l-container__main -->
   </div><!-- /.l-wrap -->
-
-  <!-- ▼閉じるボタン -->
-  <script src="../js/close_button_toggle.js"></script>
 
   <!-- オプションをクリックしたら出てくるmodal -->
   <div id="modalAreaOption" class="l-modal l-modal">
@@ -363,6 +368,40 @@
     <!-- 閉じる・追加ボタン -->
   </div>
   <script src="../js/modalOption.js"></script>
+
+  <!-- ▼閉じるボタン -->
+  <script src="../js/close_button_toggle.js"></script>
+
+  <!-- ファイルアップロードの時、ファイル名/画像表示スクリプト -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        setupCsvUpload('csvFileInput', 'csvFileNameDisplay');
+    });
+
+    function setupCsvUpload(inputId, fileNameDisplayId) {
+      const fileInput = document.getElementById(inputId);
+      const fileNameDisplay = document.getElementById(fileNameDisplayId);
+      const uploadButton = document.querySelector('.c-button__load.upload');
+
+      uploadButton.addEventListener('click', function() {
+          fileInput.click();
+      });
+
+      fileInput.addEventListener('change', function(event) {
+          const file = event.target.files[0];
+          if (file) {
+              fileNameDisplay.textContent = `選択されたファイル: ${file.name}`;
+              // ここでCSVファイルの処理を追加できます（例：アップロード処理など）
+          } else {
+              fileNameDisplay.textContent = 'ファイルが選択されていません';
+          }
+      });
+    }
+  </script>
+
+  <!-- ソート -->
+  <script src="../js/tableHeaderSort.js"></script>
+
 </body>
 
 </html>

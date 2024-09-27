@@ -91,6 +91,15 @@
       background: $yellow;
       cursor: pointer;
     }
+  } // submit
+
+  &__register {
+    @extend .c-button__submit;
+    height: 38px;
+    &:disabled {
+      background: $light-gray;
+      cursor: not-allowed;
+    }
   }
 
   &__clear {
@@ -131,9 +140,15 @@
 
   &__csv {
     width: 160px;
+    &--upload {
+      input[type="file"] {
+        display: none;
+      }
+    }
     &--download {
       @extend .c-button__csv;
       background: $gray;
+      text-decoration: none;
     }
   }
 
@@ -239,7 +254,7 @@
 
   // アップロード　ダウンロード共通ボタン
   &__load {
-    @extend .c-button__submit;
+    @extend .c-button__register;
     background: $light-deep-gray;
   }
 
@@ -248,6 +263,9 @@
     @extend .c-button__edit;
     width: 65px;
     background-color: $deep-gray;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   // フォームの「次のページ」「前のページ」系ボタン
@@ -300,7 +318,45 @@
         }
       }
     }
+    &--prev {
+      background: $yellow;
+      color: white;
+      text-align: center;
+      display: grid;
+      place-items: center;
+      width: 170px;
+      height: 50px;
+      cursor: pointer;
+      position: relative;
+      &:visited {
+        color: white;
+      }
+      
+      // 三角形を表示
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: -25px;
+        transform: translateY(-50%);
+        // 高さ50pxの三角形を作成
+        border-top: 25px solid transparent;
+        border-right: 25px solid $yellow;
+        border-bottom: 25px solid transparent;
+      }
 
+      &-green {
+        background: $green;
+        height: 38px;
+        margin-left: 19px;
+        &::after {
+          left: -19px;
+          border-top: 19px solid transparent;
+          border-right: 19px solid $green;
+          border-bottom: 19px solid transparent;
+        }
+      }
+    }
     &--return {
       background-color: $text-color;
       color: white;
@@ -777,19 +833,17 @@ label.c-button-optionSelect__radioLabel {
 }
 
 /* アップロード用ファイルボタン */
-.c-button-file::file-selector-button {
-  // 「ファイルを選択」ボタンのスタイル
-  font-weight: bold;
+.c-button-file {
   color: white;
-  background: red;
-  font-size: 14px;
-  border: 0;
-  border-radius: 10em;
-  padding: 8px 16px;
   text-align: center;
+  background: #888888;
+  border-radius: 4px;
+  width: 110px;
+  line-height: 24px;
 }
 
-.c-button-file::file-selector-button {
-  // ボタンとテキストの間で改行もできる
-  display: block;
+
+// color
+.--gray {
+  background: #888888;
 }

@@ -42,12 +42,24 @@ li {
   }
 }
 
+
+
 // リンク
 a:link, a:visited, a:active {
   color: inherit;
 }
 a:hover {
   opacity: 0.8;
+}
+.link-white {
+  color: white!important;
+  text-decoration: none;
+}
+
+.pointer {
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 // フォーム

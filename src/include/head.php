@@ -17,9 +17,9 @@
 
   <!-- css -->
   <link rel="stylesheet" href="/css/style.css">
-  <!-- web slides -->
-  <!-- CSS WebSlides -->
-  <!-- <link rel="stylesheet" type='text/css' media='all' href="/css/webslides.css"> -->
+  <!-- for print -->
+  <link rel="stylesheet" type="text/css" media="print" href="/css/print.css">
+
   <!-- Optional - CSS SVG Icons (Font Awesome) -->
   <link rel="stylesheet" type='text/css' media='all' href="/css/svg-icons.css">
 

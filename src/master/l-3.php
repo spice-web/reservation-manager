@@ -17,11 +17,13 @@
 
       <div class="l-container__inner">
         <form action="" class="u-mb2">
-          <div class="l-flex--end l-grid--gap1">
-            <div class="c-button__submit--yellow u-h38 button_select">設定</div>
-            <button class="c-button__submit--gray u-h38">CSVダウンロード</button>
-            <button class="c-button__submit--gray u-h38">CSVアップロード</button>
+          <div class="l-flex--end l-grid--gap1 c-button__csv--upload">
+            <div class="c-button__register button_select">設定</div>
+            <a href="" class="c-button__load link-white u-mt0">CSVダウンロード</a>
+            <button type="button" class="c-button__load upload u-mt0">CSVアップロード</button>
+            <input type="file" id="csvFileInput" />
           </div>
+          <div id="csvFileNameDisplay" class="text-right u-mt1"></div>
         </form>
 
         <!-- ページネーション -->
@@ -44,32 +46,479 @@
           <button class="c-pager__button c-button__next" id="nextButton" onclick="nextPage()"></button>
         </div>
 
+        <!-- 1段目 -->
         <div class="p-salesTarget__wrap">
           <!-- 左側 項目-->
           <dl class="p-salesTarget__def">
-            <dt class="p-salesTarget__dttl">月間総売上​</dt>
-            <dd>
-              <div>１）売上目標​</div>
-              <div>２）売上実績​</div>
-              <div>３）目標と実績の差額​</div>
-              <div>４）売上目標に対する達成率​</div>
-              <div>５）前年同月の売上実績</div>
-              <div>６）前年同月比と同月の売上差額</div>
-              <div>７）前年同月比に対する達成率</div>
+            <dt class="p-salesTarget__left-dttl">月間総売上​</dt>
+            <dd class="p-salesTarget__list">
+              <div class="p-salesTarget__item">１）売上目標​</div>
+              <div class="p-salesTarget__item">２）売上実績​</div>
+              <div class="p-salesTarget__item">３）目標と実績の差額​</div>
+              <div class="p-salesTarget__item">４）売上目標に対する達成率​</div>
+              <div class="p-salesTarget__item">５）前年同月の売上実績</div>
+              <div class="p-salesTarget__item">６）前年同月比と同月の売上差額</div>
+              <div class="p-salesTarget__item">７）前年同月比に対する達成率</div>
             </dd>
           </dl>
 
           <!-- 右側 テーブル -->
-           <div class="p-salesTarget__table"></div>
+          <!-- .--selectedで強調css付与 -->
+           <div class="p-salesTarget-table__wrap">
+            <button type="button" class="p-salesTarget-table__button--left"></button>
+            <div class="p-salesTarget-table__container">
+              <div class="p-salesTarget-table__inner">
+                <div class="p-salesTarget__table">
+                  <dl>
+                    <dt class="p-salesTarget__right-dttl">2023年12月​</dt>
+                    <dd class="p-salesTarget__right-desc">
+                      <ul class="p-salesTarget__right-list">
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">100%</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">100%</li>
+                      </ul>
+                    </dd>
+                  </dl>
+                </div>
+                <div class="p-salesTarget__table">
+                  <dl>
+                    <dt class="p-salesTarget__right-dttl">2023年12月​</dt>
+                    <dd class="p-salesTarget__right-desc">
+                      <ul class="p-salesTarget__right-list">
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">100%</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">100%</li>
+                      </ul>
+                    </dd>
+                  </dl>
+                </div>
+                <div class="p-salesTarget__table">
+                  <dl>
+                    <dt class="p-salesTarget__right-dttl">2023年12月​</dt>
+                    <dd class="p-salesTarget__right-desc">
+                      <ul class="p-salesTarget__right-list">
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">100%</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">100%</li>
+                      </ul>
+                    </dd>
+                  </dl>
+                </div>
+                <div class="p-salesTarget__table">
+                  <dl>
+                    <dt class="p-salesTarget__right-dttl">2023年12月​</dt>
+                    <dd class="p-salesTarget__right-desc">
+                      <ul class="p-salesTarget__right-list">
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">100%</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">100%</li>
+                      </ul>
+                    </dd>
+                  </dl>
+                </div>
+                <div class="p-salesTarget__table">
+                  <dl>
+                    <dt class="p-salesTarget__right-dttl">2023年12月​</dt>
+                    <dd class="p-salesTarget__right-desc">
+                      <ul class="p-salesTarget__right-list">
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">100%</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">100%</li>
+                      </ul>
+                    </dd>
+                  </dl>
+                </div>
+                <div class="p-salesTarget__table">
+                  <dl>
+                    <dt class="p-salesTarget__right-dttl">2023年12月​</dt>
+                    <dd class="p-salesTarget__right-desc">
+                      <ul class="p-salesTarget__right-list">
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">100%</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">100%</li>
+                      </ul>
+                    </dd>
+                  </dl>
+                </div>
+                <div class="p-salesTarget__table">
+                  <dl>
+                    <dt class="p-salesTarget__right-dttl">2023年12月​</dt>
+                    <dd class="p-salesTarget__right-desc">
+                      <ul class="p-salesTarget__right-list">
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">100%</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">100%</li>
+                      </ul>
+                    </dd>
+                  </dl>
+                </div>
+                <div class="p-salesTarget__table">
+                  <dl>
+                    <dt class="p-salesTarget__right-dttl">2014年1月​</dt>
+                    <dd class="p-salesTarget__right-desc">
+                      <ul class="p-salesTarget__right-list">
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">100%</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">100%</li>
+                      </ul>
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="p-salesTarget-table__button--right"></button>
+           </div>
+        </div>
+        <!-- 2段目 -->
+        <div class="p-salesTarget__wrap">
+          <!-- 左側 項目-->
+          <dl class="p-salesTarget__def">
+            <dt class="p-salesTarget__left-dttl">駐車料金</dt>
+            <dd class="p-salesTarget__list">
+              <div class="p-salesTarget__item">１）売上目標​</div>
+              <div class="p-salesTarget__item">２）売上実績​</div>
+              <div class="p-salesTarget__item">３）目標と実績の差額​</div>
+              <div class="p-salesTarget__item">４）売上目標に対する達成率​</div>
+              <div class="p-salesTarget__item">５）前年同月の売上実績</div>
+              <div class="p-salesTarget__item">６）前年同月比と同月の売上差額</div>
+              <div class="p-salesTarget__item">７）前年同月比に対する達成率</div>
+            </dd>
+          </dl>
 
+          <!-- 右側 テーブル -->
+          <!-- .--selectedで強調css付与 -->
+           <div class="p-salesTarget-table__wrap">
+            <button type="button" class="p-salesTarget-table__button--left"></button>
+            <div class="p-salesTarget-table__container">
+              <div class="p-salesTarget-table__inner">
+                <div class="p-salesTarget__table">
+                  <dl>
+                    <dt class="p-salesTarget__right-dttl">2023年12月​</dt>
+                    <dd class="p-salesTarget__right-desc">
+                      <ul class="p-salesTarget__right-list">
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">100%</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">100%</li>
+                      </ul>
+                    </dd>
+                  </dl>
+                </div>
+                <div class="p-salesTarget__table">
+                  <dl>
+                    <dt class="p-salesTarget__right-dttl">2023年12月​</dt>
+                    <dd class="p-salesTarget__right-desc">
+                      <ul class="p-salesTarget__right-list">
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">100%</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">100%</li>
+                      </ul>
+                    </dd>
+                  </dl>
+                </div>
+                <div class="p-salesTarget__table">
+                  <dl>
+                    <dt class="p-salesTarget__right-dttl">2023年12月​</dt>
+                    <dd class="p-salesTarget__right-desc">
+                      <ul class="p-salesTarget__right-list">
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">100%</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">100%</li>
+                      </ul>
+                    </dd>
+                  </dl>
+                </div>
+                <div class="p-salesTarget__table">
+                  <dl>
+                    <dt class="p-salesTarget__right-dttl">2023年12月​</dt>
+                    <dd class="p-salesTarget__right-desc">
+                      <ul class="p-salesTarget__right-list">
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">100%</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">100%</li>
+                      </ul>
+                    </dd>
+                  </dl>
+                </div>
+                <div class="p-salesTarget__table">
+                  <dl>
+                    <dt class="p-salesTarget__right-dttl">2023年12月​</dt>
+                    <dd class="p-salesTarget__right-desc">
+                      <ul class="p-salesTarget__right-list">
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">100%</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">100%</li>
+                      </ul>
+                    </dd>
+                  </dl>
+                </div>
+                <div class="p-salesTarget__table">
+                  <dl>
+                    <dt class="p-salesTarget__right-dttl">2023年12月​</dt>
+                    <dd class="p-salesTarget__right-desc">
+                      <ul class="p-salesTarget__right-list">
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">100%</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">100%</li>
+                      </ul>
+                    </dd>
+                  </dl>
+                </div>
+                <div class="p-salesTarget__table">
+                  <dl>
+                    <dt class="p-salesTarget__right-dttl">2023年12月​</dt>
+                    <dd class="p-salesTarget__right-desc">
+                      <ul class="p-salesTarget__right-list">
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">100%</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">100%</li>
+                      </ul>
+                    </dd>
+                  </dl>
+                </div>
+                <div class="p-salesTarget__table">
+                  <dl>
+                    <dt class="p-salesTarget__right-dttl">2014年1月​</dt>
+                    <dd class="p-salesTarget__right-desc">
+                      <ul class="p-salesTarget__right-list">
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">100%</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">100%</li>
+                      </ul>
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="p-salesTarget-table__button--right"></button>
+           </div>
+        </div>
+        <!-- 3段目 -->
+        <div class="p-salesTarget__wrap">
+          <!-- 左側 項目-->
+          <dl class="p-salesTarget__def">
+            <dt class="p-salesTarget__left-dttl">月間総売上​</dt>
+            <dd class="p-salesTarget__list">
+              <div class="p-salesTarget__item">１）売上目標​</div>
+              <div class="p-salesTarget__item">２）売上実績​</div>
+              <div class="p-salesTarget__item">３）目標と実績の差額​</div>
+              <div class="p-salesTarget__item">４）売上目標に対する達成率​</div>
+              <div class="p-salesTarget__item">５）前年同月の売上実績</div>
+              <div class="p-salesTarget__item">６）前年同月比と同月の売上差額</div>
+              <div class="p-salesTarget__item">７）前年同月比に対する達成率</div>
+            </dd>
+          </dl>
+
+          <!-- 右側 テーブル -->
+          <!-- .--selectedで強調css付与 -->
+           <div class="p-salesTarget-table__wrap">
+            <button type="button" class="p-salesTarget-table__button--left"></button>
+            <div class="p-salesTarget-table__container">
+              <div class="p-salesTarget-table__inner">
+                <div class="p-salesTarget__table">
+                  <dl>
+                    <dt class="p-salesTarget__right-dttl">2023年12月​</dt>
+                    <dd class="p-salesTarget__right-desc">
+                      <ul class="p-salesTarget__right-list">
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">100%</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">100%</li>
+                      </ul>
+                    </dd>
+                  </dl>
+                </div>
+                <div class="p-salesTarget__table">
+                  <dl>
+                    <dt class="p-salesTarget__right-dttl">2023年12月​</dt>
+                    <dd class="p-salesTarget__right-desc">
+                      <ul class="p-salesTarget__right-list">
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">100%</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">100%</li>
+                      </ul>
+                    </dd>
+                  </dl>
+                </div>
+                <div class="p-salesTarget__table">
+                  <dl>
+                    <dt class="p-salesTarget__right-dttl">2023年12月​</dt>
+                    <dd class="p-salesTarget__right-desc">
+                      <ul class="p-salesTarget__right-list">
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">100%</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">100%</li>
+                      </ul>
+                    </dd>
+                  </dl>
+                </div>
+                <div class="p-salesTarget__table">
+                  <dl>
+                    <dt class="p-salesTarget__right-dttl">2023年12月​</dt>
+                    <dd class="p-salesTarget__right-desc">
+                      <ul class="p-salesTarget__right-list">
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">100%</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">100%</li>
+                      </ul>
+                    </dd>
+                  </dl>
+                </div>
+                <div class="p-salesTarget__table">
+                  <dl>
+                    <dt class="p-salesTarget__right-dttl">2023年12月​</dt>
+                    <dd class="p-salesTarget__right-desc">
+                      <ul class="p-salesTarget__right-list">
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">100%</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">100%</li>
+                      </ul>
+                    </dd>
+                  </dl>
+                </div>
+                <div class="p-salesTarget__table">
+                  <dl>
+                    <dt class="p-salesTarget__right-dttl">2023年12月​</dt>
+                    <dd class="p-salesTarget__right-desc">
+                      <ul class="p-salesTarget__right-list">
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">100%</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">100%</li>
+                      </ul>
+                    </dd>
+                  </dl>
+                </div>
+                <div class="p-salesTarget__table">
+                  <dl>
+                    <dt class="p-salesTarget__right-dttl">2023年12月​</dt>
+                    <dd class="p-salesTarget__right-desc">
+                      <ul class="p-salesTarget__right-list">
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">100%</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">100%</li>
+                      </ul>
+                    </dd>
+                  </dl>
+                </div>
+                <div class="p-salesTarget__table">
+                  <dl>
+                    <dt class="p-salesTarget__right-dttl">2014年1月​</dt>
+                    <dd class="p-salesTarget__right-desc">
+                      <ul class="p-salesTarget__right-list">
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">100%</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">15000,000</li>
+                        <li class="p-salesTarget__item p-salesTarget__right-item">100%</li>
+                      </ul>
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="p-salesTarget-table__button--right"></button>
+           </div>
         </div>
 
       </div><!-- ./l-container__inner -->
+
+      <!-- サイド固定ボタン -->
+      <button onclick="window.print(); return false;" class="c-button__right-fixed--gray"><img src="../images/icon/print.svg" width="30" height="32" /></button>
+
     </main>
   </div>
-
-  <script src="../js/yearList.js"></script>
-
     <!-- オプションをクリックしたら出てくるmodal -->
     <div id="modalAreaOption" class="l-modal">
     <!-- モーダルのinnerを記述   -->
@@ -81,34 +530,164 @@
       <form class="l-flex--column l-flex--column l-flex--sb u-w-full">
         <div class="u-w-full-wide">
           <div class="c-title__modal--lv3">2024年03月​売上目標設定</div>
-          <!-- 1列目 -->
-            <div>
-              月間総売上
-              売上目標
-              <input type="text">円
-              前年同月比売上
-              <input type="text">円
+          <div>
+            <!-- 1列目 -->
+             <div class="l-grid--col3 l-grid--cgap1 l-grid--sales-target-setting">
+               <div>
+                 月間総売上
+               </div>
+               <div class="l-grid--col3 l-grid--gap05 u-font-nowrap">
+                 売上目標
+                 <input type="text">円
+               </div>
+               <div class="l-grid--col3 l-grid--gap05 u-font-nowrap">
+                 前年同月比売上
+                 <input type="text">円
+               </div>
+             </div>
+            <!-- 2列目 -->
+            <div class="l-grid--col3 l-grid--cgap1 l-grid--sales-target-setting">
+              <div>
+                駐車料金
+              </div>
+              <div class="l-grid--col3 l-grid--gap05 u-font-nowrap">
+                売上目標
+                <input type="text">円
+              </div>
+              <div class="l-grid--col3 l-grid--gap05 u-font-nowrap">
+                前年同月比売上
+                <input type="text">円
+              </div>
             </div>
-          <!-- 2列目 -->
-          <!-- 3列目 -->
-        </div>
+            <!-- 3列目 -->
+            <div class="l-grid--col3 l-grid--cgap1 l-grid--sales-target-setting">
+              <div>
+                <div class="l-grid--sales-target-setting__category">
+                  商品カテゴリー1:
+                </div>
+                  洗車
+              </div>
+              <div class="l-grid--col3 l-grid--gap05 u-font-nowrap">
+                売上目標
+                <input type="text">円
+              </div>
+              <div class="l-grid--col3 l-grid--gap05 u-font-nowrap">
+                前年同月比売上
+                <input type="text">円
+              </div>
+            </div>
+            <!-- 4列目 -->
+            <div class="l-grid--col3 l-grid--cgap1 l-grid--sales-target-setting">
+              <div>
+                <div class="l-grid--sales-target-setting__category">
+                  商品カテゴリー2:
+                </div>
+                  洗車
+              </div>
+              <div class="l-grid--col3 l-grid--gap05 u-font-nowrap">
+                売上目標
+                <input type="text">円
+              </div>
+              <div class="l-grid--col3 l-grid--gap05 u-font-nowrap">
+                前年同月比売上
+                <input type="text">円
+              </div>
+            </div>
+          </div>
         <div class="l-flex--center l-grid--gap1 u-mt2 u-mb2">
-          <button type="button" class="c-button__submit--dark-gray">新規保存</button>
-          <button type="button" id="modal_add" class="c-button__submit">上書き保存</button>
+          <button type="button" class="c-button__submit--dark-gray modal_optionClose">閉じる</button>
+          <button type="submit" id="modal_add" class="c-button__submit">上書き保存</button>
         </div>
       </form>
 
       </div><!-- ./l-modal__content -->
 
-      <!-- データ削除ボタン -->
-      <div class="l-modal__trashButton">
-        <img src="../images/svg/trash.svg" alt="ゴミ箱" width="100%" class="l-modal--trashButton">
-      </div>
-
     </div><!-- ./l-modal inner -->
     <!-- 閉じる・追加ボタン -->
   </div>
+
+  <!-- モーダルスクリプト -->
   <script src="../js/modalOption.js"></script>
+
+  <!-- カレンダー（year選択） -->
+  <script src="../js/yearList.js"></script>
+
+  <!-- ファイルアップロードの時スクリプト -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        setupCsvUpload('csvFileInput', 'csvFileNameDisplay');
+    });
+
+    function setupCsvUpload(inputId, fileNameDisplayId) {
+      const fileInput = document.getElementById(inputId);
+      const fileNameDisplay = document.getElementById(fileNameDisplayId);
+      const uploadButton = document.querySelector('.c-button__load.upload');
+
+      uploadButton.addEventListener('click', function() {
+          fileInput.click();
+      });
+
+      fileInput.addEventListener('change', function(event) {
+          const file = event.target.files[0];
+          if (file) {
+              fileNameDisplay.textContent = `選択されたファイル: ${file.name}`;
+              // ここでCSVファイルの処理を追加できます（例：アップロード処理など）
+          } else {
+              fileNameDisplay.textContent = 'ファイルが選択されていません';
+          }
+      });
+    }
+  </script>
+
+  <!-- 表をずらすスクリプト -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+  const wrappers = document.querySelectorAll('.p-salesTarget__wrap');
+
+  wrappers.forEach(wrapper => {
+    const inner = wrapper.querySelector('.p-salesTarget-table__inner');
+    const leftButton = wrapper.querySelector('.p-salesTarget-table__button--left');
+    const rightButton = wrapper.querySelector('.p-salesTarget-table__button--right');
+    let currentPosition = 0;
+
+    if (!inner || !leftButton || !rightButton) {
+      console.error('Required elements not found', wrapper);
+      return;
+    }
+
+    function updateButtons() {
+      leftButton.disabled = currentPosition >= 0;
+      rightButton.disabled = currentPosition <= -(inner.scrollWidth - inner.clientWidth);
+    }
+
+    function scroll(direction) {
+      const scrollAmount = 100 * direction;
+      currentPosition += scrollAmount;
+
+      // スクロール位置の制限
+      const maxScroll = -(inner.scrollWidth - inner.clientWidth);
+      currentPosition = Math.max(maxScroll, Math.min(0, currentPosition));
+
+      console.log('Applying transform:', `translateX(${currentPosition}px)`);
+      inner.style.setProperty('transform', `translateX(${currentPosition}px)`, 'important');
+      updateButtons();
+    }
+
+    leftButton.addEventListener('click', () => {
+      console.log('Left button clicked');
+      scroll(1);
+    });
+
+    rightButton.addEventListener('click', () => {
+      console.log('Right button clicked');
+      scroll(-1);
+    });
+
+    // 初期状態でボタンの状態を更新
+    updateButtons();
+  });
+});
+  </script>
 </body>
 
 </html>

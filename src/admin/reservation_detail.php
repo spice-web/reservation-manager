@@ -178,7 +178,7 @@
   </div><!-- /.l-container__wrap -->
 
   <!-- サイド固定ボタン -->
-    <button onclick="window.print(); return false;" class="c-button__right-fixed--gray"><img src="../images/icon/print.svg" width="30" height="32" /></button>
+  <button onclick="window.print(); return false;" class="c-button__right-fixed--gray"><img src="../images/icon/print.svg" width="30" height="32" /></button>
 
 </body>
 

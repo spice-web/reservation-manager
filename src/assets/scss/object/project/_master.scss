@@ -2,12 +2,22 @@
 
 .p-master-register {
   margin-top: 10rem;
+  margin-bottom: 10rem;
+  
+  &__wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 5rem;
+  }
 
   &__item {
-    padding: 0 3.75rem;
+    // padding: 0 3.75rem;
     display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(4, auto);
     grid-template-columns: 1fr;
     justify-items: center;
+    place-items: top;
     gap: 0.625rem;
     &:nth-child(2) {
       border-left: 1px solid #B4B4B4;
@@ -72,4 +82,20 @@
     align-items: center;
     // align-items: flex-end;
   }
+
+  // テーブルレイアウト
+  &__table-container {
+    max-height: 546px;
+    overflow: auto;
+    text-align: center;
+    th:last-child,
+    td:last-child {
+      width: 100px;
+    }
+  }
+}
+
+.p-master-agency-setting__upload-image {
+  width: 160px;
+  height: 98px;
 }
