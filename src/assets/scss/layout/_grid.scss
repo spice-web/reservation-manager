@@ -283,11 +283,16 @@
   label {
     white-space: nowrap;
     text-align: right;
+    font-size: 14px;
   }
 
   input {
     width: 155px;
     margin-bottom: 0;
+  }
+  .--last {
+    grid-column: 3; /* 3列目に配置 */
+    grid-row: 7; /* 7行目に配置（21番目の位置） */
   }
 }
 

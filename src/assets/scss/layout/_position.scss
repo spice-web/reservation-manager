@@ -1,6 +1,7 @@
 .l-position {
   &__upload {
     position: relative;
+    overflow-wrap: break-word;
     .delete-button {
       position: absolute;
       top: -10px;

@@ -18,7 +18,7 @@
       <div class="l-container__inner">
 
         <h2 class="c-title__lv2 u-mb2">期間一括登録</h2>
-        <div class="l-grid--col2-1fr_160 l-grid--gap2 u-font--md l-grid--start">
+        <form method="POST" action="?" class="l-grid--col2-1fr_160 l-grid--gap2 u-font--md l-grid--start">
           <!-- 開始日 -->
           <div class="l-grid--col2 l-grid--gap2">
             <div class="form-item">
@@ -30,7 +30,10 @@
               <input type="date" id="end_date" name="end_date" class="u-mb0 c-input u-w-full-wide" required>
             </div>
           </div>
-          <button class="c-button__register l-grid--self-end u-font--normal">一括登録</button>
+
+          <!-- 一括登録ボタン -->
+          <button class="c-button__register l-grid--self-end u-font--normal" formaction="">一括登録</button>
+          
           <div class="l-grid--col5 l-grid--gap1">
             <!-- MAX在庫 -->
             <div class="form-item">
@@ -56,13 +59,14 @@
               <input type="text" id="limit_per_15min" name="limit_per_15min" class="c-input u-w-full-wide" required>
             </div>
           </div>
-          <div class="l-grid__right-submitButton--button c-button__csv--upload u-mb1">
-            <button type="button" class="c-button__load u-mt0">CSVダウンロード</button>
+          <div class="l-grid__right-submitButton--button c-button__csv--upload u-mb1 u-pt1-half">
+            <a type="button" class="c-button__load u-mt0">CSVダウンロード</a>
             <button type="button" class="c-button__load upload">CSVアップロード</button>
             <input type="file" id="csvFileInput" />
-            <div id="csvFileNameDisplay"></div>
+            <div id="csvFileNameDisplay" class="u-font--sm l-position__upload"></div>
+            <input type="submit" value="登録" class="c-button__register fileUpload" formaction="" disabled>
           </div>
-        </div>
+        </form>
 
         <!-- カレンダー -->
         <!-- ページネーション -->
@@ -100,6 +104,7 @@
       const fileInput = document.getElementById(inputId);
       const fileNameDisplay = document.getElementById(fileNameDisplayId);
       const uploadButton = document.querySelector('.c-button__load.upload');
+      const registerButton = document.querySelector('.fileUpload');
 
       uploadButton.addEventListener('click', function() {
           fileInput.click();
@@ -108,12 +113,47 @@
       fileInput.addEventListener('change', function(event) {
           const file = event.target.files[0];
           if (file) {
-              fileNameDisplay.textContent = `選択されたファイル: ${file.name}`;
-              // ここでCSVファイルの処理を追加できます（例：アップロード処理など）
+              fileNameDisplay.innerHTML = `選択されたファイル: ${file.name}`;
+              addDeleteButton(fileNameDisplay, fileInput);
+              registerButton.removeAttribute('disabled');
           } else {
               fileNameDisplay.textContent = 'ファイルが選択されていません';
+              registerButton.setAttribute('disabled', '');
           }
       });
+    }
+
+    function addDeleteButton(container, fileInput, imageDisplay = null) {
+    // 既存の削除ボタンを削除
+    const existingDeleteButton = container.querySelector('.delete-button');
+    if (existingDeleteButton) {
+        existingDeleteButton.remove();
+    }
+
+    const deleteButton = document.createElement('img');
+    deleteButton.src = '../images/icon/closeButton.svg';
+    deleteButton.alt = '削除';
+    deleteButton.className = 'delete-button';
+    deleteButton.style.cursor = 'pointer';
+    deleteButton.style.marginLeft = '10px';
+
+    deleteButton.addEventListener('click', function() {
+        fileInput.value = '';
+        if (imageDisplay) {
+            imageDisplay.style.display = 'none';
+        } else {
+            container.textContent = '';
+        }
+        deleteButton.remove();
+
+        // CSVファイルが削除された場合、登録ボタンを無効化
+        if (fileInput.id === 'csvFileInput') {
+            const registerButton = document.querySelector('.fileUpload');
+            registerButton.setAttribute('disabled', '');
+        }
+    });
+
+    container.appendChild(deleteButton);
     }
   </script>
 </body>
