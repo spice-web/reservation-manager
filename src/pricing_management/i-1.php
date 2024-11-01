@@ -19,12 +19,111 @@
       </ul>
 
       <div class="l-container__inner">
+        <div class="u-mb1">
+          <h2 class="c-title__lv2 l-flex--sb">登録済み 適用料金表一覧<span class="close_button c-button__close">閉じる</span></h2>
+          <!-- 検索フォーム -->
+          <div class="is-active u-mb2">
+            <table class="l-table-list">
+              <thead>
+                <tr class="l-table-list__head l-table-list--scroll__head">
+                  <th class="u-w240"><div class="c-button-sort">適用期間</div></th>
+                  <th>メモ</th>
+                  <th>操作</th>
+                </tr>
+              </thead>
+              <tbody class="l-table-list__body">
+                <tr>
+                  <td>2021/01/01～2021/12/31</td>
+                  <td>メモメモメモ</td>
+                  <td>
+                    <button type="button" class="c-button__edit button_select">編集</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2021/01/01～2021/12/31</td>
+                  <td>メモメモメモ</td>
+                  <td>
+                    <button type="button" class="c-button__edit button_select">編集</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2021/01/01～2021/12/31</td>
+                  <td>メモメモメモ</td>
+                  <td>
+                    <button type="button" class="c-button__edit button_select">編集</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <button type="" class="button_select c-button__register u-mb4 u-horizontal-auto">新規登録</button>
+
         <form action="" method="POST" class="l-grid__right-submitButton u-mb4">
           <!-- 入力フォーム -->
           <div class="c-form__input">
-            <h2 class="c-title__lv2 l-flex--sb u-w-full-wide">料金設定登録<span class="close_button c-button__close">閉じる</span></h2>
+            <!-- 下段 -->
+            <div class="l-grid__basicPricing--bottom">
+              <h2 class="c-title__lv2 l-flex--sb u-mb05">車両サイズによる割引・割増設定<span class="close_button c-button__close">閉じる</span></h2>
+              <p class="note text-right u-mb1 u-font--sm">※ダイナミックプライシング料金・代理店料金にも適用されます。</p>
+              <div class="l-grid--col2 is-active l-grid__basicPricing--bottom__item">
+                <div>
+                  <!-- 二輪 -->
+                  <label class="l-flex--start l-grid--center l-grid--gap1 u-mb2">二輪
+                    <div class="l-flex--start l-grid--gap05">
+                      ×<input type="text" name="two_wheeler" class="u-mb0">倍
+                    </div>
+                  </label>
+                  <!-- 大型 -->
+                  <label class="l-flex--start l-grid--center l-grid--gap1">大型
+                    <div class="l-flex--start l-grid--gap05">
+                      ×<input type="text" name="large_size" class="u-mb0">倍
+                    </div>
+                </div>
+                <div>
+                  <!-- マイクロバス -->
+                  <label class="l-flex--end l-grid--center l-grid--gap1 u-mb2">マイクロバス
+                    <div class="l-flex--start l-grid--gap05">
+                      ×<input type="text" id="micro_bus" name="micro_bus" class="u-mb0">倍
+                    </div>
+                  </label>
+                  <!-- キャンピングカー -->
+                  <label class="l-flex--end l-grid--center l-grid--gap1">キャンピングカー
+                    <div class="l-flex--start l-grid--gap05">
+                      ×<input type="text" id="camping_car" name="camping_car" class="u-mb0">倍
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- button -->
+          <div class="l-grid__right-submitButton--button c-button__csv--upload">
+            <button type="submit" class="c-button__register u-mt0">登録</button>
+          </div>
+        </form>
 
-            <div class="is-active">
+      </div>
+    </main><!-- /.l-container__main -->
+  </div><!-- /.l-wrap -->
+
+  <!-- 閉じる・開く切替 -->
+  <script src="../js/close_button_toggle.js"></script>
+
+  <!-- modal -->
+  <div id="modalAreaOption" class="l-modal">
+    <!-- モーダルのinnerを記述   -->
+    <div class="l-modal__inner l-modal--trash">
+      <div class="l-modal__head">編集</div>
+      <!-- close button -->
+      <div class="l-modal__close modal_optionClose">×</div>
+      <div class="l-modal__content">
+        <form action="" method="POST" class="l-flex--column l-flex--sb u-w-full">
+          <!-- 入力フォーム -->
+          <div class="u-w-full-wide">
+            <div class="c-title__modal--lv3">基本料金設定編集</div>
+            <div class="">
               <div class="l-grid--col2 l-grid--gap2">
                 <div>
                   <label for="price_list" class="u-font--md">料金表選択</label>
@@ -54,7 +153,7 @@
               <textarea name="memo" id="memo" rows="1" class="u-w-full-wide"></textarea>
 
               <!-- 1日目～15日まで料金を入力するinput -->
-              <div class="l-grid--pricing l-grid--input u-mb2 u-pb2 u-border--bottom">
+              <div class="l-grid--pricing l-grid--input">
                 <div>
                   <label for="day1">1日目</label>
                   <input type="text" id="day1" name="day1">
@@ -129,43 +228,24 @@
                 </div>
               </div>
             </div>
-
-            <!-- 下段 -->
-            <div class="l-grid__basicPricing--bottom">
-              <h2 class="c-title__lv2 l-flex--sb">車両サイズによる割引・割増設定<span class="close_button c-button__close">閉じる</span></h2>
-              <div class="l-grid--col2 is-active">
-                <div class="l-grid__basicPricing--bottom__item l-grid__basicPricing--bottom--left">
-                  <!-- 二輪 -->
-                  <label for="two_wheeler">二輪</label>
-                  <input type="text" id="two_wheeler" name="two_wheeler">
-                  <!-- 大型 -->
-                  <label for="large_size">大型</label>
-                  <input type="text" id="large_size" name="large_size">
-                </div>
-                <div class="l-grid__basicPricing--bottom__item l-grid__basicPricing--bottom--right">
-                  <!-- マイクロバス -->
-                  <label for="micro_bus">マイクロバス</label>
-                  <input type="text" id="micro_bus" name="micro_bus">
-                  <!-- キャンピングカー -->
-                  <label for="camping_car">キャンピングカー</label>
-                  <input type="text" id="camping_car" name="camping_car">
-                </div>
-              </div>
-            </div>
-
-
           </div>
-          <!-- button -->
-          <div class="l-grid__right-submitButton--button c-button__csv--upload u-mb1">
-            <button type="submit" class="c-button__register u-mt0">登録</button>
+          <!-- 閉じる・追加ボタン -->
+          <div class="l-flex--center l-grid--gap1 u-mt2 u-mb4">
+            <button type="submit" class="c-button__submit--dark-gray modal_optionClose">閉じる</button>
+            <button type="submit" class="c-button__submit">登録</button>
           </div>
         </form>
-      </div>
-    </main><!-- /.l-container__main -->
-  </div><!-- /.l-wrap -->
+      </div><!-- ./l-modal__content -->
 
-  <!-- 閉じる・開く切替 -->
-  <script src="../js/close_button_toggle.js"></script>
+      <!-- 編集の場合のデータ削除ボタン -->
+      <div class="l-modal__trashButton">
+        <img src="../images/svg/trash.svg" alt="ゴミ箱" width="100%" class="l-modal--trashButton">
+      </div>
+    </div><!-- ./l-modal inner -->
+  </div>
+
+  <!-- モーダル -->
+  <script src="../js/modalOption.js"></script>
 </body>
 
 </html>

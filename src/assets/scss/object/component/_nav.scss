@@ -54,6 +54,9 @@
     &.--setting::before {
       background: url('../images/icon/setting.svg') no-repeat center center;
     }
+    &.--support::before {
+      background: url('../images/icon/support.svg') no-repeat center center;
+    }
   }
 
   // QR

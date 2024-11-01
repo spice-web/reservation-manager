@@ -13,6 +13,9 @@
     <li class="c-nav__item">
       <a href="/pricing_management/basic_pricing.php" class="c-nav__link --setting">設定</a>
     </li>
+    <li class="c-nav__item">
+      <a href="[リンク]" class="c-nav__link --support">営業支援</a>
+    </li>
   </ul>
 
   <figure class="c-nav__qr">

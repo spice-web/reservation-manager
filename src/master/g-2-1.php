@@ -162,6 +162,7 @@
             <thead class="l-table-list__head l-table-list--scroll-vertical__head">
               <tr>
                 <th><div class="c-button-sort">空港</div></th>
+                <th><div class="c-button-sort">T</div></th>
                 <th><div class="c-button-sort">便名</div></th>
                 <th><div class="c-button-sort --asc">到着日</div></th>
                 <th><div class="c-button-sort">時刻</div></th>
@@ -175,6 +176,7 @@
               <tr>
                 <td>成田</td>
                 <td>T1</td>
+                <td>JL644</td>
                 <td>2023/11/15</td>
                 <td>09:00</td>
                 <td>TPE</td>
@@ -185,6 +187,7 @@
               <tr>
                 <td>成田</td>
                 <td>T1</td>
+                <td>JL644</td>
                 <td>2023/11/15</td>
                 <td>09:00</td>
                 <td>TPE</td>
@@ -195,6 +198,7 @@
               <tr>
                 <td>成田</td>
                 <td>T1</td>
+                <td>JL644</td>
                 <td>2023/11/15</td>
                 <td>09:00</td>
                 <td>TPE</td>
@@ -205,6 +209,7 @@
               <tr>
                 <td>成田</td>
                 <td>T1</td>
+                <td>JL644</td>
                 <td>2023/11/15</td>
                 <td>09:00</td>
                 <td>TPE</td>
@@ -215,6 +220,7 @@
               <tr>
                 <td>成田</td>
                 <td>T1</td>
+                <td>JL644</td>
                 <td>2023/11/15</td>
                 <td>09:00</td>
                 <td>TPE</td>
@@ -225,6 +231,7 @@
               <tr>
                 <td>成田</td>
                 <td>T1</td>
+                <td>JL644</td>
                 <td>2023/11/15</td>
                 <td>09:00</td>
                 <td>TPE</td>
@@ -235,6 +242,7 @@
               <tr>
                 <td>成田</td>
                 <td>T1</td>
+                <td>JL644</td>
                 <td>2023/11/15</td>
                 <td>09:00</td>
                 <td>TPE</td>
@@ -245,6 +253,7 @@
               <tr>
                 <td>成田</td>
                 <td>T1</td>
+                <td>JL644</td>
                 <td>2023/11/15</td>
                 <td>09:00</td>
                 <td>TPE</td>
@@ -255,6 +264,7 @@
               <tr>
                 <td>成田</td>
                 <td>T1</td>
+                <td>JL644</td>
                 <td>2023/11/15</td>
                 <td>09:00</td>
                 <td>TPE</td>
@@ -265,6 +275,7 @@
               <tr>
                 <td>成田</td>
                 <td>T1</td>
+                <td>JL644</td>
                 <td>2023/11/15</td>
                 <td>09:00</td>
                 <td>TPE</td>
@@ -275,6 +286,7 @@
               <tr>
                 <td>成田</td>
                 <td>T1</td>
+                <td>JL644</td>
                 <td>2023/11/15</td>
                 <td>09:00</td>
                 <td>TPE</td>
@@ -285,6 +297,7 @@
               <tr>
                 <td>成田</td>
                 <td>T1</td>
+                <td>JL644</td>
                 <td>2023/11/15</td>
                 <td>09:00</td>
                 <td>TPE</td>
@@ -295,6 +308,7 @@
               <tr>
                 <td>成田</td>
                 <td>T1</td>
+                <td>JL644</td>
                 <td>2023/11/15</td>
                 <td>09:00</td>
                 <td>TPE</td>
@@ -305,6 +319,7 @@
               <tr>
                 <td>成田</td>
                 <td>T1</td>
+                <td>JL644</td>
                 <td>2023/11/15</td>
                 <td>09:00</td>
                 <td>TPE</td>
@@ -315,6 +330,7 @@
               <tr>
                 <td>成田</td>
                 <td>T1</td>
+                <td>JL644</td>
                 <td>2023/11/15</td>
                 <td>09:00</td>
                 <td>TPE</td>
@@ -325,11 +341,12 @@
               <tr>
                 <td>成田</td>
                 <td>T1</td>
+                <td>JL644</td>
                 <td>2023/11/15</td>
                 <td>09:00</td>
                 <td>TPE</td>
                 <td>アメリカン航空</td>
-                <td>ロサンゼルス</td>
+                <td>パナ</td>
                 <td>1</td>
               </tr>
             </tbody>

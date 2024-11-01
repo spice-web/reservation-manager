@@ -476,3 +476,87 @@
   }
 }
 
+// I-3 ダイナミックプライシング料金設定
+.l-table-dynamic-pricing-list {
+  &__button {
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: normal;
+    &.c-button__edit {
+      width: 90%;
+      border-radius: 4px;
+    }
+  }
+
+  margin-top: 3rem;
+  border-spacing: 0;
+  table-layout: fixed;
+
+  thead {
+    font-weight: normal;
+    th {
+      padding: 0 0 1rem 0;
+    }
+  }
+  tbody {
+    font-size: 0.875rem;
+    line-height: 44px;
+    tr {
+      &:first-child {
+        th {
+          border-top: 1px solid $text-color;
+          background: #888888!important;
+          &:first-child {
+            border-radius: 8px 0 0 0;
+            border-left: 1px solid $text-color;
+          }
+          &:last-child {
+            border-radius: 0 8px 0 0;
+          }
+        }
+      }
+      &:not(:first-child) {
+        th {
+          border-left: 1px solid $text-color;
+        }
+      }
+      &:last-child {
+        th, td {
+          border-bottom: 1px solid $text-color;
+        }
+        th {
+          border-radius: 0 0 0 8px;
+        }
+        td:last-child {
+          border-radius: 0 0 8px 0;
+        }
+      }
+      th {
+        background: #888888;
+        color: white;
+        font-weight: normal;
+        width: 180px;
+        border-right: 1px solid $text-color;
+      }
+      td {
+        width: 140px;
+        text-align: right;
+        padding: 0 .5rem;
+        &:not(:last-child) {
+          border-right: 1px solid $gray;
+        }
+        &:last-child {
+          border-right: 1px solid $text-color;
+        }
+      }
+      &:nth-child(even) {
+        th {
+          background: #B4B4B4;
+        }
+        td {
+          background-color: #ECECEC;
+        }
+      }
+    }
+  }
+}
