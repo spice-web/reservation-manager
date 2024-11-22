@@ -161,7 +161,11 @@
   }
   &--yellow {
     @extend .c-button;
+    color: white;
     background: $yellow;
+    &:visited {
+      color: white;
+    }
   }
   &--green {
     @extend .c-button;

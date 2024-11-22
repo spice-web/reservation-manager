@@ -54,7 +54,10 @@
     display: grid;
     grid-template-columns: repeat(5, auto);
   }
-
+  &--col5-1fr {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
   &__right-submitButton {
     display: grid;
     grid-template-columns: 1fr 160px;

@@ -18,18 +18,18 @@
       </ul>
 
       <div class="l-container__inner">
-        <div class="l-grid--col5 l-grid--rgap2">
-          <a href="" class="c-button__submit c-button--yellow c-link-no-border">航空会社マスタ</a>
-          <a href="" class="c-button__submit c-button--yellow c-link-no-border">航空会社マスタ</a>
-          <a href="" class="c-button__submit c-button--yellow c-link-no-border">航空会社マスタ</a>
-          <a href="" class="c-button__submit c-button--yellow c-link-no-border">航空会社マスタ</a>
-          <a href="" class="c-button__submit c-button--yellow c-link-no-border">航空会社マスタ</a>
-          <a href="" class="c-button__submit c-button--yellow c-link-no-border">航空会社マスタ</a>
-          <a href="" class="c-button__submit c-button--yellow c-link-no-border">航空会社マスタ</a>
-          <a href="" class="c-button__submit c-button--yellow c-link-no-border">航空会社マスタ</a>
-          <a href="" class="c-button__submit c-button--yellow c-link-no-border">航空会社マスタ</a>
-          <a href="" class="c-button__submit c-button--yellow c-link-no-border">航空会社マスタ</a>
-          <a href="" class="c-button__submit c-button--yellow c-link-no-border">航空会社マスタ</a>
+        <div class="l-flex l-flex--wrap l-grid--gap2">
+          <a href="" class="c-button c-button--yellow c-link-no-border">商品カテゴリーマスタ</a>
+          <a href="" class="c-button c-button--yellow c-link-no-border">航空会社マスタ</a>
+          <a href="" class="c-button c-button--yellow c-link-no-border">航空会社マスタ</a>
+          <a href="" class="c-button c-button--yellow c-link-no-border">航空会社マスタ</a>
+          <a href="" class="c-button c-button--yellow c-link-no-border">航空会社マスタ</a>
+          <a href="" class="c-button c-button--yellow c-link-no-border">航空会社マスタ</a>
+          <a href="" class="c-button c-button--yellow c-link-no-border">航空会社マスタ</a>
+          <a href="" class="c-button c-button--yellow c-link-no-border">航空会社マスタ</a>
+          <a href="" class="c-button c-button--yellow c-link-no-border">航空会社マスタ</a>
+          <a href="" class="c-button c-button--yellow c-link-no-border">航空会社マスタ</a>
+          <a href="" class="c-button c-button--yellow c-link-no-border">航空会社マスタ</a>
         </div>
       </div><!-- ./l-container__inner -->
     </main>

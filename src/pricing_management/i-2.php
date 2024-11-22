@@ -33,8 +33,8 @@
     </main><!-- /.l-container__main -->
   </div><!-- /.l-container__wrap -->
 
-    <!-- modal i-1と同じコード -->
-    <div id="modalAreaOption" class="l-modal">
+  <!-- modal i-1と同じコード -->
+  <div id="modalAreaOption" class="l-modal">
     <!-- モーダルのinnerを記述   -->
     <div class="l-modal__inner l-modal--trash">
       <div class="l-modal__head">編集</div>
@@ -45,25 +45,36 @@
           <!-- 入力フォーム -->
           <div class="u-w-full-wide">
             <div class="c-title__modal--lv3">ダイナミックプライシング台数一括設定</div>
-
-              <div class="l-flex--center l-grid--col2 l-grid--gap2">
-                <!-- 料金の適用期間 -->
-                <div class="l-grid--dynamic-pricing-modal">
-                  <label for="start_date" class="u-mb025 u-font--md">開始日</label>
-                  <div></div>
-                  <label for="end_date" class="u-mb025 u-font--md">終了日</label>
-                  <input type="date" id="start_date" name="start_date" class="u-w-full-wide">
-                  <p class="u-mb1">～</p>
-                  <input type="date" id="end_date" name="end_date" class="u-w-full-wide">
-                </div>
-                <!-- 台数設定 -->
-                <div>
-                  <label for="" class="u-font--md">台数</label>
-                  <div class="">
-                    <input type="text" class="u-mr05 u-w120">台
-                  </div>
+            <div class="l-flex">
+              <!-- 料金の適用期間 -->
+              <div class="l-grid--dynamic-pricing-modal">
+                <label for="start_date" class="u-mb025 u-font--md">開始日</label>
+                <div></div>
+                <label for="end_date" class="u-mb025 u-font--md">終了日</label>
+                <input type="date" id="start_date" name="start_date" class="u-w-full-wide">
+                <p class="u-mb1">～</p>
+                <input type="date" id="end_date" name="end_date" class="u-w-full-wide">
+              </div>
+            </div>
+            <div class="l-flex l-grid--gap2">
+              <!-- 料金種別 -->
+              <div>
+                <label for="" class="u-font--md">料金種別</label>
+                <div class="c-form-select-color">
+                  <select name="" id="">
+                    <option value="dummy">ダミー</option>
+                    <option value="dummy">長い長いテキストテキスト長い長いテキストテキスト</option>
+                  </select>
                 </div>
               </div>
+              <!-- 台数設定 -->
+              <div>
+                <label for="" class="u-font--md">台数</label>
+                <div class="">
+                  <input type="text" class="u-mr05 u-w120">台
+                </div>
+              </div>
+            </div>
 
           </div>
           <!-- button -->
