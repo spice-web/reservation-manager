@@ -16,6 +16,9 @@
     <li class="c-nav__item">
       <a href="[リンク]" class="c-nav__link --support">営業支援</a>
     </li>
+    <li class="c-nav__item">
+      <a href="[リンク]" class="c-nav__link --print">帳票印刷</a>
+    </li>
   </ul>
 
   <figure class="c-nav__qr">

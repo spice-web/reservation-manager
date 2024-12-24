@@ -18,19 +18,13 @@
       </ul>
 
       <div class="l-container__inner">
-        <div class="l-flex l-flex--wrap l-grid--gap2">
-          <a href="" class="c-button c-button--yellow c-link-no-border">商品カテゴリーマスタ</a>
-          <a href="" class="c-button c-button--yellow c-link-no-border">航空会社マスタ</a>
-          <a href="" class="c-button c-button--yellow c-link-no-border">航空会社マスタ</a>
-          <a href="" class="c-button c-button--yellow c-link-no-border">航空会社マスタ</a>
-          <a href="" class="c-button c-button--yellow c-link-no-border">航空会社マスタ</a>
-          <a href="" class="c-button c-button--yellow c-link-no-border">航空会社マスタ</a>
-          <a href="" class="c-button c-button--yellow c-link-no-border">航空会社マスタ</a>
-          <a href="" class="c-button c-button--yellow c-link-no-border">航空会社マスタ</a>
-          <a href="" class="c-button c-button--yellow c-link-no-border">航空会社マスタ</a>
-          <a href="" class="c-button c-button--yellow c-link-no-border">航空会社マスタ</a>
-          <a href="" class="c-button c-button--yellow c-link-no-border">航空会社マスタ</a>
+
+      <!-- 文字数多い場合、レイアウト崩れ修正のためCSSを変更 -->
+        <div class="l-grid--col5-1fr l-grid--rgap2 l-grid--cgap1 u-font--white">
+          <a href="" class="c-button--yellow c-link-no-border">商品カテゴリーマスタ</a>
+          <a href="" class="c-button--yellow c-link-no-border">航空会社マスタ</a>
         </div>
+
       </div><!-- ./l-container__inner -->
     </main>
 
