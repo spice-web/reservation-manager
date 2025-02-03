@@ -1,15 +1,18 @@
-@use 'variables' as *;
+@use "variables" as *;
 body {
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   color: $text-color;
   letter-spacing: 0.05em;
 }
 
-body, html {
+body,
+html {
   height: 100%;
 }
 
-.kufi { font-family: "Reem Kufi"; }
+.kufi {
+  font-family: "Reem Kufi";
+}
 
 hr {
   border: none;
@@ -38,19 +41,21 @@ li {
 .note {
   color: var(--note-color);
   &--blue {
-    color: #4696DC;
+    color: #4696dc;
   }
 }
 
 // リンク
-a:link, a:visited, a:active {
+a:link,
+a:visited,
+a:active {
   color: inherit;
 }
 a:hover {
   opacity: 0.8;
 }
 .link-white {
-  color: white!important;
+  color: white !important;
   text-decoration: none;
 }
 .link-text {
@@ -74,13 +79,15 @@ input {
   background-color: $light-gray;
   padding: 0.4375rem;
   border-radius: 0.5rem;
-  &:not([type="submit"],[type="checkbox"],[type="radio"]) {
-    outline: #B4B4B4 1px solid;
+  &:not([type="submit"], [type="checkbox"], [type="radio"]) {
+    outline: #b4b4b4 1px solid;
     outline-offset: -1px;
   }
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
   margin-bottom: 1rem;
 }
 
@@ -88,7 +95,7 @@ textarea {
   background-color: $light-gray;
   padding: 0.5rem;
   border-radius: 0.5rem;
-  border: #B4B4B4 1px solid;
+  border: #b4b4b4 1px solid;
 }
 
 select {
@@ -124,5 +131,16 @@ select {
     top: 50%;
     right: 0;
     transform: translateY(-50%);
+  }
+}
+
+.br {
+  &--sp {
+    display: block;
+  }
+  @media screen and (min-width: 851px) {
+    &--sp {
+      display: none;
+    }
   }
 }

@@ -5,7 +5,7 @@
 
 <body>
   <div class="l-container__user-login">
-    <form action="user_information.php" method="POST" class="">
+    <form action="user_information.php" method="POST">
       <div>
         <label for="user_name">メールアドレスまたは携帯電話番号</label>
         <input type="text" name="user_name" class="u-w-full-wide" />

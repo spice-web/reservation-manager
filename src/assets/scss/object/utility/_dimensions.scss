@@ -66,4 +66,8 @@ input.u-w-auto {
   line-height: 38px;
 }
 
-
+@media screen and (max-width: 850px) {
+  .u-w-full-wide--md {
+    width: 100%;
+  }
+}

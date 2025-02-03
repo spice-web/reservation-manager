@@ -32,10 +32,10 @@
 
       <div class="p-user-input-auto-output__wrap u-mb4">
         <div class="l-flex--start l-flex--item-end l-grid--gap05">
-          <div>
+          <div class="u-w-full-wide--md">
             <label for="coupon">割引クーポン</label>
             <!-- クーポン -->
-            <input type="text" id="coupon" name="coupon" class="u-mb0">
+            <input type="text" id="coupon" name="coupon" class="u-mb0 u-w-full-wide--md">
           </div>
           <button type="button" class="c-button__apply--green">適用</button>
         </div>

@@ -90,7 +90,7 @@
           <td>NRT</td>
           <th>到着ターミナル</th>
           <td>2</td>
-          <td colspan="3">
+          <td colspan="3" class="--mark">
             <div class="c-label--lg">到着日とお迎え日が異なる</div>
           </td>
         </tr>
@@ -138,24 +138,24 @@
         <tbody class="l-table-charge-detail__body">
           <tr>
             <th>駐車料金</th>
-            <td>1,000円</td>
+            <td class="u-font-nowrap">1,000円</td>
             <td>1</td>
-            <td>5,000円</td>
-            <td>(税別10%)</td>
+            <td class="u-font-nowrap">5,000円</td>
+            <td class="--tax">(税別10%)</td>
           </tr>
           <tr>
             <th>​WAX洗車（オプション料金）</th>
-            <td>2,500円</td>
+            <td class="u-font-nowrap">2,500円</td>
             <td>2</td>
-            <td>2,500円</td>
-            <td>(税別10%)</td>
+            <td class="u-font-nowrap">2,500円</td>
+            <td class="--tax">(税別10%)</td>
           </tr>
           <tr>
             <th>​海外旅行保険（オプション料金）​</th>
-            <td>3,800円</td>
+            <td class="u-font-nowrap">3,800円</td>
             <td>3</td>
-            <td>3,800円</td>
-            <td>(対象外)</td>
+            <td class="u-font-nowrap">3,800円</td>
+            <td class="--tax">(対象外)</td>
           </tr>
         </tbody>
       </table>
@@ -165,14 +165,14 @@
           <div>消費税8%</div>
           <div>0円</div>
           <div colspan="2" class="text-right">合計金額</div>
-          <div class="u-font--24 u-font--medium">11,300 <span>円</span>（税抜）</div>
+          <div class="u-font--lg u-font--medium">11,300 <span>円</span>（税抜）</div>
           <div>消費税10%</div>
           <div>750円</div>
-          <div class="u-font--24 u-font--medium l-grid--colspan2">12,500 <span>円</span>（税込）</div>
+          <div class="u-font--lg u-font--medium l-grid--colspan2">12,500 <span>円</span>（税込）</div>
         </div>
       </div>
 
-      <!--  -->
+      <!-- button -->
       <div class="c-button-group__form u-mt3">
         <button id="returnButton" class="c-button__pagination--return">前のページに戻る</button>
         <button type="submit" class="c-button__pagination--next">お会計へ</button>

@@ -17,7 +17,7 @@
       <!-- 詳細情報入力 -->
       <div class="p-user-input-auto-output__wrap l-flex--item-end">
         <!-- 入力エリア -->
-        <div class="l-grid--col2-auto l-grid--cgap2">
+        <div class="l-grid--col2-auto l-grid--cgap2 l-flex--column--md l-grid--cgap-md">
           <div>
             <label for="maker">メーカー</label>
             <!-- 車メーカーのselect -->
@@ -59,7 +59,7 @@
           <div>
             <label for="date">到着日</label>
             <input type="date" id="date" name="date" class="u-w-full-wide u-mb025">
-            <p class="text-center">到着日がお迎え日と異なる</p>
+            <p class="text-center u-mb1--md">到着日がお迎え日と異なる</p>
           </div>
           <div>
             <label for="people">ご利用人数</label>
@@ -69,7 +69,7 @@
 
         <!-- 自動出力 -->
         <div class="p-user-input-auto-output__right u-mb1">
-          <dl class="l-grid--col2 u-mb3">
+          <dl class="l-grid--col2 u-mb3 u-mb1--md">
             <dt>航空会社名</dt>
             <dd class="text-right">日本航空</dd>
             <!-- 福岡空港 成田空港 18:20 -->

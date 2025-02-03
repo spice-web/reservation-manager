@@ -1,5 +1,5 @@
-<!-- D-1-5 -->
-<!-- 代理店実績表 -->
+<!-- D-1-4 -->
+<!-- 入出庫予定表 -->
 <!DOCTYPE html>
 <html lang="ja">
 <?php include_once 'include/head.php'; ?>
@@ -12,7 +12,7 @@
     <main class="l-wrap__main">
       <!-- パンくず -->
       <ul class="l-wrap__breadcrumb l-breadcrumb">
-        <li class="l-breadcrumb__list">代理店実績表</li>
+        <li class="l-breadcrumb__list">入出庫予定表</li>
       </ul>
 
       <div class="l-container__inner">

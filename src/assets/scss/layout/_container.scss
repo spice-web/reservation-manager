@@ -1,4 +1,4 @@
-@use '../foundation/variables' as *;
+@use "../foundation/variables" as *;
 
 .l-container {
   &__inner {
@@ -16,7 +16,8 @@
     padding: 3.5rem 0;
   }
   &__user-login {
-    max-width: 390px;
+    max-width: 395px;
+    padding: 0 10px;
     margin: 0 auto;
     width: 100%;
     position: absolute;
@@ -38,4 +39,3 @@
     }
   }
 }
-
