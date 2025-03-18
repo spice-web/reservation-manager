@@ -39,3 +39,14 @@
     }
   }
 }
+.c-title-print {
+  &__lv2 {
+    font-size: 1rem;
+    &:not(:first-child) {
+      margin-top: 1rem;
+    }
+  }
+  &__lv3 {
+    font-size: 0.875rem;
+  }
+}

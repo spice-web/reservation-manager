@@ -17,10 +17,21 @@
         <div class="l-container__inner">
 
           <form action="/admin/b-2-1.php" method="POST">
+            <!-- 代理店コード -->
             <div class="p-reserve__wrap">
-              <!-- 代理店コード -->
               <label for="agency_code" class="u-d-none">代理店コード</label>
-              <input type="text" id="agency_code" class="u-w240" name="agency_code" value="0000" />
+              <div class="l-flex--start l-grid--gap1 u-mb1">
+                <input type="text" id="agency_code" class="u-w240 u-mb0" name="agency_code" value="0000" />
+                <button class="c-button--yellow">検索</button>
+              </div>
+
+              <!-- 代理店コードに該当する画像と名前を出力 -->
+              <div class="l-flex--start l-grid--gap1">
+                <figure class="u-w160">
+                  <img src="/images/dummy/dummy_ana_card.png" width="100%" height="auto" alt="ダミー">
+                </figure>
+                <div>テスト代理店名</div>
+              </div>
             </div>
 
             <!-- カレンダー選択 -->
@@ -152,19 +163,19 @@
                 <dt class="c-calendar__heading">時間</dt>
                 <dd>
                   <ul class="p-reserve-selectedTime--detail__wrap">
-                    <li class="c-calendar-available-time">
+                    <li class="c-calendar-available-time__detail">
                       <div class="p-reserve-selectedTime__bg">19:00～</div>
                       <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg" alt=""></div>
                     </li>
-                    <li class="c-calendar-available-time">
+                    <li class="c-calendar-available-time__detail">
                       <div class="p-reserve-selectedTime__bg">19:15～</div>
                       <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg" alt=""></div>
                     </li>
-                    <li class="c-calendar-available-time">
+                    <li class="c-calendar-available-time__detail">
                       <div class="p-reserve-selectedTime__bg">19:30～</div>
                       <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg" alt=""></div>
                     </li>
-                    <li class="c-calendar-available-time">
+                    <li class="c-calendar-available-time__detail">
                       <div class="p-reserve-selectedTime__bg">19:45～</div>
                       <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg" alt=""></div>
                     </li>

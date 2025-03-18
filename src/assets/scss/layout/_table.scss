@@ -612,3 +612,40 @@
     }
   }
 }
+
+// 帳票印刷テーブル
+.l-table-print {
+  border-spacing: 0;
+  border-collapse: separate;
+  // width: 100%;
+  font-size: 0.75rem;
+  // margin-bottom: 2rem;
+  border: 1px solid #b4b4b4;
+  margin-bottom: 1rem;
+  margin-top: 0.25rem;
+  tr:not(:last-child) {
+    td {
+      border-bottom: 1px solid #b4b4b4;
+    }
+  }
+  th {
+    background: $off-white;
+    font-weight: normal;
+    border-bottom: 1px solid #b4b4b4;
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  th,
+  td {
+    // min-width: 50px;
+    padding: 0.5rem;
+    &:not(:last-child) {
+      border-right: 1px solid #b4b4b4;
+    }
+  }
+
+  &__wrap {
+    width: 1040px;
+    overflow-x: auto;
+  }
+}

@@ -153,19 +153,19 @@
           <dt class="c-calendar__heading">時間</dt>
           <dd>
             <ul class="p-reserve-selectedTime--detail__wrap">
-              <li class="c-calendar-available-time">
+              <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">19:00～</div>
                 <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg" alt=""></div>
               </li>
-              <li class="c-calendar-available-time">
+              <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">19:15～</div>
                 <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg" alt=""></div>
               </li>
-              <li class="c-calendar-available-time">
+              <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">19:30～</div>
                 <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg" alt=""></div>
               </li>
-              <li class="c-calendar-available-time">
+              <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">19:45～</div>
                 <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg" alt=""></div>
               </li>

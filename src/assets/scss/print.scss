@@ -1,13 +1,66 @@
-.l-wrap {
-  display: block;
+@media print {
+  .l-wrap {
+    display: block;
+    height: auto;
+  }
+
+  .l-header {
+    display: none;
+  }
+  .l-wrap__nav {
+    display: none;
+  }
+  .l-wrap__main {
+    margin-bottom: 0;
+  }
+  .l-print__none {
+    display: none;
+    height: 0;
+  }
+  .l-container__inner {
+    padding: 0;
+  }
+  .l-print__wrap {
+    overflow-x: visible;
+    width: 100%;
+  }
+  .l-table-print {
+    // word-wrap: break-word;
+    // table-layout: fixed;
+    // width: 100%;
+    max-width: calc(100% - 20mm);
+    th,
+    td {
+      padding: 2mm;
+      white-space: pre-wrap;
+    }
+  }
+  .a4-vertical-print {
+    width: 210mm;
+    height: 297mm;
+    font-size: 8px;
+  }
+
+  .b4-horizontal-print {
+    width: 344mm;
+    height: 237mm;
+  }
+
+  .a3-horizontal-print {
+    width: 400mm;
+    height: 277mm;
+  }
+
+  .a4-horizontal-print {
+    width: 297mm;
+    height: 210mm;
+  }
 }
 
-.l-header {
-  display: none;
-}
-.l-wrap__nav {
-  display: none;
-}
-.l-wrap__main {
-  margin-bottom:0;
+// /* デフォルトの印刷設定 */
+@media print {
+  @page {
+    size: A4 portrait; /* A4縦 */
+    margin: 10mm;
+  }
 }

@@ -54,6 +54,10 @@ a:active {
 a:hover {
   opacity: 0.8;
 }
+.link-noBorder {
+  text-decoration: none;
+}
+
 .link-white {
   color: white !important;
   text-decoration: none;
@@ -62,10 +66,14 @@ a:hover {
   color: #1558d6;
   border-bottom: #1558d6 solid 1px;
 }
-
 .pointer {
   &:hover {
     cursor: pointer;
+  }
+}
+.hover {
+  &:hover {
+    opacity: 0.8;
   }
 }
 
