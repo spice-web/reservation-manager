@@ -13,7 +13,7 @@
       次回から新しいパスワードでログインできます。</p>
     <div class="text-center u-mt2">
       <!-- ログインページへ遷移 -->
-      <a href="" class="c-button--yellow u-horizontal-auto link-white u-w210">ログイン画面に戻る</a>
+      <a href="" class="c-button--yellow u-horizontal-auto link-white u-w210">TOPページに戻る</a>
     </div>
   </main>
 

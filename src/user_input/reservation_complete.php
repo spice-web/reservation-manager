@@ -10,7 +10,9 @@
 
 
   <div class="l-user-input__inner">
-    <p class="text-center u-font--green u-font--36 u-font--bold u-font-lh--2 u-mb4">受付入力は以上です。<br>スタッフへ端末をお返しください。</p>
+    <p class="p-user-input-complete__text u-font--green u-font--bold ">
+      受付入力は以上です。<br>スタッフへ端末を<br class="br--sp">お返しください。
+    </p>
 
     <div class="p-user-input-complete__message u-horizontal-auto ">
       <p class="text-center">お客様の予約コードは 00000 です。</p>

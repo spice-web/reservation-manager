@@ -8,11 +8,12 @@
   <?php include_once 'include/header.php'; ?>
 
   <main class="u-mt4">
-    <div class="c-form__admin--title">パスワード再設定メール送信完了</div>
+    <div class="c-form__admin--title">パスワードを変更しました。</div>
+    <p class="text-center">パスワードの変更が完了しました。<br>
+      次回から新しいパスワードでログインできます。</p>
     <div class="text-center u-mt2">
-      パスワード再設定用のメールを送信いたしました。<br>
-      ご入力いただいたメールアドレス宛に、パスワード再設定用のリンクをお送りしましたので、<br>
-      メールの内容に従って新しいパスワードの設定をお願いいたします。
+      <!-- ログインページへ遷移 -->
+      <a href="" class="c-button--yellow u-horizontal-auto link-white u-w210">ログイン画面に戻る</a>
     </div>
   </main>
 

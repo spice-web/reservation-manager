@@ -39,3 +39,17 @@
 .l-flex--self-end {
   align-self: end;
 }
+
+@media screen and (max-width: 850px) {
+  .l-flex--column--md {
+  }
+}
+@media screen and (max-width: 500px) {
+  .l-flex--column--md {
+    display: flex;
+    flex-direction: column;
+  }
+  .l-flex--items-start--md {
+    align-items: flex-start;
+  }
+}

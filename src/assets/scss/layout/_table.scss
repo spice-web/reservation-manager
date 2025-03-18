@@ -1,4 +1,4 @@
-@use '../foundation/variables' as *;
+@use "../foundation/variables" as *;
 
 // テーブル共通
 .l-table {
@@ -11,7 +11,9 @@
 }
 
 // 一覧系テーブル
-.l-table-list {
+// レジ点検表
+.l-table-list,
+.l-table-register {
   border-radius: 8px;
   letter-spacing: 0.05em;
   border-spacing: 0;
@@ -29,7 +31,7 @@
     }
     th {
       font-size: 11px;
-      padding: .5rem 1rem;
+      padding: 0.5rem 1rem;
       font-weight: normal;
       background: $dark-gray;
       border-top: 1px solid $text-color;
@@ -57,10 +59,9 @@
           border-radius: 0 0 8px 0;
         }
       }
-
     }
     td {
-      padding: .5rem;
+      padding: 0.5rem;
       border-bottom: 1px solid $text-color;
       border-left: 1px solid $text-color;
 
@@ -98,7 +99,8 @@
   }
 }
 
-.l-table-list--master {
+.l-table-list--master,
+.l-table-register {
   tr:nth-child(even) {
     background: $light-gray;
   }
@@ -140,24 +142,25 @@
     background: $green;
   }
 
-  &.--in, &.--out {
-    tr[data-href]:nth-of-type(n+2):hover {
+  &.--in,
+  &.--out {
+    tr[data-href]:nth-of-type(n + 2):hover {
       // background-color: #f0f0f0;
       cursor: pointer;
     }
   }
   &.--in {
-    tr[data-href]:nth-of-type(n+2):hover {
-        >td {
-          background: rgba(210, 248, 245, 1);
-        }
+    tr[data-href]:nth-of-type(n + 2):hover {
+      > td {
+        background: rgba(210, 248, 245, 1);
       }
     }
+  }
   &.--out {
-    tr[data-href]:nth-of-type(n+2):hover {
-      >td {
-          background: rgba(230, 240, 255, 1);
-        }
+    tr[data-href]:nth-of-type(n + 2):hover {
+      > td {
+        background: rgba(230, 240, 255, 1);
+      }
     }
   }
   //   tr[data-href]:nth-of-type(2n) {
@@ -169,8 +172,8 @@
   //   /* 好みの色に変更 */
   // }
   tr {
-    &:nth-child(2n+1) {
-      >td {
+    &:nth-child(2n + 1) {
+      > td {
         background: $light-gray;
       }
     }
@@ -208,26 +211,24 @@
     }
   }
 
-
   th:first-child,
-  td:first-child{
+  td:first-child {
     position: -webkit-sticky;
     position: sticky;
     left: 0;
     border-left: 0.9px solid $text-color;
-    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, .5));
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
   }
 
   &.--sticky-second {
-    th:nth-child(-n+2),
-    td:nth-child(-n+2){
+    th:nth-child(-n + 2),
+    td:nth-child(-n + 2) {
       position: -webkit-sticky;
       position: sticky;
     }
     .process_all {
       width: 43px;
     }
-
 
     th:nth-child(1),
     td:nth-child(1) {
@@ -239,14 +240,13 @@
     td:nth-child(2) {
       left: 54px;
       border-right: 0.9px solid $text-color;
-      filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, .5));
+      filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
     }
     th:nth-child(3),
     td:nth-child(3) {
       border-left: none;
     }
-  } 
-
+  }
 
   th:last-child,
   td:last-child {
@@ -298,7 +298,6 @@
         background: $blue;
       }
     }
-
   }
 }
 
@@ -343,29 +342,31 @@
 // 入力テーブル　// 検索入力テーブル
 .l-table-confirm,
 .l-table-input {
-  border: 1px solid #B4B4B4;
+  border: 1px solid #b4b4b4;
   border-spacing: 0;
   border-collapse: separate;
   width: 100%;
   font-size: 0.875rem;
   margin-bottom: 2rem;
   tr:not(:last-child) {
-    th, td {
-      border-bottom: 1px solid #B4B4B4;
+    th,
+    td {
+      border-bottom: 1px solid #b4b4b4;
     }
   }
   th {
     background: $off-white;
     font-weight: normal;
-    border-right: 1px solid #B4B4B4;
+    border-right: 1px solid #b4b4b4;
     min-width: 100px;
   }
-  th,td {
-    padding: .5rem;
+  th,
+  td {
+    padding: 0.5rem;
   }
   td {
     &:not(:last-child) {
-      border-right: 1px solid #B4B4B4;
+      border-right: 1px solid #b4b4b4;
     }
   }
 }
@@ -396,7 +397,7 @@
     width: 100%;
   }
   input[type="checkbox"] {
-    margin: 0 .5rem;
+    margin: 0 0.5rem;
   }
   select {
     font-size: 0.875rem;
@@ -419,6 +420,10 @@
       background: $gray;
       color: white;
     }
+    th {
+      padding: 0.25rem 0.5rem;
+      white-space: nowrap;
+    }
   }
   &__body {
     text-align: left;
@@ -437,7 +442,7 @@
 
   // 金額合計
   &--second {
-    border-bottom:1px solid $gray;
+    border-bottom: 1px solid $gray;
     padding-bottom: 1rem;
     margin-bottom: 1rem;
     width: 100%;
@@ -454,14 +459,14 @@
 // テーブル上部のアイテム
 .l-table-top {
   &-list {
-      position: absolute;
-      top: -40px;
-      right: 0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 1rem;
-      gap: 1rem;
+    position: absolute;
+    top: -40px;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 1rem;
   }
   &-item {
     border-top-right-radius: 0.5rem;
@@ -505,7 +510,7 @@
       &:first-child {
         th {
           border-top: 1px solid $text-color;
-          background: #888888!important;
+          background: #888888 !important;
           &:first-child {
             border-radius: 8px 0 0 0;
             border-left: 1px solid $text-color;
@@ -521,7 +526,8 @@
         }
       }
       &:last-child {
-        th, td {
+        th,
+        td {
           border-bottom: 1px solid $text-color;
         }
         th {
@@ -541,7 +547,7 @@
       td {
         width: 140px;
         text-align: right;
-        padding: 0 .5rem;
+        padding: 0 0.5rem;
         &:not(:last-child) {
           border-right: 1px solid $gray;
         }
@@ -551,12 +557,95 @@
       }
       &:nth-child(even) {
         th {
-          background: #B4B4B4;
+          background: #b4b4b4;
         }
         td {
-          background-color: #ECECEC;
+          background-color: #ececec;
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .l-table-confirm {
+    border-bottom: none;
+    border-right: none;
+    word-break: break-all;
+    font-size: 12px;
+    tr {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+    th,
+    td {
+      border-bottom: 1px solid #b4b4b4;
+    }
+    td {
+      border-right: 1px solid #b4b4b4;
+    }
+    .--mark {
+      grid-column: 1 / span 2;
+      text-align: center;
+    }
+  }
+
+  .l-table-charge-detail {
+    border-spacing: 0.25rem;
+    font-size: 12px;
+    .--tax {
+      font-size: 10px;
+      white-space: nowrap;
+    }
+    &--second {
+      border-bottom: 0;
+    }
+    &--second__column {
+      grid-template-columns: repeat(2, auto);
+      column-gap: 0;
+      row-gap: 0.5rem;
+      > div {
+        border-bottom: 1px solid #b4b4b4;
+        line-height: 24px;
+        padding-bottom: 0.25rem;
+      }
+    }
+  }
+}
+
+// 帳票印刷テーブル
+.l-table-print {
+  border-spacing: 0;
+  border-collapse: separate;
+  // width: 100%;
+  font-size: 0.75rem;
+  // margin-bottom: 2rem;
+  border: 1px solid #b4b4b4;
+  margin-bottom: 1rem;
+  margin-top: 0.25rem;
+  tr:not(:last-child) {
+    td {
+      border-bottom: 1px solid #b4b4b4;
+    }
+  }
+  th {
+    background: $off-white;
+    font-weight: normal;
+    border-bottom: 1px solid #b4b4b4;
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  th,
+  td {
+    // min-width: 50px;
+    padding: 0.5rem;
+    &:not(:last-child) {
+      border-right: 1px solid #b4b4b4;
+    }
+  }
+
+  &__wrap {
+    width: 1040px;
+    overflow-x: auto;
   }
 }

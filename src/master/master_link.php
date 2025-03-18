@@ -19,7 +19,7 @@
 
       <div class="l-container__inner">
 
-      <!-- 文字数多い場合、レイアウト崩れ修正のためCSSを変更 -->
+      <!-- 文字数多い場合、レイアウト崩れ修正のためクラスを変更 -->
         <div class="l-grid--col5-1fr l-grid--rgap2 l-grid--cgap1 u-font--white">
           <a href="" class="c-button--yellow c-link-no-border">商品カテゴリーマスタ</a>
           <a href="" class="c-button--yellow c-link-no-border">航空会社マスタ</a>

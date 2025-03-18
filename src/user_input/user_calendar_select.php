@@ -22,23 +22,20 @@
 
 
       <!-- カレンダー選択 -->
-      <div class="u-mb6">
+      <div class="p-reserve__wrap">
         <p class="text-center u-mb2 u-font--medium">入庫日を指定してください</p>
-        <div class="l-grid--col2 l-grid--gap2">
-          <div>
-            <div class="c-title__calendar">2021年1月</div>
-            <div id="my-calendar"></div>
-          </div>
-          <div>
-            <div class="c-title__calendar">2024年2月</div>
-          </div>
+        <div>
+          <div class="c-title__calendar c-calendar-reserve">2021年1月</div>
+        </div>
+        <div>
+          <div id="my-calendar"></div>
         </div>
       </div>
 
-      <div class="u-mb6">
+      <div class="p-reserve__wrap">
         <p class="text-center u-mb2 u-font--medium">入庫予定時間を指定してください</p>
         <div class="c-title__calendar u-mb1">2024年2月</div>
-        <div class="l-grid--col3-auto l-grid--gap05 l-grid--start">
+        <div class="u-mb2 l-grid--col2 l-grid--gap1 p-reserve-selectedTime">
           <dl class="c-calendar__wrap">
             <dt class="c-calendar__heading">午前</dt>
             <dd>
@@ -149,44 +146,38 @@
               </ul>
             </dd>
           </dl>
-
-          <!-- 時間 19:00から15分刻みの理由は不明　leftにpadding入れている理由も不明 -->
-          <dl class="c-calendar__wrap u-pl4">
-            <dt class="c-calendar__heading">時間</dt>
-            <dd>
-              <ul class="c-calendar-available-time__wrap">
-                <li class="c-calendar-available-time">
-                  <div>19:00～</div>
-                  <div class="c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg" alt=""></div>
-                </li>
-                <li class="c-calendar-available-time">
-                  <div>19:15～</div>
-                  <div class="c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg" alt=""></div>
-                </li>
-                <li class="c-calendar-available-time">
-                  <div>19:30～</div>
-                  <div class="c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg" alt=""></div>
-                </li>
-                <li class="c-calendar-available-time">
-                  <div>19:45～</div>
-                  <div class="c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg" alt=""></div>
-                </li>
-              </ul>
-            </dd>
-          </dl>
-
         </div>
+
+        <!-- 時間選択 -->
+        <dl class="p-reserve-selectedTime--detail">
+          <dt class="c-calendar__heading">時間</dt>
+          <dd>
+            <ul class="p-reserve-selectedTime--detail__wrap">
+              <li class="c-calendar-available-time__detail">
+                <div class="p-reserve-selectedTime__bg">19:00～</div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg" alt=""></div>
+              </li>
+              <li class="c-calendar-available-time__detail">
+                <div class="p-reserve-selectedTime__bg">19:15～</div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg" alt=""></div>
+              </li>
+              <li class="c-calendar-available-time__detail">
+                <div class="p-reserve-selectedTime__bg">19:30～</div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg" alt=""></div>
+              </li>
+              <li class="c-calendar-available-time__detail">
+                <div class="p-reserve-selectedTime__bg">19:45～</div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg" alt=""></div>
+              </li>
+            </ul>
+          </dd>
+        </dl>
       </div>
 
       <div class="u-mb6">
         <p class="text-center u-mb2  u-font--medium">出庫日を指定してください</p>
-        <div class="l-grid--col2 l-grid--gap2">
-          <div>
-            <div class="c-title__calendar">2021年1月</div>
-          </div>
-          <div>
-            <div class="c-title__calendar">2024年2月</div>
-          </div>
+        <div>
+          <div class="c-title__calendar c-calendar-reserve">2021年1月</div>
         </div>
       </div>
 
@@ -254,50 +245,48 @@
 
   <!-- カレンダーJS　laravelでは削除 -->
   <script src="//unpkg.com/@popperjs/core@2" defer></script>
-	<script src="//unpkg.com/tippy.js@6" defer></script>
-	<script src="//cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.js" defer></script>
+  <script src="//unpkg.com/tippy.js@6" defer></script>
+  <script src="//cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.js" defer></script>
   <script>
+    const events = [{
+        id: "a",
+        start: "2022-02-02",
+        title: "〇",
+      },
+      {
+        id: "b",
+        start: "2022-02-03",
+        title: "×",
+      },
+      {
+        id: "c",
+        start: "2022-02-08",
+        title: "針供養",
+      },
+    ];
 
-const events = [
-	{
-		id: "a",
-		start: "2022-02-02",
-		title: "〇",
-	},
-	{
-		id: "b",
-		start: "2022-02-03",
-		title: "×",
-	},
-	{
-		id: "c",
-		start: "2022-02-08",
-		title: "針供養",
-	},
-];
+    window.onload = (e) => {
 
-window.onload = (e)=>{
-
-	// Calendar
-	const elem = document.getElementById("my-calendar");
-	const calendar = new FullCalendar.Calendar(elem, {
-		initialView: "dayGridMonth",
-		initialDate: "2022-02-13",
-		events: events,
-		dateClick: (e)=>{
-			console.log("dateClick:", e);
-		},
-		eventClick: (e)=>{
-			console.log("eventClick:", e.event.title);
-		},
-		eventDidMount: (e)=>{
-			tippy(e.el, {// Tippy
-				content: e.event.extendedProps.description,
-			});
-		}
-	});
-	calendar.render();
-}
+      // Calendar
+      const elem = document.getElementById("my-calendar");
+      const calendar = new FullCalendar.Calendar(elem, {
+        initialView: "dayGridMonth",
+        initialDate: "2022-02-13",
+        events: events,
+        dateClick: (e) => {
+          console.log("dateClick:", e);
+        },
+        eventClick: (e) => {
+          console.log("eventClick:", e.event.title);
+        },
+        eventDidMount: (e) => {
+          tippy(e.el, { // Tippy
+            content: e.event.extendedProps.description,
+          });
+        }
+      });
+      calendar.render();
+    }
   </script>
 </body>
 

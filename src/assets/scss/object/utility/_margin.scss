@@ -1,4 +1,4 @@
-@use '../../foundation/variables' as *;
+@use "../../foundation/variables" as *;
 
 .u-horizontal-auto {
   margin-left: auto;
@@ -89,4 +89,10 @@ input.u-mb0 {
 }
 .u-mr6 {
   margin-right: 6rem;
+}
+
+@media screen and (max-width: 850px) {
+  .u-mb1--md {
+    margin-bottom: 1rem;
+  }
 }

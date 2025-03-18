@@ -1,0 +1,37 @@
+@use "../foundation/variables" as *;
+@use "../layout/table";
+@use "../object/component/title";
+// color
+:root {
+  --red: #ff0000;
+  --green: #00ff00;
+}
+
+@media screed and (min-width: 850px) {
+}
+// title
+.c-title {
+  &__user {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: $green;
+    padding: 0.5rem 0;
+  }
+}
+// テーブル
+.l-user-table-confirm {
+  @extend .l-table-confirm;
+  border-right: 1px solid #b4b4b4 !important;
+  border-bottom: none;
+  tr {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+  }
+  th,
+  td {
+    border-bottom: 1px solid #b4b4b4;
+  }
+  td {
+    border-right: none !important;
+  }
+}

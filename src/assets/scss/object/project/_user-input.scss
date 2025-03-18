@@ -1,4 +1,4 @@
-@use '../../foundation/variables' as *;
+@use "../../foundation/variables" as *;
 
 .p-user-input {
   &-header {
@@ -35,7 +35,10 @@
     padding-bottom: 5rem;
     &--sm {
       @extend .p-user-input__inner;
-      width: 900px;
+      padding-left: 10px;
+      padding-right: 10px;
+      width: 100%;
+      max-width: 920px;
     }
   }
 }
@@ -65,7 +68,7 @@
     text-align: left;
     margin-bottom: 2rem;
     font-weight: 500;
-  
+
     div:nth-of-type(3n) {
       text-align: right;
     }
@@ -82,7 +85,7 @@
     text-align: center;
     border-bottom: 1px solid $gray;
     position: relative;
-    padding: .5rem;
+    padding: 0.5rem;
   }
   &__detail-close-button {
     position: absolute;
@@ -93,7 +96,7 @@
   &__detail-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: .5rem;
+    row-gap: 0.5rem;
     padding: 1rem;
     border-bottom: 1px solid $gray;
     > div:nth-child(odd) {
@@ -124,7 +127,7 @@
     grid-template-columns: 1fr 250px;
     align-items: end;
     gap: 2rem;
-    margin-bottom: 2rem;  
+    margin-bottom: 2rem;
   }
   &__right {
     max-width: 250px;
@@ -214,6 +217,47 @@
 }
 
 // 完了ページ
+.p-user-input-complete__text {
+  font-size: 32px;
+  text-align: center;
+  line-height: 2;
+  margin-bottom: 4rem;
+}
 .p-user-input-complete__message {
   max-width: 600px;
+}
+
+// メディアクエリ
+@media screen and (max-width: 850px) {
+  .p-user-input {
+    &__inner {
+      width: 100%;
+      max-width: 620px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    &-header {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      margin-bottom: 1rem;
+      height: auto;
+
+      &__info {
+        padding-right: 0;
+      }
+    }
+  }
+  .p-user-input-auto-output__wrap {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  // 受付終了
+  .p-user-input-complete__text {
+    font-size: 20px;
+    // line-height: 1;
+    margin-bottom: 2rem;
+  }
 }
