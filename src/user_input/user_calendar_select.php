@@ -35,7 +35,7 @@
       <div class="p-reserve__wrap">
         <p class="text-center u-mb2 u-font--medium">入庫予定時間を指定してください</p>
         <div class="c-title__calendar u-mb1">2024年2月</div>
-        <div class="u-mb2 l-grid--col2 l-grid--gap1 p-reserve-selectedTime">
+        <div class="u-mb2 p-reserve-selectedTime">
           <dl class="c-calendar__wrap">
             <dt class="c-calendar__heading">午前</dt>
             <dd>
