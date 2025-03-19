@@ -10,6 +10,12 @@
   }
 }
 .p-reserve-selectedTime {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  @media screen and (max-width: 850px) {
+    grid-template-columns: 1fr;
+  }
   &--detail {
     max-width: 240px;
     margin-left: auto;
@@ -23,27 +29,12 @@
   }
   &__bg {
     background-color: $calendar-bg;
+    padding: 0 0.5rem;
   }
 }
 
 // ユーザー用予約ページメディアクエリ
-
 @media (max-width: 768px) {
-  .c-title__calendar {
-    font-size: 1rem;
-    line-height: 50px;
-  }
-  // 時間選択
-  .c-calendar__heading {
-    height: 32px;
-    line-height: 32px;
-  }
-  .c-calendar-available-time {
-    grid-template-columns: 1fr 24px;
-    font-size: 12px;
-    line-height: 32px;
-    height: 32px;
-  }
   // 料金計算
   .p-input-user-total-parking-charges__inner {
     width: 100%;

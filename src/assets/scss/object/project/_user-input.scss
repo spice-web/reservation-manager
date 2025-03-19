@@ -35,8 +35,8 @@
     padding-bottom: 5rem;
     &--sm {
       @extend .p-user-input__inner;
-      padding-left: 10px;
-      padding-right: 10px;
+      padding-left: 32px;
+      padding-right: 32px;
       width: 100%;
       max-width: 920px;
     }
@@ -233,8 +233,8 @@
     &__inner {
       width: 100%;
       max-width: 620px;
-      padding-left: 10px;
-      padding-right: 10px;
+      padding-left: 32px;
+      padding-right: 32px;
     }
 
     &-header {

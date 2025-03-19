@@ -29,16 +29,18 @@
   &__wrap {
     display: grid;
     grid-auto-flow: column;
-    grid-template-rows: repeat(4, auto);
+    grid-template-rows: repeat(6, auto);
     gap: 0.25rem;
   }
-  display: flex;
+  display: grid;
   grid-template-columns: 1fr 45px;
   gap: 0.25rem;
   text-align: center;
   height: 50px;
   line-height: 50px;
   font-size: 1.25rem;
+
+  // 15分刻みの時間詳細
   &__detail {
     display: flex;
     // grid-template-columns: 1fr 45px;
@@ -54,6 +56,26 @@
 // 受付入力1カレンダー
 .c-calendar-reservation__wrap {
   position: relative;
+}
+
+// ユーザー用予約ページメディアクエリ
+@media (max-width: 768px) {
+  .c-title__calendar {
+    font-size: 1rem;
+    line-height: 50px;
+  }
+  // 時間選択
+  .c-calendar__heading {
+    height: 32px;
+    line-height: 32px;
+  }
+  .c-calendar-available-time,
+  .c-calendar-available-time__detail {
+    grid-template-columns: 1fr 24px;
+    font-size: 14px;
+    line-height: 32px;
+    height: 32px;
+  }
 }
 
 .fc {
