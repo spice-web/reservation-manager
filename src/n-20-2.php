@@ -5,7 +5,7 @@
 <?php include_once 'include/head.php'; ?>
 
 <body>
-  <?php include_once 'include/header.php'; ?>
+  <?php include_once 'include/user/header.php'; ?>
 
   <main class="u-mt4">
     <div class="c-form__admin--title">パスワード再設定メール送信完了</div>

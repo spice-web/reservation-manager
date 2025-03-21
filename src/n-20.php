@@ -6,7 +6,7 @@
 <?php include_once 'include/head.php'; ?>
 
 <body>
-  <?php include_once 'include/header.php'; ?>
+  <?php include_once 'include/user/header.php'; ?>
 
   <div class="l-container__admin">
     <div class="c-form__admin--title">パスワードを忘れた場合</div>
@@ -19,8 +19,8 @@
     </form>
     <p class="text-center">上記メールアドレスに再設定用のURLを送信します。</p>
   </div>
-  <div class="text-center u-mt2">
-    <a href="">ログイン画面に戻る</a>
+  <div class="l-flex l-flex--center u-mt2">
+    <a href="" class="c-button--yellow">ログイン画面に戻る</a>
   </div>
 
 </body>

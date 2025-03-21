@@ -43,6 +43,9 @@
 @media screen and (max-width: 850px) {
   .l-flex--column--md {
   }
+  .l-flex--center--md {
+    justify-content: center;
+  }
 }
 @media screen and (max-width: 500px) {
   .l-flex--column--md {

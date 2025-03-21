@@ -442,17 +442,16 @@
 
   // 金額合計
   &--second {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    column-gap: 1rem;
+    row-gap: 0.25rem;
+    align-items: center;
     border-bottom: 1px solid $gray;
     padding-bottom: 1rem;
     margin-bottom: 1rem;
-    width: 100%;
-    &__column {
-      display: grid;
-      grid-template-columns: 1fr auto auto auto;
-      column-gap: 1rem;
-      text-align: right;
-      align-items: center;
-    }
+    text-align: right;
   }
 }
 
@@ -596,19 +595,6 @@
     .--tax {
       font-size: 10px;
       white-space: nowrap;
-    }
-    &--second {
-      border-bottom: 0;
-    }
-    &--second__column {
-      grid-template-columns: repeat(2, auto);
-      column-gap: 0;
-      row-gap: 0.5rem;
-      > div {
-        border-bottom: 1px solid #b4b4b4;
-        line-height: 24px;
-        padding-bottom: 0.25rem;
-      }
     }
   }
 }

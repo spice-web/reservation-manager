@@ -29,6 +29,10 @@
   display: grid;
   align-items: center;
   height: 40px;
+  text-decoration: none;
+  &:hover {
+    opacity: 0.8;
+  }
   &__submit {
     @extend .c-button;
     width: 160px;
@@ -857,4 +861,29 @@ label.c-button-optionSelect__radioLabel {
 // color
 .--gray {
   background: #888888;
+}
+
+// ユーザーページ用ボタン
+.c-button-user {
+  color: white;
+  line-height: 32px;
+  text-align: center;
+  text-decoration: none;
+  width: 130px;
+  border-radius: 4px;
+  background: $light-green;
+  font-size: 0.875rem;
+  &__footer {
+    @extend .c-button-user;
+    width: 150px;
+
+    &--access {
+      @extend .c-button-user__footer;
+      background: #4962ad;
+    }
+    &--contact {
+      @extend .c-button-user__footer;
+      background: #c6474f;
+    }
+  }
 }

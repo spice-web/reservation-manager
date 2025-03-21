@@ -1,5 +1,5 @@
 <!-- N-14 -->
-<!-- 顧客詳細画面 -->
+<!-- 顧客情報詳細 -->
 
 <!DOCTYPE html>
 <html lang="ja">
@@ -8,7 +8,7 @@
   <!-- head内の違いは /css/user/style.css のみ -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>顧客情報編集</title>
+  <title>顧客情報詳細</title>
   <!-- description -->
   <meta name="description" content="" />
   <!-- favicon -->
@@ -28,11 +28,13 @@
 </head>
 
 <body>
-  <!-- パンくず -->
-  <div>
-    <a href="">マイページ</a>> 顧客情報
-  </div>
-  <div class="p-user-input__inner--sm">
+  <?php include_once('../include/user/header.php'); ?>
+  <div class="p-user-input__inner">
+    <!-- パンくず -->
+    <ul class="p-user-breadcrumb">
+      <li class="p-user-breadcrumb__list"><a href="">マイページ</a></li>
+      <li class="p-user-breadcrumb__list">顧客情報詳細</li>
+    </ul>
     <!-- 顧客情報 -->
     <div class="c-title__user">顧客情報</div>
     <table class="l-user-table-confirm">
@@ -66,7 +68,7 @@
     </table>
     <!-- 顧客情報編集ページへのリンク -->
     <div class="l-flex--center u-mt2 u-mb3">
-      <a href="" class="c-button__submit">編集</a>
+      <a href="n-15.php" class="c-button__submit">編集</a>
     </div>
 
     <!-- 車両情報 -->
@@ -96,8 +98,9 @@
       </tr>
     </table>
     <!-- 車両情報編集ページへのリンク -->
-    <div class="l-flex--center u-mt2">
-      <a href="" class="c-button__submit">編集</a>
+    <div class="l-flex--column l-grid--rgap1 l-flex--center u-mt2">
+      <a href="n-15-2.php" class="c-button__submit">編集</a>
+      <a href="/user/dashboard.php" class="c-button__submit">マイページに戻る</a>
     </div>
 
   </div><!-- ./p-user-input__inner -->
