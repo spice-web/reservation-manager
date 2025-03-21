@@ -28,9 +28,13 @@
 </head>
 
 <body>
-  <!-- パンくず -->
-  <div></div>
+  <?php include_once '../include/user/header.php'; ?>
   <div class="p-user-input__inner--sm">
+    <!-- パンくず -->
+    <ul class="p-user-breadcrumb">
+      <li class="p-user-breadcrumb__list"><a href="/user/dashboard.php">マイページ</a></li>
+      <li class="p-user-breadcrumb__list">車両情報編集</li>
+    </ul>
     <h2 class="c-title__table">車両情報</h2>
     <form action="" method="POST">
       <div class="l-flex l-grid--cgap1 l-flex--column--md l-flex--items-start--md">

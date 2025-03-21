@@ -25,27 +25,124 @@
 </head>
 
 <body>
-  <header class="l-wrap__header l-header">
-    <!-- logo -->
-    <div class="l-header-logo">
-      <div class="l-header-logo__inner">
-        <img src="/images/svg/logo.svg" width="100%" alt="logo">
-        <p class="u-font--medium u-font--14">ダミーパーキング成田店</p>
-      </div>
-    </div>
-  </header>
-  <div class="l-wrap">
-    <main class="l-wrap__main">
-      <div class="l-container__inner">
+  <?php include_once('../include/user/header.php'); ?>
+  <main class="p-user__inner">
+    <div class="p-user__container">
+      <div class="">
+        <h2 class="c-title__user--lv2">マイページ</h2>
+        <div class="p-user-head__wrap">
+          <a href="" class="p-user-head__item--reserve">新規予約はこちら</a>
+          <a href="" class="p-user-head__item--access">駐車場へのアクセス</a>
+          <a href="" class="p-user-head__item--contact">お問い合わせ</a>
+        </div>
+
+        <h2 class="c-title__user--lv2">予約情報</h2>
+        <div class="p-user-top__tab">
+          <button id="buttonOne" class="p-user-top__tab-item is-active">予約一覧</button>
+          <button id="buttonTwo" class="p-user-top__tab-item">過去の予約</button>
+        </div>
+        <div class="l-user__content p-user-top__tab-inner contentOne is-active">
+          <!-- 予約一覧のコンテンツ -->
+          <div>
+            <div class="l-user-reserve__wrap">
+              <a href="/user/n-13.php" class="l-user-reserve__item"><!-- 各々の予約情報詳細（N-13） -->
+                <div class="l-user-reserve__label">予約コード:01234567898</div>
+                <div class="l-user-reserve__date">
+                  <div>入庫日時</div>
+                  <div>2025年2月1日</div>
+                </div>
+                <div class="l-user-reserve__date">
+                  <div>出庫予定日</div>
+                  <div>2025年2月1日</div>
+                </div>
+              </a>
+              <div class="l-user-reserve__button u-font--white l-flex--column l-grid--gap05">
+                <a href="/user/change.php" class="c-button-user">予約内容の変更</a>
+                <a href="/user/cancel.php" class="c-button-user">予約のキャンセル</a>
+              </div>
+            </div>
+            <div class="l-user-reserve__wrap">
+              <a href="/user/n-13.php" class="l-user-reserve__item"><!-- 各々の予約情報詳細（N-13） -->
+                <div class="l-user-reserve__label">予約コード:01234567898</div>
+                <div class="l-user-reserve__date">
+                  <div>入庫日時</div>
+                  <div>2025年2月1日</div>
+                </div>
+                <div class="l-user-reserve__date">
+                  <div>出庫予定日</div>
+                  <div>2025年2月1日</div>
+                </div>
+              </a>
+              <div class="l-user-reserve__button u-font--white l-flex--column l-grid--gap05">
+                <a href="/user/change.php" class="c-button-user">予約内容の変更</a>
+                <a href="/user/cancel.php" class="c-button-user">予約のキャンセル</a>
+              </div>
+            </div>
+          </div>
+          <!-- ページャー -->
+          <div class="l-user-pager">
+            <a class="l-user-pager__item --current">1</a>
+            <a href="/" class="l-user-pager__item">2</a>
+            <a href="/" class="l-user-pager__item">3</a>
+            <a href="/" class="l-user-pager__item">4</a>
+            <a href="/" class="l-user-pager__item">5</a>
+          </div>
+        </div>
+
+        <div class="l-user__content p-user-top__tab-inner contentTwo is-none">
+          <!-- 過去の予約のコンテンツ -->
+          <div>
+            <div class="l-user-reserve__wrap--old">
+              <a href="/user/n-13.php" class="l-user-reserve__item"><!-- 各々の予約情報詳細（N-13） -->
+                <div class="l-user-reserve__label">予約コード:01234567898</div>
+                <div class="l-user-reserve__date">
+                  <div>入庫日時</div>
+                  <div>2025年2月1日</div>
+                </div>
+                <div class="l-user-reserve__date">
+                  <div>出庫日</div>
+                  <div>2025年2月1日</div>
+                </div>
+              </a>
+            </div>
+            <div class="l-user-reserve__wrap--old">
+              <a href="/user/n-13.php" class="l-user-reserve__item"><!-- 各々の予約情報詳細（N-13） -->
+                <div class="l-user-reserve__label">予約コード:01234567898</div>
+                <div class="l-user-reserve__date">
+                  <div>入庫日時</div>
+                  <div>2025年2月1日</div>
+                </div>
+                <div class="l-user-reserve__date">
+                  <div>出庫日</div>
+                  <div>2025年2月1日</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- ページャー -->
+          <div class="l-user-pager">
+            <a class="l-user-pager__item --current">1</a>
+            <a href="/" class="l-user-pager__item">2</a>
+            <a href="/" class="l-user-pager__item">3</a>
+            <a href="/" class="l-user-pager__item">4</a>
+            <a href="/" class="l-user-pager__item">5</a>
+          </div>
+        </div>
+
+        <!-- 顧客情報　start -->
+        <h2 class="c-title__user--lv2">顧客情報</h2>
+        <div class="l-user__content">
+          <a href="/user/n-14.php">顧客情報詳細（N-14）</a>
+          <a href="/user/n-13.php">予約情報詳細（N-13）</a>
+        </div>
 
       </div>
-    </main>
-    <footer class="l-footer">
-      <div class="l-container__inner">
-        <p class="l-footer__copy u-font--white">© 2021 All rights reserved.</p>
-      </div>
-    </footer>
-  </div>
+    </div>
+  </main>
+
+  <?php include_once('../include/user/footer.php'); ?>
+
+  <script src="../js/toggle_display.js"></script>
 </body>
 
 </html>

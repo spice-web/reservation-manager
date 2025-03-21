@@ -1,0 +1,41 @@
+@use "../foundation/variables" as *;
+
+.l-footer-user {
+  padding: 2rem;
+  color: $text-color;
+  background-color: $light-green;
+  text-align: center;
+  &__inner {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  &__logo {
+    width: 100%;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__copy {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  @media screen and (min-width: 851px) {
+    text-align: left;
+    &__inner {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &__logo {
+      margin-left: 0;
+      margin-right: auto;
+    }
+  }
+}

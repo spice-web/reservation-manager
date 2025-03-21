@@ -19,8 +19,6 @@
         <label for="agency_code" class="u-d-none">代理店コード</label>
         <input type="text" id="agency_code" class="u-w-full-wide" name="agency_code" value="0000" />
       </div>
-
-
       <!-- カレンダー選択 -->
       <div class="p-reserve__wrap">
         <p class="text-center u-mb2 u-font--medium">入庫日を指定してください</p>

@@ -11,7 +11,7 @@
 <?php include_once 'include/head.php'; ?>
 
 <body>
-  <?php include_once 'include/header.php'; ?>
+  <?php include_once 'include/user/header.php'; ?>
 
   <div class="l-container__admin">
     <div class="c-form__admin--title">パスワードリセット</div>
