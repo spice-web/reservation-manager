@@ -32,7 +32,7 @@
   <div class="p-user-input__inner--sm">
     <!-- パンくず -->
     <ul class="p-user-breadcrumb">
-      <li class="p-user-breadcrumb__list"><a href="">マイページ</a></li>
+      <li class="p-user-breadcrumb__list"><a href="/user/n-5.php">マイページ</a></li>
       <li class="p-user-breadcrumb__list">顧客情報編集</li>
     </ul>
     <h2 class="c-title__user">顧客情報</h2>
@@ -60,11 +60,14 @@
       <label for="email-confirm">メールアドレス※（確認用）</label>
       <input type="email" id="email-confirm" name="email-confirm" class="u-w-half u-w-full-wide--md">
       <!-- ボタン　サブミット -->
-      <div class="l-flex--center u-mt3">
+      <div class="l-flex--column l-grid--rgap1 l-flex--center u-mt2">
         <button type="submit" class="c-button__submit">更新</button>
+        <a href="/user/n-14.php" class="c-button__submit">戻る</a>
       </div>
     </form>
   </div><!-- ./p-user-input__inner -->
+
+  <?php include('../include/user/footer.php'); ?>
 </body>
 
 </html>

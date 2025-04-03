@@ -1,39 +1,38 @@
 // color
-$text-color: #3C3C3C;
+$text-color: #3c3c3c;
 
-$off-white: #FBFBFB;
+$off-white: #fbfbfb;
 
-$green: #31B6A2;
+$green: #31b6a2;
 
-$light-green: #A7DFD7;
+$light-green: #a7dfd7;
 
-$yellow: #FAA03C;
-$light-yellow: #FEE8D0;
+$yellow: #faa03c;
+$light-yellow: #fee8d0;
 
-$blue: #4472C4;
+$blue: #4472c4;
 
-$gray: #B4B4B4;       // サイドバーのボーダー色 モーダルのヘッドBG色
-$light-gray: #ECECEC; // サイドバーのBG色 ipnutのBG色
-$dark-gray: #7F7F7F;  // ラベル(入庫済)のBG色
-$deep-gray: #666666;  // ラベル(有)のBG色
+$gray: #b4b4b4; // サイドバーのボーダー色 モーダルのヘッドBG色
+$light-gray: #ececec; // サイドバーのBG色 ipnutのBG色
+$dark-gray: #7f7f7f; // ラベル(入庫済)のBG色
+$deep-gray: #666666; // ラベル(有)のBG色
 $light-deep-gray: #888888; // ラベル(無)のBG色
-
-$light-gray2: #BEBEBE;
+$light-gray2: #bebebe;
 
 // $orange: #ff6d00;
 
 // $red: #FF0000;
-$red: #C1272D;
-$blue: #4696DC;
+$red: #c1272d;
+$blue: #4696dc;
 
 // 予約
-$reserved-red: #E50012;
-$available-green: #24A12C;
-$some-available-orange: #F7931E;
-$calendar-bg: #EAEAEA;
+$reserved-red: #e50012;
+$available-green: #24a12c;
+$some-available-orange: #f7931e;
+$calendar-bg: #eaeaea;
 
 :root {
   --gap-s: 12px;
-  --caution-color: #FF0000;
-  --note-color: #FF0000;
+  --caution-color: #ff0000;
+  --note-color: #ff0000;
 }

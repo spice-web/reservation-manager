@@ -123,8 +123,8 @@
           <div class="l-modal__head">決済画面</div>
           <div id="modal_close" class="l-modal__close">×</div>
 
-          <form action="" method="POST">
-            <div class="l-modal__content p-register">
+          <form action="" method="POST" class="l-modal__content p-register"><!-- クラス追加 -->
+            <div><!-- クラス削除 -->
               <p class="text-center u-mb1">やまだたろう 様</p>
               <div class="p-register__settlement">
 

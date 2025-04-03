@@ -1,4 +1,4 @@
-@use '../../foundation/variables' as *;
+@use "../../foundation/variables" as *;
 
 // ヘッダー
 .c-label-header-admin-info {
@@ -38,6 +38,7 @@
     @extend .c-label;
     font-size: 0.875rem;
     padding: 5px 1rem;
+    background-color: #d24045;
   }
   &__light-deep-gray {
     // ラベル(入庫済)のBG色
@@ -48,11 +49,13 @@
       background-color: $light-deep-gray;
     }
   }
-  &__dark-gray { // ラベル(入庫済)のBG色
+  &__dark-gray {
+    // ラベル(入庫済)のBG色
     @extend .c-label;
     background-color: $dark-gray;
   }
-  &__deep-gray { // ラベル(有)のBG色
+  &__deep-gray {
+    // ラベル(有)のBG色
     @extend .c-label;
     background-color: $deep-gray;
     &.--status-yes {

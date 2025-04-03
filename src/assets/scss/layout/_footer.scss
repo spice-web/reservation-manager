@@ -5,6 +5,7 @@
   color: $text-color;
   background-color: $light-green;
   text-align: center;
+  position: relative;
   &__inner {
     max-width: 1024px;
     margin-left: auto;
@@ -38,4 +39,34 @@
       margin-right: auto;
     }
   }
+}
+
+.c-button__button {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  line-height: 20px;
+  z-index: 999;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.c-button__button:hover {
+  background-color: #555;
+}
+
+/* フッターエリアに入ったら右上に固定 */
+.c-button__button.in-footer {
+  position: absolute;
+  top: -20px;
+  right: 10px;
+  bottom: auto;
 }

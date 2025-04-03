@@ -129,22 +129,23 @@
 
 // ユーザーマイページ
 .l-header-user {
-  @extend .l-header;
-  margin-bottom: 1rem;
-  &-logo {
-    @extend .l-header-logo;
-    &__inner {
-      @extend .l-header-logo__inner;
-      @media screen and (max-width: 768px) {
-        display: flex;
-        flex-direction: column;
-        // gap: 0.5rem;
-        justify-content: center;
-        height: 80px;
-        img {
-          width: 275px;
-        }
-      }
-    }
+  background: $light-green;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  justify-content: center;
+  height: 75px;
+  align-items: center;
+  padding: 0 1.5rem;
+  margin-bottom: 2rem;
+  img {
+    width: 187px;
+  }
+
+  @media screen and (min-width: 850px) {
+    gap: 1rem;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 2.5rem;
   }
 }

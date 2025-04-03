@@ -1,4 +1,4 @@
-@use '../../foundation/variables' as *;
+@use "../../foundation/variables" as *;
 
 .p-register {
   &__optionWrap {
@@ -23,7 +23,7 @@
       align-items: center;
       gap: 0.5rem;
 
-      >div:last-child {
+      > div:last-child {
         text-align: right;
       }
     }
@@ -44,7 +44,6 @@
   }
 }
 
-
 // 決済モーダル
 .p-register {
   &__settlement {
@@ -52,19 +51,22 @@
       display: grid;
       grid-template-columns: 300px 1fr;
       gap: 2rem;
-    // grid-template-columns: auto 1fr;
-    // grid-template-rows: auto 130px;
+      // grid-template-columns: auto 1fr;
+      // grid-template-rows: auto 130px;
+      width: 85%;
+      margin-left: auto;
+      margin-right: auto;
     }
 
-
     &--foot {
-      grid-area: foot;
+      // grid-area: foot;
       background-color: $light-gray;
-      height: 15%;
-      display: grid;
+      // height: 15%;
+      // display: grid;
+      // align-items: center;
       border-bottom-right-radius: 2rem;
       border-bottom-left-radius: 2rem;
-      align-items: center;
+      padding: 1rem 0;
     }
   }
 
@@ -74,10 +76,10 @@
     flex-direction: column;
     gap: 1.25rem;
     font-size: 2rem;
-     label {
+    label {
       border-radius: 0;
       border: none;
-     }
+    }
   }
 }
 
@@ -86,7 +88,7 @@
   grid-template-columns: repeat(3, 100px);
   gap: 0.125rem;
 
-  >* {
+  > * {
     background-color: $light-gray;
     display: grid;
     align-items: center;
@@ -117,9 +119,9 @@
   &__paymentMethod {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: .5rem;
+    gap: 0.5rem;
     margin-top: 1rem;
-    font-size: .875rem;
+    font-size: 0.875rem;
     font-weight: 500;
     margin-bottom: 2rem;
 
@@ -130,7 +132,7 @@
     select {
       background-color: $light-gray;
       border: none;
-      font-size: .875rem;
+      font-size: 0.875rem;
       font-weight: 500;
     }
   }
@@ -158,8 +160,8 @@
     font-size: 1.5rem;
     text-align: right;
     .p-register-checkout__amount-received & {
-        font-size: 1.75rem;
-      }
+      font-size: 1.75rem;
+    }
     &--big {
       text-align: right;
       font-weight: 500;
@@ -176,6 +178,6 @@
 }
 
 [class^="p-register-checkout__total-"] {
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
   border-bottom: 1px solid $gray;
 }
