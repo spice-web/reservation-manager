@@ -26,26 +26,27 @@
 }
 
 .c-calendar-available-time {
-  &__wrap {
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-rows: repeat(6, auto);
-    gap: 0.25rem;
-  }
-  display: grid;
-  grid-template-columns: 1fr 45px;
-  gap: 0.25rem;
-  text-align: center;
-  height: 50px;
-  line-height: 50px;
-  font-size: 1.25rem;
+  // &__wrap {
+  //   display: grid;
+  //   grid-auto-flow: column;
+  //   grid-template-rows: repeat(6, auto);
+  //   gap: 0.25rem;
+  // }
+  // display: grid;
+  // grid-template-columns: 1fr 45px;
+  // gap: 0.25rem;
+  // text-align: center;
+  // height: 50px;
+  // line-height: 50px;
+  // font-size: 1.25rem;
 
   // 15分刻みの時間詳細
   &__detail {
-    display: flex;
-    // grid-template-columns: 1fr 45px;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    // justify-content: center;
     gap: 0.25rem;
+    margin-bottom: 0.25rem;
     text-align: center;
     height: 50px;
     line-height: 50px;
@@ -71,7 +72,7 @@
   }
   .c-calendar-available-time,
   .c-calendar-available-time__detail {
-    grid-template-columns: 1fr 24px;
+    grid-template-columns: 1fr 50px;
     font-size: 14px;
     line-height: 32px;
     height: 32px;
