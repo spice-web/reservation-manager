@@ -42,6 +42,7 @@
 
 @media screen and (max-width: 850px) {
   .l-flex--column--md {
+    flex-direction: column;
   }
   .l-flex--center--md {
     justify-content: center;

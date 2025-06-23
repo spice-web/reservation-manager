@@ -40,7 +40,7 @@
     <!-- パスワード変更 -->
     <div class="l-container__admin">
       <div class="c-form__admin--title">パスワード再設定</div>
-      <form action="" method="POST" class="c-form__admin">
+      <form action="n-21.php" method="POST" class="c-form__admin">
         <div>
           <label for="password">新しいパスワードを入力してください</label>
           <input type="text" name="password" class="c-input__admin" />
@@ -49,15 +49,12 @@
         </div>
         <input type="submit" value="更新" class="c-button__submit u-horizontal-auto" />
       </form>
+      <a href="/user/n-5.php" class="c-button__submit u-w170 u-horizontal-auto">マイページに戻る</a>
     </div>
-
-    <div class="l-flex--center u-mt3">
-      <a href="/user/dashboard.php" class="c-button__submit u-w170">マイページに戻る</a>
-    </div>
-
-
 
   </div><!-- ./p-user-input__inner -->
+  <?php include('../include/user/footer.php'); ?>
+
 </body>
 
 </html>

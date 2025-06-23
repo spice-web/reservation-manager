@@ -32,9 +32,12 @@
   <div class="p-user-input__inner u-mt4">
     <div class="c-form__admin--title">パスワードを変更しました。</div>
     <div class="l-flex--center u-mt3">
-      <a href="/user/dashboard.php" class="c-button__submit u-w170">マイページに戻る</a>
+      <a href="/user/n-5.php" class="c-button__submit u-w170">マイページに戻る</a>
     </div>
   </div><!-- ./p-user-input__inner -->
+
+  <?php include('../include/user/footer.php'); ?>
+
 </body>
 
 </html>

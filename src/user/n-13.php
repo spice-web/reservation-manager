@@ -32,21 +32,31 @@
   <div class="p-user-input__inner">
     <!-- パンくず -->
     <ul class="p-user-breadcrumb">
-      <li class="p-user-breadcrumb__list"><a href="">マイページ</a></li>
+      <li class="p-user-breadcrumb__list"><a href="/user/n-5.php">マイページ</a></li>
       <li class="p-user-breadcrumb__list">予約情報詳細</li>
     </ul>
+
+    <!-- QRコード -->
+    <!-- 過去の予約の場合、非表示 -->
+    <div class="l-flex--column">
+      <div class="c-title__user">予約QR</div>
+      <div class="l-flex--column l-flex--start l-flex--item-start l-grid--gap05 u-mb2 u-w140">
+        <img src="../images/dummy/dummy_qr.jpg" width="100%" height="auto" alt="">
+        <div class="u-font--white u-horizontal-auto u-w80">
+          <a href="/user/n-5.php" class="c-button--sm--text-color link-noBorder">戻る</a>
+        </div>
+      </div>
+    </div>
+    <!-- 過去の予約の場合、非表示 -->
+
     <!-- 予約情報 -->
     <div class="c-title__user">予約情報</div>
     <table class="l-user-table-confirm">
       <tr>
-        <th>予約コード</th>
-        <td>1234567890</td>
-        <th>受付コード</th>
+        <th>取引コード</th>
         <td>1234567890</td>
         <th>予約日時</th>
         <td>2024/1/15(月)20:12</td>
-        <th>予約経路</th>
-        <td>公式HP</td>
       </tr>
       <tr>
         <th>入庫日時</th>
@@ -82,12 +92,9 @@
         <td>111-0000</td>
         <th>電話番号</th>
         <td>090-1234-5678</td>
-        <!-- 以下2つは桁数次第ではレイアウトが崩れる分けてもよいかも -->
         <th>Mail</th>
         <td>testaaatestaaaatestaaatest@test.jp</td>
-        <th>LINE ID</th>
-        <td>sun123</td>
-        <th>領収書のあて名</th>
+        <th>領収書の宛名</th>
         <td>ダミーテキストダミーテキストダミーテキスト株式会社</td>
       </tr>
     </table>
@@ -115,6 +122,8 @@
         <td>NRT</td>
         <th>到着ターミナル</th>
         <td>2</td>
+        <th>人数</th>
+        <td>3名</td>
         <th></th><!-- レイアウトを合わせるため空 -->
         <td>
           <span class="c-label--lg">到着日とお迎え日が異なる</span>
@@ -126,8 +135,10 @@
     <div class="c-title__table">車両情報</div>
     <table class="l-user-table-confirm">
       <tr>
-        <th>メーカー</th>
+        <th>車両コード</th>
         <td>1234567890</td>
+        <th>メーカー</th>
+        <td>BMW</td>
         <th>車種</th>
         <td>BMW5</td>
         <th>車番</th>
@@ -138,14 +149,6 @@
       <tr>
         <th>区分</th>
         <td>普通</td>
-        <th>人数</th>
-        <td>3名</td>
-        <th>車両取扱</th>
-        <td colspan="3">MT車</td>
-      </tr>
-      <tr>
-        <th>備考</th>
-        <td>文字が長い場合があるので独立行にした</td>
       </tr>
     </table>
 
@@ -204,14 +207,16 @@
 
     <!-- 各ボタン -->
     <div class="l-flex--column l-grid--rgap1 l-flex--center u-mt2">
-      <a href="change.php" class="c-button__submit">変更</a>
-      <a href="cancel.php" class="c-button__submit">キャンセル</a>
-      <a href="/user/dashboard.php" class="c-button__submit">マイページに戻る</a>
+      <!-- 下二つ（変更・キャンセル）は過去の予約の場合非表示 -->
+      <a href="change.php" class="c-button--yellow u-w170">フライト情報変更</a>
+      <a href="cancel.php" class="c-button--yellow u-w170">キャンセル</a>
+      <a href="/user/dashboard.php" class="c-button--yellow u-w170">マイページに戻る</a>
     </div>
 
-
-
   </div><!-- ./p-user-input__inner -->
+
+  <?php include('../include/user/footer.php'); ?>
+
 </body>
 
 </html>

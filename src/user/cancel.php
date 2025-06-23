@@ -42,14 +42,10 @@
     <div class="c-title__user">予約情報</div>
     <table class="l-user-table-confirm">
       <tr>
-        <th>予約コード</th>
-        <td>1234567890</td>
-        <th>受付コード</th>
+        <th>取引コード</th>
         <td>1234567890</td>
         <th>予約日時</th>
         <td>2024/1/15(月)20:12</td>
-        <th>予約経路</th>
-        <td>公式HP</td>
       </tr>
       <tr>
         <th>入庫日時</th>
@@ -85,15 +81,16 @@
         <td>111-0000</td>
         <th>電話番号</th>
         <td>090-1234-5678</td>
-        <!-- 以下2つは桁数次第ではレイアウトが崩れる分けてもよいかも -->
         <th>Mail</th>
         <td>testaaatestaaaatestaaatest@test.jp</td>
-        <th>LINE ID</th>
-        <td>sun123</td>
-        <th>領収書のあて名</th>
+        <th>領収書の宛名</th>
         <td>ダミーテキストダミーテキストダミーテキスト株式会社</td>
       </tr>
     </table>
+
+    <div>備考</div>
+    <textarea name="" id="" rows="4" class="u-w-full-wide u-max-350" disabled>ダミーテキストダミーテキストダミーテキスト</textarea>
+
     <!-- 到着予定 -->
     <div class="c-title__table">到着予定</div>
     <table class="l-user-table-confirm">
@@ -101,7 +98,7 @@
         <th>到着予定日</th>
         <td>2024/2/5(月)</td>
         <th>到着予定時間</th>
-        <td>16：45</td>
+        <td>16:45</td>
         <th>到着便</th>
         <td>NH205</td>
         <th>航空会社</th>
@@ -114,9 +111,10 @@
         <td>NRT</td>
         <th>到着ターミナル</th>
         <td>2</td>
-        <th></th><!-- レイアウトを合わせるため空 -->
-        <td>
-          <span class="c-label--lg">到着日とお迎え日が異なる</span>
+        <th>人数</th>
+        <td>3名</td>
+        <td class="--label"><!-- この項目のみspan->2 -->
+          <div class="c-label--lg">到着日とお迎え日が異なる</div>
         </td>
       </tr>
     </table>
@@ -125,8 +123,10 @@
     <div class="c-title__table">車両情報</div>
     <table class="l-user-table-confirm">
       <tr>
-        <th>メーカー</th>
+        <th>車両コード</th>
         <td>1234567890</td>
+        <th>メーカー</th>
+        <td>BMW</td>
         <th>車種</th>
         <td>BMW5</td>
         <th>車番</th>
@@ -137,14 +137,6 @@
       <tr>
         <th>区分</th>
         <td>普通</td>
-        <th>人数</th>
-        <td>3名</td>
-        <th>車両取扱</th>
-        <td colspan="3">MT車</td>
-      </tr>
-      <tr>
-        <th>備考</th>
-        <td>文字が長い場合があるので独立行にした</td>
       </tr>
     </table>
 
@@ -186,24 +178,28 @@
     </table>
 
     <div class="l-table-charge-detail--second">
-      <div class="l-table-charge-detail--second__column">
-        <div>消費税8%</div>
-        <div>0円</div>
-        <div>消費税10%</div>
-        <div>750円</div>
-        <div colspan="2" class="text-right">合計金額</div>
-        <div class="u-font--lg u-font--medium">11,300<span class="u-font--18">円</span><span class="u-font--normal">（税抜）</span></div>
-        <div class="u-font--lg u-font--medium l-grid--colspan2">12,500<span class="u-font--18">円</span><span class="u-font--normal">（税込）</div>
-      </div>
+      <div>消費税8%</div>
+      <div>0円</div>
+      <div></div>
+      <div>消費税10%</div>
+      <div>750円</div>
+      <div></div>
+      <div colspan="2" class="text-right">合計金額</div>
+      <div class="u-font--lg u-font--medium">11,300<span class="u-font--18">円</span></div>
+      <div class="u-font--normal">（税抜）</div>
+      <div class="u-font--lg u-font--medium l-grid--colspan2">12,500<span class="u-font--18">円</span></div>
+      <div class="u-font--normal">（税込）</div>
     </div>
     <!-- 料金明細 fin -->
 
     <div class="l-flex--column l-grid--rgap1 l-flex--center u-mt2">
-      <a href="/user/n-21.php" class="c-button__submit">予約キャンセル</a>
-      <a href="/user/dashboard.php" class="c-button__submit">マイページに戻る</a>
+      <button class="c-button__submit">予約キャンセル</button><!-- アラート表示させるという指示を受けています -->
+      <a href="/user/n-5.php" class="c-button__submit">マイページに戻る</a>
     </div>
 
   </div><!-- ./p-user-input__inner -->
+  <?php include('../include/user/footer.php'); ?>
+
 </body>
 
 </html>

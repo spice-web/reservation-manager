@@ -10,10 +10,14 @@
   &__admin {
     max-width: 600px;
     width: 100%;
-    border: 1px solid $dark-gray;
     border-radius: 1.5rem;
-    margin: 7rem auto 0;
-    padding: 3.5rem 0;
+    padding: 2rem 0 0;
+
+    @media screen and (min-width: 850px) {
+      border: 1px solid $dark-gray;
+      margin: 7rem auto 0;
+      padding: 3.5rem 0;
+    }
   }
   &__user-login {
     max-width: 395px;

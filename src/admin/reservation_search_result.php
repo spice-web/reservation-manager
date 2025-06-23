@@ -56,6 +56,7 @@
                   <label for="all">すべて<br>選択</label>
                 </div>
               </th>
+              <th>詳細</th><!-- 2番目に移動 -->
               <th class="c-button-sort --active --desc test">予約コード</th>
               <th>予約日時</th>
               <th>予約経路</th>
@@ -67,7 +68,23 @@
               <th>お客様氏名</th>
               <th>ふりがな</th>
               <th>利用回数</th>
-              <th>詳細</th>
+            </tr>
+            <tr>
+              <td class="l-table__checkbox">
+                <input type="checkbox" name="select" value="1">
+              </td>
+              <td><a href="/admin/reservation_detail.php">表示</a></td><!-- 2番目に移動 -->
+              <td>テキスト</td>
+              <td>テキスト</td>
+              <td>テキスト</td>
+              <td>テキスト</td>
+              <td>テキスト</td>
+              <td>テキスト</td>
+              <td>テキスト</td>
+              <td>テキスト</td>
+              <td>テキスト</td>
+              <td>テキスト</td>
+              <td>テキスト</td>
             </tr>
             <tr>
               <td class="l-table__checkbox">
@@ -84,7 +101,7 @@
               <td>テキスト</td>
               <td>テキスト</td>
               <td>テキスト</td>
-              <td><a href="/admin/reservation_detail.php">表示</a></td>
+              <td>テキスト</td>
             </tr>
             <tr>
               <td class="l-table__checkbox">
@@ -104,8 +121,9 @@
               <td>テキスト</td>
             </tr>
             <tr>
-            <td class="l-table__checkbox">
-                <input type="checkbox" name="select" value="1"></td>
+              <td class="l-table__checkbox">
+                <input type="checkbox" name="select" value="1">
+              </td>
               <td>テキスト</td>
               <td>テキスト</td>
               <td>テキスト</td>
@@ -121,23 +139,8 @@
             </tr>
             <tr>
               <td class="l-table__checkbox">
-                <input type="checkbox" name="select" value="1"></td>
-              <td>テキスト</td>
-              <td>テキスト</td>
-              <td>テキスト</td>
-              <td>テキスト</td>
-              <td>テキスト</td>
-              <td>テキスト</td>
-              <td>テキスト</td>
-              <td>テキスト</td>
-              <td>テキスト</td>
-              <td>テキスト</td>
-              <td>テキスト</td>
-              <td>テキスト</td>
-            </tr>
-            <tr>
-              <td class="l-table__checkbox">
-                <input type="checkbox" name="select" value="1"></td>
+                <input type="checkbox" name="select" value="1">
+              </td>
               <td>テキスト</td>
               <td>テキスト</td>
               <td>テキスト</td>
@@ -152,7 +155,7 @@
               <td>テキスト</td>
             </tr>
           </table>
-        </div><!-- /.l-table-list__wrapper -->
+        </div><!-- /.l-table-list--scroll__wrapper -->
 
         <div class="c-button-group__form">
           <a href="" class="c-button__pagination--back c-link-no-border">戻る</a>

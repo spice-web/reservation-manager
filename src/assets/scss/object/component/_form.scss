@@ -1,4 +1,4 @@
-@use '../../foundation/variables' as *;
+@use "../../foundation/variables" as *;
 
 // フォーム
 .c-form__admin {
@@ -6,7 +6,8 @@
   flex-direction: column;
   gap: 1.5rem;
   justify-content: center;
-  width: 390px;
+  width: 90%;
+  max-width: 390px;
   margin: 0 auto;
 
   &--title {
@@ -36,10 +37,10 @@
 
 // 画像アップロード
 .c-form-input__upload-image {
-  border: 1px solid #B4B4B4;
-  background: #ECECEC;
+  border: 1px solid #b4b4b4;
+  background: #ececec;
   border-radius: 8px;
-  padding: .5rem;
+  padding: 0.5rem;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -73,7 +74,8 @@
 .c-form-select-color {
   position: relative;
   margin-bottom: 1rem;
-  &::before, &::after {
+  &::before,
+  &::after {
     position: absolute;
     content: "";
     pointer-events: none;
@@ -102,7 +104,7 @@
   }
   select {
     appearance: none;
-    padding: .4em 3.6em .4em .8em;
+    padding: 0.4em 3.6em 0.4em 0.8em;
     border-radius: 5px;
     background-color: #ffffff;
     color: #333;
