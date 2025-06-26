@@ -34,11 +34,11 @@
         <p class="text-center u-mb2 u-font--medium">入庫予定時間を指定してください</p>
         <div class="c-title__calendar u-mb1">2024年2月</div>
 
-        <!-- 
-          1時間おきの時間選択削除
-        -->
         <!--
           変更ここから 2025/6/23
+        -->
+        <!-- 
+          1時間おきの時間選択削除
         -->
         <dl class="p-reserve-selectedTime--detail">
           <dt class="c-calendar__heading">時間</dt>
