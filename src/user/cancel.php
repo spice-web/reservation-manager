@@ -54,6 +54,8 @@
         <td>2024/2/1(木)</td>
         <th>利用日数</th>
         <td>5日</td>
+        <th>人数</th>
+        <td>3名</td>
       </tr>
     </table>
 
@@ -111,8 +113,6 @@
         <td>NRT</td>
         <th>到着ターミナル</th>
         <td>2</td>
-        <th>人数</th>
-        <td>3名</td>
         <td class="--label"><!-- この項目のみspan->2 -->
           <div class="c-label--lg">到着日とお迎え日が異なる</div>
         </td>
@@ -129,14 +129,10 @@
         <td>BMW</td>
         <th>車種</th>
         <td>BMW5</td>
-        <th>車番</th>
+        <th>ナンバー</th>
         <td>1234</td>
         <th>色</th>
         <td>黒</td>
-      </tr>
-      <tr>
-        <th>区分</th>
-        <td>普通</td>
       </tr>
     </table>
 

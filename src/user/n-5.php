@@ -55,7 +55,7 @@
             <div class="l-user-reserve-info__item">
               <div class="l-flex--column l-flex--item-start l-grid--gap05">
                 <div class="l-user-reserve-info__status">入庫中</div><!-- 入庫中の場合表示 -->
-                <span class="l-user-reserve-info__label">予約コード:01234567898</span>
+                <span class="l-user-reserve-info__label">取引コード:01234567898</span>
               </div>
               <div class="l-user-reserve-info__date">
                 <div class="l-user-reserve-info__date--title">入庫日時</div>
@@ -76,7 +76,7 @@
           <div class="l-user-reserve-info__wrap">
             <div class="l-user-reserve-info__item">
               <div class="l-flex--column l-flex--item-start l-grid--gap05">
-                <span class="l-user-reserve-info__label">予約コード:01234567898</span>
+                <span class="l-user-reserve-info__label">取引コード:01234567898</span>
               </div>
               <div class="l-user-reserve-info__date">
                 <div class="l-user-reserve-info__date--title">入庫日時</div>
@@ -109,7 +109,7 @@
           <div class="l-user-reserve-info__wrap--old">
             <div class="l-user-reserve-info__item">
               <div>
-                <span class="l-user-reserve-info__label">予約コード:01234567898</span>
+                <span class="l-user-reserve-info__label">取引コード:01234567898</span>
               </div>
               <div class="l-user-reserve-info__date">
                 <div class="l-user-reserve-info__date--title">入庫日時</div>
@@ -127,7 +127,7 @@
           <div class="l-user-reserve-info__wrap--old">
             <div class="l-user-reserve-info__item">
               <div>
-                <span class="l-user-reserve-info__label">予約コード:01234567898</span>
+                <span class="l-user-reserve-info__label">取引コード:01234567898</span>
               </div>
               <div class="l-user-reserve-info__date">
                 <div class="l-user-reserve-info__date--title">入庫日時</div>
@@ -185,7 +185,6 @@
                 <div class="l-user-car-info__detail">
                   <div>ナンバー: 1234</div>
                   <div>色: 黒</div>
-                  <div>区分: 普通</div>
                 </div>
                 <div class="l-user-car-info__button-area">
                   <button class="l-user-reserve-info__button editVehicleModalButton">変更</button>
@@ -198,7 +197,6 @@
                 <div class="l-user-car-info__detail">
                   <div>ナンバー: 1234</div>
                   <div>色: 黒</div>
-                  <div>区分: 普通</div>
                 </div>
                 <div class="l-user-car-info__button-area">
                   <button class="l-user-reserve-info__button editVehicleModalButton">変更</button>
@@ -211,7 +209,6 @@
                 <div class="l-user-car-info__detail">
                   <div>ナンバー: 1234</div>
                   <div>色: 黒</div>
-                  <div>区分: 普通</div>
                 </div>
                 <div class="l-user-car-info__button-area">
                   <button class="l-user-reserve-info__button editVehicleModalButton">変更</button>
@@ -224,7 +221,6 @@
                 <div class="l-user-car-info__detail">
                   <div>ナンバー: 1234</div>
                   <div>色: 黒</div>
-                  <div>区分: 普通</div>
                 </div>
                 <div class="l-user-car-info__button-area">
                   <button class="l-user-reserve-info__button editVehicleModalButton">変更</button>
@@ -291,14 +287,6 @@
           <label for="number">ナンバー（※4桁の数字）</label>
           <input type="text" id="number" name="number" maxlength="4" minlength="4" class="u-w-full-wide">
         </div>
-        <div>
-          <label class="form-label">区分</label>
-          <select class="form-select" required>
-            <option value="普通">普通</option>
-            <option value="軽自動車">軽自動車</option>
-            <option value="大型">大型</option>
-          </select>
-        </div>
         <button class="c-button__submit u-mt1 u-mb1 u-horizontal-auto" type="submit">追加</button>
       </div>
     </div>
@@ -344,15 +332,6 @@
           <label for="number">ナンバー（※4桁の数字）</label>
           <input type="text" id="number" name="number" maxlength="4" minlength="4" class="u-w-full-wide">
         </div>
-        <div>
-          <label class="form-label">区分</label>
-          <select class="form-select" required>
-            <option value="普通">普通</option>
-            <option value="軽自動車">軽自動車</option>
-            <option value="大型">大型</option>
-          </select>
-        </div>
-
         <button class="c-button__submit u-mt1 u-mb1 u-horizontal-auto" type="submit">変更</button>
       </div>
     </div>

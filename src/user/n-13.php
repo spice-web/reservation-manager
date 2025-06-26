@@ -65,6 +65,8 @@
         <td>2024/2/1(木)</td>
         <th>利用日数</th>
         <td>5日</td>
+        <th>人数</th>
+        <td>3名</td>
       </tr>
     </table>
 
@@ -122,8 +124,6 @@
         <td>NRT</td>
         <th>到着ターミナル</th>
         <td>2</td>
-        <th>人数</th>
-        <td>3名</td>
         <th></th><!-- レイアウトを合わせるため空 -->
         <td>
           <span class="c-label--lg">到着日とお迎え日が異なる</span>
@@ -141,14 +141,10 @@
         <td>BMW</td>
         <th>車種</th>
         <td>BMW5</td>
-        <th>車番</th>
+        <th>ナンバー</th>
         <td>1234</td>
         <th>色</th>
         <td>黒</td>
-      </tr>
-      <tr>
-        <th>区分</th>
-        <td>普通</td>
       </tr>
     </table>
 
@@ -208,9 +204,9 @@
     <!-- 各ボタン -->
     <div class="l-flex--column l-grid--rgap1 l-flex--center u-mt2">
       <!-- 下二つ（変更・キャンセル）は過去の予約の場合非表示 -->
-      <a href="change.php" class="c-button--yellow u-w170">フライト情報変更</a>
-      <a href="cancel.php" class="c-button--yellow u-w170">キャンセル</a>
-      <a href="/user/dashboard.php" class="c-button--yellow u-w170">マイページに戻る</a>
+      <a href="change.php" class="c-button--yellow u-w170 link-white">フライト情報変更</a>
+      <a href="cancel.php" class="c-button--yellow u-w170 link-white">キャンセル</a>
+      <a href="/user/dashboard.php" class="c-button--yellow u-w170 link-white">マイページに戻る</a>
     </div>
 
   </div><!-- ./p-user-input__inner -->
