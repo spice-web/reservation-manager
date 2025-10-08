@@ -27,14 +27,14 @@
             <div class="p-inventoryTransactions-bulk-date">
               <!-- 日付を選択 input -->
               <form class="p-inventoryTransactions-bulk-date__simple-select-date">
-                <input type="date" name="date" value="2024-09-10" min="2024-09-10" >
-                <input type="date" name="date" value="2024-09-11" min="2024-09-11" >
+                <input type="date" name="date" value="2024-09-10" min="2024-09-10">
+                <input type="date" name="date" value="2024-09-11" min="2024-09-11">
                 <button class="c-button--deep-gray u-h-full u-pt05 u-pb05">絞込</button>
               </form>
               <!-- ページャー -->
               <div class="c-pager u-mb0">
                 <ul class="c-pager__list">
-                  <li class="c-pager__item--first"><a href="#" class="c-pager__link"><img src="../images/icon/pager-last.svg" width="15.5" height="18" /></a></li>
+                  <li class="c-pager__item--first"><a href="#" class="c-pager__link"><img src="../assets/images/icon/pager-last.svg" width="15.5" height="18" /></a></li>
                   <li class="c-pager__item--prev"><a href="#" class="c-pager__link"><img src="../images/icon/pager-next.svg" width="12" height="18" /></a></li>
                   <li class="c-pager__item"><a href="#" class="c-pager__link">1</a></li>
                   <li class="c-pager__item"><a href="#" class="c-pager__link">2</a></li>
@@ -46,7 +46,7 @@
                   <li class="c-pager__item--next"><a href="#" class="c-pager__link"><img src="../images/icon/pager-next.svg" width="12" height="18" /></a></li>
                   <li class="c-pager__item--last"><a href="#" class="c-pager__link"><img src="../images/icon/pager-last.svg" width="15.5" height="18" /></a></li>
                 </ul>
-  
+
                 <input type="text" class="c-pager__input-pageNumber">/150
                 <div class="c-form-select-wrap">
                   <select name="" id="">
@@ -316,25 +316,25 @@
   </div>
 
   <!-- FullCalendar JavaScript -->
-	<script src="//unpkg.com/@popperjs/core@2" defer></script>
-	<script src="//unpkg.com/tippy.js@6" defer></script>
-	<script src="//cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.js" defer></script>
-	<script src="./js/calendar_inventory.js" defer></script>
+  <script src="//unpkg.com/@popperjs/core@2" defer></script>
+  <script src="//unpkg.com/tippy.js@6" defer></script>
+  <script src="//cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.js" defer></script>
+  <script src="./js/calendar_inventory.js" defer></script>
 
   <!-- // 出庫処理のすべてをチェックする処理 -->
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-        // 「一括処理」チェックボックスを取得
-        const allCheckbox = document.querySelector('input[name="all"]');
-        // テーブル内のすべてのチェックボックスを取得
-        const checkboxes = document.querySelectorAll('.process');
+      // 「一括処理」チェックボックスを取得
+      const allCheckbox = document.querySelector('input[name="all"]');
+      // テーブル内のすべてのチェックボックスを取得
+      const checkboxes = document.querySelectorAll('.process');
 
-        // 「一括処理」チェックボックスにイベントリスナーを追加
-        allCheckbox.addEventListener('click', function() {
-            checkboxes.forEach(function(checkbox) {
-                checkbox.checked = allCheckbox.checked;
-            });
+      // 「一括処理」チェックボックスにイベントリスナーを追加
+      allCheckbox.addEventListener('click', function() {
+        checkboxes.forEach(function(checkbox) {
+          checkbox.checked = allCheckbox.checked;
         });
+      });
     });
   </script>
 </body>

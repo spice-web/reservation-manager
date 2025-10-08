@@ -2,7 +2,7 @@
   <div class="l-footer-user__inner">
     <div>
       <figure class="l-footer-user__logo">
-        <img src="/images/svg/logo.svg" width="100%" alt="logo">
+        <img src="/assets/images/svg/logo.svg" width="100%" alt="logo">
       </figure>
       株式会社サン・ポート<br>
       〒286-0121 千葉県成田市駒井野 134<br>
@@ -15,7 +15,7 @@
     </div>
   </div>
   <p class="l-footer-user__copy">© 2025 AIRPORT PARKING PRO</p>
-  <button id="gototop" class="c-button__button"><img src="/images/icon/chevron-up.svg" width="18px" height="10px" alt=""></button>
+  <button id="gototop" class="c-button__button"><img src="/assets/images/icon/chevron-up.svg" width="18px" height="10px" alt=""></button>
 </footer>
 
 <script>

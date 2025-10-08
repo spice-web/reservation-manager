@@ -8,6 +8,7 @@
     justify-content: center;
     align-items: center;
   }
+
   &__pager {
     display: flex;
     gap: 1rem;
@@ -30,21 +31,26 @@
   align-items: center;
   height: 40px;
   text-decoration: none;
+
   &:hover {
     opacity: 0.8;
   }
+
   &__submit {
     @extend .c-button;
     width: 160px;
     height: 48px;
     background: $yellow;
     color: white;
+
     &:visited {
       color: white;
     }
+
     &:link {
       color: white;
     }
+
     &:hover {
       opacity: 0.8;
     }
@@ -58,34 +64,42 @@
       @extend .c-button__submit;
       background: #888888;
     }
+
     &--light-gray {
       @extend .c-button__submit;
       background: $light-gray;
     }
+
     &--light-gray2 {
       @extend .c-button__submit;
       background: $light-gray2; // #BEBEBE
     }
+
     &--dark-gray {
       @extend .c-button__submit;
       background: $text-color;
     }
+
     &--deep-gray {
       @extend .c-button__submit;
       background: $deep-gray;
     }
+
     &--light-deep-gray {
       @extend .c-button__submit;
       background: $light-deep-gray;
     }
+
     &--green {
       @extend .c-button__submit;
       background: $green;
     }
+
     &.--disabled {
       background: $light-gray;
       cursor: not-allowed;
     }
+
     &.--disabled2 {
       background: $light-gray2;
       cursor: not-allowed;
@@ -95,11 +109,14 @@
       background: $yellow;
       cursor: pointer;
     }
-  } // submit
+  }
+
+  // submit
 
   &__register {
     @extend .c-button__submit;
     height: 38px;
+
     &:disabled {
       background: $light-gray;
       cursor: not-allowed;
@@ -124,10 +141,12 @@
     &--green {
       @extend .c-button__apply;
       background: $green;
+
       &.--disabled {
         background: $light-green;
       }
     }
+
     &--light-green {
       @extend .c-button__apply;
       background: $light-green;
@@ -137,6 +156,7 @@
       @extend .c-button__apply;
       width: 160px;
     }
+
     &--auto {
       @extend .c-button__apply;
       width: auto;
@@ -145,11 +165,13 @@
 
   &__csv {
     width: 160px;
+
     &--upload {
       input[type="file"] {
         display: none;
       }
     }
+
     &--download {
       @extend .c-button__csv;
       background: $gray;
@@ -164,31 +186,38 @@
     color: $text-color;
     border: 1px solid $gray;
   }
+
   &--yellow {
     @extend .c-button;
     color: white;
     background: $yellow;
+
     &:visited {
       color: white;
     }
   }
+
   &--green {
     @extend .c-button;
     background: $green;
   }
+
   &--gray {
     @extend .c-button;
     background: $gray;
   }
+
   &--light-gray {
     @extend .c-button;
     background-color: $light-gray;
     color: $text-color;
   }
+
   &--light-deep-gray {
     @extend .c-button;
     background-color: $light-deep-gray;
   }
+
   &--deep-gray {
     @extend .c-button;
     background-color: $text-color;
@@ -203,10 +232,12 @@
     display: grid;
     place-items: center;
     cursor: pointer;
+
     &--h90 {
       @extend .c-button__select;
       height: 90px;
     }
+
     &--gray {
       @extend .c-button__select;
       border: 1px solid $gray;
@@ -215,6 +246,7 @@
       padding: 2rem;
       cursor: pointer;
     }
+
     &.--unselected {
       background: $light-gray;
     }
@@ -231,6 +263,7 @@
     display: inline-block;
     line-height: 1;
     display: block;
+
     &--text-color {
       @extend .c-button--sm;
       background-color: $text-color;
@@ -247,6 +280,7 @@
     height: 30px;
     display: grid;
     align-items: center;
+
     &:hover {
       opacity: 0.8;
     }
@@ -302,6 +336,7 @@
       font-size: clamp(0.875rem, 0.8rem + 0.5vw, 1rem);
       cursor: pointer;
       position: relative;
+
       &:visited {
         color: white;
       }
@@ -323,6 +358,7 @@
         background: $green;
         height: 38px;
         margin-right: 19px;
+
         &::after {
           right: -19px;
           border-top: 19px solid transparent;
@@ -331,6 +367,7 @@
         }
       }
     }
+
     &--prev {
       background: $yellow;
       color: white;
@@ -342,6 +379,7 @@
       height: 50px;
       cursor: pointer;
       position: relative;
+
       &:visited {
         color: white;
       }
@@ -363,6 +401,7 @@
         background: $green;
         height: 38px;
         margin-left: 19px;
+
         &::after {
           left: -19px;
           border-top: 19px solid transparent;
@@ -371,6 +410,7 @@
         }
       }
     }
+
     &--return {
       background-color: $text-color;
       color: white;
@@ -397,13 +437,16 @@
         border-bottom: 25px solid transparent;
       }
     }
+
     &--back {
       @extend .c-button__pagination--return;
       background-color: $gray;
       color: white;
+
       &:visited {
         color: white;
       }
+
       &::after {
         border-right: 25px solid $gray;
       }
@@ -421,6 +464,7 @@
     height: 38px;
     cursor: pointer;
     border-radius: 6px;
+
     // 右に三角形を表示
     &::after {
       content: "";
@@ -430,6 +474,7 @@
       border-right: 7px solid white;
       border-bottom: 7px solid transparent;
     }
+
     &.absolute-VerticalCenter {
       left: -25px;
     }
@@ -448,10 +493,12 @@
       border-right: 0px solid transparent;
       border-bottom: 7px solid transparent;
     }
+
     &.absolute-VerticalCenter--right {
       right: -25px;
     }
   }
+
   // 「計算する」ボタン
   &__calculate {
     background: $blue;
@@ -521,6 +568,7 @@
     border-top: 6px solid transparent;
     border-bottom: 6px solid transparent;
   }
+
   &__prev--small {
     @extend .c-button__next--small;
     border-right: 10px solid $text-color;
@@ -538,6 +586,7 @@
   line-height: 30px;
   width: 30px;
   height: 30px;
+
   &.--text {
     width: auto;
   }
@@ -567,11 +616,13 @@
     justify-content: center;
     cursor: pointer;
   }
+
   &--lg {
     @extend .c-button__add;
     width: 45px;
     height: 38px;
     line-height: 38px;
+
     &::after {
       width: 45px;
       height: 38px;
@@ -599,13 +650,15 @@
     align-items: center;
     justify-content: center;
   }
+
   // チェックされたら背景色を変える
-  input[type="checkbox"]:checked + label {
+  input[type="checkbox"]:checked+label {
     background: $green;
     color: white;
   }
+
   // チェックされたら背景色を変える
-  input[type="radio"]:checked + label {
+  input[type="radio"]:checked+label {
     background: $green;
     color: white;
   }
@@ -616,6 +669,7 @@
     height: 0;
     display: contents;
   }
+
   input[type="radio"] {
     opacity: 0;
     width: 0;
@@ -623,6 +677,7 @@
     display: contents;
   }
 }
+
 label.c-button-optionSelect__radioLabel {
   background: $gray;
   color: white;
@@ -641,13 +696,13 @@ label.c-button-optionSelect__radioLabel {
   }
 
   // チェックされたら背景色を変える
-  input[type="checkbox"]:checked + label {
+  input[type="checkbox"]:checked+label {
     background: $green;
     color: white;
   }
 
   // チェックされたら背景色を変える
-  input[type="radio"]:checked + label {
+  input[type="radio"]:checked+label {
     background: $green;
     color: white;
   }
@@ -678,6 +733,7 @@ label.c-button-optionSelect__radioLabel {
     align-items: center;
     justify-content: center;
     text-align: center;
+
     &.background-green {
       background: $green;
       color: white;
@@ -714,10 +770,10 @@ label.c-button-optionSelect__radioLabel {
   background-color: #b4b4b4;
   cursor: pointer;
   color: #fff;
-  &--down {
-  }
-  &--up {
-  }
+
+  &--down {}
+
+  &--up {}
 }
 
 // 入出庫一覧用のトグルボタン
@@ -733,7 +789,7 @@ label.c-button-optionSelect__radioLabel {
     width: 0;
     height: 0;
 
-    &:checked + .c-button-toggle__slider {
+    &:checked+.c-button-toggle__slider {
       background: $green;
 
       &:before {
@@ -741,7 +797,7 @@ label.c-button-optionSelect__radioLabel {
       }
     }
 
-    &:focus-visible + .c-button-toggle__slider {
+    &:focus-visible+.c-button-toggle__slider {
       outline: 2px solid;
     }
   }
@@ -878,6 +934,7 @@ label.c-button-optionSelect__radioLabel {
       @extend .c-button-user__footer;
       background: #495cb9;
     }
+
     &--contact {
       @extend .c-button-user__footer;
       background: #f89d33;

@@ -48,6 +48,14 @@
                 <input type="text" id="name" name="name" class="c-form-input--w100">
               </div>
               <div>
+                <label for="">ふりがな</label>
+                <input type="text" id="" name="" class="c-form-input--w100">
+              </div>
+              <div>
+                <label for="">電話番号</label>
+                <input type="text" id="" name="">
+              </div>
+              <div>
                 <label for="zip">郵便番号</label>
                 <input type="text" id="zip" name="zip">
               </div>
@@ -103,8 +111,33 @@
                   <input type="text" id="number" name="number" class="c-form-input--w100" maxlength="4" minlength="4">
                 </div>
                 <div>
+
+
                   <!-- セレクト（取扱注意メモ） -->
                   <label for="memo">取扱注意メモ</label>
+                  <div class="c-form-select-color">
+                    <select name="car_caution_ids[]" id="car_caution_ids" class="u-mb0 select2-hidden-accessible" multiple="" data-select2-id="car_caution_ids" tabindex="-1" aria-hidden="true">
+                      <option value="" disabled=""></option>
+                      <option value="1">
+                        土足禁止
+                      </option>
+                      <option value="2">
+                        フロントガラスに傷あり
+                      </option>
+                    </select>
+
+                    <span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="1" style="width: calc(100% - 39px);">
+                      <span class="selection">
+                        <span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="false">
+                          <ul class="select2-selection__rendered">
+                            <li class="select2-search select2-search--inline">
+                              <input class="select2-search__field" type="search" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" role="searchbox" aria-autocomplete="list" placeholder="" style="width: 0.75em;">
+                            </li>
+                          </ul>
+                        </span></span>
+                      <span class="dropdown-wrapper" aria-hidden="true"></span>
+                    </span>
+                  </div>
                   <div class="c-form-select-color">
                     <select name="memo" id="memo" class="u-mb0" multiple>
                       <option value="1">MT車</option>
@@ -148,7 +181,11 @@
                 <!-- 到着日 -->
                 <label for="arrival">到着日</label>
                 <input type="date" id="arrival" name="arrival" class="c-form-input--w100 u-mb05">
-                <div class="c-label">到着日とお迎え日が異なる</div>
+
+                <!-- 9/22 MTG修正 -->
+                <div class="c-label--lg">到着日とお迎え日が異なる</div>
+                <!-- 9/22 MTG修正 -->
+
               </div>
               <div>
                 <!-- 到着時間 -->

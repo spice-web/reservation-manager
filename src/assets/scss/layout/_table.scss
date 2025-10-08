@@ -4,6 +4,7 @@
 .l-table {
   &__checkbox {
     text-align: center;
+
     input {
       margin-bottom: 0;
     }
@@ -22,6 +23,7 @@
 
   &__head {
     color: white;
+
     &--sort {
       th {
         padding-top: 0;
@@ -29,6 +31,7 @@
         height: 42px;
       }
     }
+
     th {
       font-size: 11px;
       padding: 0.5rem 1rem;
@@ -37,16 +40,20 @@
       border-top: 1px solid $text-color;
       border-left: 1px solid $text-color;
     }
+
     th:first-child {
       border-radius: 8px 0 0 0;
     }
+
     th:last-child {
       border-radius: 0 8px 0 0;
     }
+
     th:last-child {
       border-right: 1px solid $text-color;
     }
   }
+
   &__body {
     font-size: 14px;
 
@@ -55,11 +62,13 @@
         td:first-child {
           border-radius: 0 0 0 8px;
         }
+
         td:last-child {
           border-radius: 0 0 8px 0;
         }
       }
     }
+
     td {
       padding: 0.5rem;
       border-bottom: 1px solid $text-color;
@@ -68,7 +77,8 @@
       &:last-child {
         width: 120px;
         border-right: 1px solid $text-color;
-        > button {
+
+        >button {
           margin-left: auto;
           margin-right: auto;
         }
@@ -85,12 +95,14 @@
       max-height: 278px;
       overflow: auto;
     }
+
     &__head {
       position: sticky;
       top: 0;
       height: 42px;
       width: 100%;
       z-index: 1;
+
       th {
         padding-top: 0;
         padding-bottom: 0;
@@ -104,6 +116,7 @@
   tr:nth-child(even) {
     background: $light-gray;
   }
+
   tbody {
     tr:not(:last-child) {
       td {
@@ -149,20 +162,23 @@
       cursor: pointer;
     }
   }
+
   &.--in {
     tr[data-href]:nth-of-type(n + 2):hover {
-      > td {
+      >td {
         background: rgba(210, 248, 245, 1);
       }
     }
   }
+
   &.--out {
     tr[data-href]:nth-of-type(n + 2):hover {
-      > td {
+      >td {
         background: rgba(230, 240, 255, 1);
       }
     }
   }
+
   //   tr[data-href]:nth-of-type(2n) {
   //     background-color: #FFF;
   //     /* 好みの色に変更 */
@@ -173,7 +189,7 @@
   // }
   tr {
     &:nth-child(2n + 1) {
-      > td {
+      >td {
         background: $light-gray;
       }
     }
@@ -221,11 +237,13 @@
   }
 
   &.--sticky-second {
+
     th:nth-child(-n + 2),
     td:nth-child(-n + 2) {
       position: -webkit-sticky;
       position: sticky;
     }
+
     .process_all {
       width: 43px;
     }
@@ -242,6 +260,7 @@
       border-right: 0.9px solid $text-color;
       filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
     }
+
     th:nth-child(3),
     td:nth-child(3) {
       border-left: none;
@@ -304,12 +323,15 @@
 // 日次更新テーブル
 .l-table-date {
   @extend .l-table-list;
+
   &__head {
     @extend .l-table-list__head;
+
     th {
       background: $green;
     }
   }
+
   &__body {
     @extend .l-table-list__body;
   }
@@ -326,11 +348,13 @@
 
   &__body {
     @extend .l-table-list__body;
+
     td {
       &:last-child {
         width: auto;
         background: $light-yellow;
       }
+
       &:not(:first-child) {
         text-align: center;
       }
@@ -348,27 +372,39 @@
   width: 100%;
   font-size: 0.875rem;
   margin-bottom: 2rem;
+
   tr:not(:last-child) {
+
     th,
     td {
       border-bottom: 1px solid #b4b4b4;
     }
   }
+
+  th,
+  td {
+    padding: 0.5rem .25rem;
+  }
+
   th {
     background: $off-white;
     font-weight: normal;
     border-right: 1px solid #b4b4b4;
-    min-width: 100px;
+    min-width: 80px;
   }
-  th,
+
   td {
-    padding: 0.5rem;
-  }
-  td {
+    min-width: 50px;
+
     &:not(:last-child) {
       border-right: 1px solid #b4b4b4;
     }
   }
+}
+
+// 確認テーブル
+.l-table-confirm {
+  font-size: 0.75rem;
 }
 
 .l-table-input {
@@ -376,29 +412,36 @@
     padding: 0.5rem 0.15rem;
     text-align: center;
   }
+
   td {
     // width: 100%;
     padding: 0;
   }
+
   label {
     display: inline-block;
   }
+
   input {
     margin-bottom: 0;
     border: none;
     outline: none;
     background-color: transparent;
     padding: 0.5rem 0 0.5rem 0.5rem;
+
     &::placeholder {
       opacity: 0.75;
     }
   }
+
   input:not([class*="u-"]):not([type="number"]):not([type="checkbox"]) {
     width: 100%;
   }
+
   input[type="checkbox"] {
     margin: 0 0.5rem;
   }
+
   select {
     font-size: 0.875rem;
     margin-bottom: 0;
@@ -415,25 +458,31 @@
   border-bottom: 1px solid $gray;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
+
   &__head {
-    > * {
+    >* {
       background: $gray;
       color: white;
     }
+
     th {
       padding: 0.25rem 0.5rem;
       white-space: nowrap;
     }
   }
+
   &__body {
     text-align: left;
+
     th {
       font-weight: normal;
     }
+
     td {
       &:nth-child(even) {
         text-align: right;
       }
+
       &:nth-child(3) {
         text-align: center;
       }
@@ -467,6 +516,7 @@
     margin-bottom: 1rem;
     gap: 1rem;
   }
+
   &-item {
     border-top-right-radius: 0.5rem;
     border-top-left-radius: 0.5rem;
@@ -486,6 +536,7 @@
     margin-left: auto;
     margin-right: auto;
     font-weight: normal;
+
     &.c-button__edit {
       width: 90%;
       border-radius: 4px;
@@ -498,44 +549,55 @@
 
   thead {
     font-weight: normal;
+
     th {
       padding: 0 0 1rem 0;
     }
   }
+
   tbody {
     font-size: 0.875rem;
     line-height: 44px;
+
     tr {
       &:first-child {
         th {
           border-top: 1px solid $text-color;
           background: #888888 !important;
+
           &:first-child {
             border-radius: 8px 0 0 0;
             border-left: 1px solid $text-color;
           }
+
           &:last-child {
             border-radius: 0 8px 0 0;
           }
         }
       }
+
       &:not(:first-child) {
         th {
           border-left: 1px solid $text-color;
         }
       }
+
       &:last-child {
+
         th,
         td {
           border-bottom: 1px solid $text-color;
         }
+
         th {
           border-radius: 0 0 0 8px;
         }
+
         td:last-child {
           border-radius: 0 0 8px 0;
         }
       }
+
       th {
         background: #888888;
         color: white;
@@ -543,21 +605,26 @@
         width: 180px;
         border-right: 1px solid $text-color;
       }
+
       td {
         width: 140px;
         text-align: right;
         padding: 0 0.5rem;
+
         &:not(:last-child) {
           border-right: 1px solid $gray;
         }
+
         &:last-child {
           border-right: 1px solid $text-color;
         }
       }
+
       &:nth-child(even) {
         th {
           background: #b4b4b4;
         }
+
         td {
           background-color: #ececec;
         }
@@ -572,17 +639,21 @@
     border-right: none;
     word-break: break-all;
     font-size: 12px;
+
     tr {
       display: grid;
       grid-template-columns: 150px 1fr;
     }
+
     th,
     td {
       border-bottom: 1px solid #b4b4b4;
     }
+
     td {
       border-right: 1px solid #b4b4b4;
     }
+
     .--mark {
       grid-column: 1 / span 2;
       text-align: center;
@@ -592,6 +663,7 @@
   .l-table-charge-detail {
     border-spacing: 0.25rem;
     font-size: 12px;
+
     .--tax {
       font-size: 10px;
       white-space: nowrap;
@@ -609,11 +681,13 @@
   border: 1px solid #b4b4b4;
   margin-bottom: 1rem;
   margin-top: 0.25rem;
+
   tr:not(:last-child) {
     td {
       border-bottom: 1px solid #b4b4b4;
     }
   }
+
   th {
     background: $off-white;
     font-weight: normal;
@@ -621,10 +695,12 @@
     background-color: #f2f2f2;
     font-weight: bold;
   }
+
   th,
   td {
     // min-width: 50px;
     padding: 0.5rem;
+
     &:not(:last-child) {
       border-right: 1px solid #b4b4b4;
     }

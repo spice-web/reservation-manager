@@ -20,7 +20,7 @@
           <div class="c-button__select button_select">保険</div>
           <div class="c-button__select button_select">回数券</div>
           <div class="c-button__select button_select">物販</div>
-          <div class="c-button__select button_select">その他</div>
+          <div class="c-button__select button_select">オプション選択：100文字以上入れるとエラーになるが編集画面には残っているのは想定内の挙動でしょうか？</div>
         </div>
 
         <!-- オプション選択項目自動出力 -->

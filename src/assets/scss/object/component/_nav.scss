@@ -7,7 +7,8 @@
     padding-top: 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    // justify-content: space-between;
+    position: relative;
     row-gap: 2rem;
   }
 
@@ -37,27 +38,34 @@
     &.--current {
       background: white;
     }
+
     &::before {
       content: "";
       display: block;
       width: 22px;
       height: 22px;
     }
+
     &.--reserve::before {
       background: url('../images/icon/reserve.svg') no-repeat center center;
     }
+
     &.--list::before {
       background: url('../images/icon/list.svg') no-repeat center center;
     }
+
     &.--en::before {
       background: url('../images/icon/en.svg') no-repeat center center;
     }
+
     &.--setting::before {
       background: url('../images/icon/setting.svg') no-repeat center center;
     }
+
     &.--support::before {
       background: url('../images/icon/support.svg') no-repeat center center;
     }
+
     &.--print::before {
       background: url('../images/icon/side-print.svg') no-repeat center center;
     }
@@ -75,21 +83,18 @@
     background-image: url('../images/icon/qr_bg.png');
     background-position: center top;
     background-size: 60px 60px;
+
     img {
       width: 45px;
       height: auto;
       padding-top: 7.5px;
     }
+
     figcaption {
       font-size: 0.75rem;
       text-align: center;
       letter-spacing: 0;
       font-weight: 500;
-    }
-
-    &.--sticky {
-      position: sticky;
-      bottom: 2rem;
     }
   }
 }

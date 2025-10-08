@@ -15,13 +15,16 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
+
   @media screen and (max-width: 850px) {
     grid-template-columns: 1fr;
   }
+
   &--detail {
     max-width: 240px;
     margin-left: auto;
     margin-right: auto;
+
     &__wrap {
       height: 300px;
       overflow-y: scroll;
@@ -31,6 +34,7 @@
       // gap: 0.25rem;
     }
   }
+
   &__bg {
     background-color: $calendar-bg;
     padding: 0 0.5rem;
@@ -39,6 +43,7 @@
 
 // ユーザー用予約ページメディアクエリ
 @media (max-width: 768px) {
+
   // 料金計算
   .p-input-user-total-parking-charges__inner {
     width: 100%;

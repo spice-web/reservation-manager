@@ -12,7 +12,7 @@ const paths = {
   scss: {
     src: 'src/assets/scss/**/*.scss', // コンパイル対象
     parent: 'src/assets/scss', // 親ディレクトリ
-    dest: 'src/css' // 出力先
+    dest: 'src/assets/css' // 出力先
   },
 };
 

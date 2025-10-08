@@ -16,8 +16,8 @@
       </div>
       <p class="text-center u-font--14 u-mb3">パスワードを忘れた方は<a href="/" class="c-link-text">こちら</a>をクリック​</p>
       <input type="submit" value="ログイン" class="c-button__submit--yellow u-w240 u-mb2 u-horizontal-auto" />
-      <input type="submit" value="お得な新規会員登録​" class="c-button__submit--yellow u-w240 u-horizontal-auto" />
-      <input type="submit" value="会員登録なしで予約する​" class="c-button__submit--green u-w240 u-horizontal-auto" />
+      <input type="submit" value="お得な新規会員登録​" class="c-button__submit--yellow u-w240 u-mb2 u-horizontal-auto" />
+      <input type="submit" value="会員登録なしで予約する​" class="c-button__submit--green u-w240 u-mb2 u-horizontal-auto" />
     </form>
   </div>
 </body>

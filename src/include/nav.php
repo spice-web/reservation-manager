@@ -22,7 +22,20 @@
   </ul>
 
   <figure class="c-nav__qr">
-    <img src="../images/dummy/dummy_qr.jpg" alt="" width="100%" height="auto">
+    <img src="/assets/images/dummy/dummy_qr.jpg" alt="" width="100%" height="auto">
     <figcaption>予約QR読込</figcaption>
   </figure>
 </nav>
+
+<script>
+  // // 100pxスクロールしたら発火
+  // window.addEventListener('DOMContentLoaded', function() {
+  //   window.addEventListener('scroll', function() {
+  //     if (window.scrollY > 100) {
+  //       document.querySelector('.c-nav__qr').classList.add('--fixed');
+  //     } else {
+  //       document.querySelector('.c-nav__qr').classList.remove('--fixed');
+  //     }
+  //   })
+  // })
+</script>

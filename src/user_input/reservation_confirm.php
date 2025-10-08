@@ -16,11 +16,11 @@
       <table class="l-table-confirm">
         <tr>
           <th>予約コード</th>
-          <td>1234567890</td>
+          <td>01K5X1XWNRT8ADYJT7XYJK22ZN</td>
           <th>受付コード</th>
           <td>1234567890</td>
           <th>予約日時</th>
-          <td>2024/1/15(月)20:12</td>
+          <td>2024/01/15(月)20:12</td>
           <th>予約経路</th>
           <td>公式HP</td>
         </tr>
@@ -39,23 +39,13 @@
       <table class="l-table-confirm">
         <tr>
           <th>顧客コード</th>
-          <td>1234567890</td>
-          <th>お客様氏名</th>
-          <td>サン太郎</td>
+          <td>01K5X8HBGQGKPCCB4JH3MYANB9</td>
+          <th>お客様氏名 </th>
+          <td>サン太郎 サン太郎</td>
           <th>ふりがな</th>
           <td>さんたろう</td>
           <th>利用回数</th>
           <td>8回</td>
-        </tr>
-        <tr>
-          <th>会員ランク</th>
-          <td>シルバー</td>
-          <th>ラベル2</th>
-          <td>ダミーダミー</td>
-          <th>ラベル3</th>
-          <td>ダミーダミー</td>
-          <th>ラベル4</th>
-          <td>ダミーダミー</td>
         </tr>
         <tr>
           <th>郵便番号</th>
@@ -75,7 +65,7 @@
       <table class="l-table-confirm">
         <tr>
           <th>到着予定日</th>
-          <td>2024/2/5(月)</td>
+          <td>2024/12/15(月)</td>
           <th>到着予定時間</th>
           <td>16：45</td>
           <th>到着便</th>
@@ -137,7 +127,7 @@
         </thead>
         <tbody class="l-table-charge-detail__body">
           <tr>
-            <th>駐車料金</th>
+            <th>駐車料金（大型）​</th>
             <td class="u-font-nowrap">1,000円</td>
             <td>1</td>
             <td class="u-font-nowrap">5,000円</td>

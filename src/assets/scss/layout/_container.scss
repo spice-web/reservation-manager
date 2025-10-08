@@ -6,12 +6,15 @@
     padding: 0 2rem 0 3rem;
     margin-left: 0;
   }
+
   // ログイン画面
   &__admin {
     max-width: 600px;
-    width: 100%;
+    width: 90%;
     border-radius: 1.5rem;
     padding: 2rem 0 0;
+    margin-left: auto;
+    margin-right: auto;
 
     @media screen and (min-width: 850px) {
       border: 1px solid $dark-gray;
@@ -19,6 +22,7 @@
       padding: 3.5rem 0;
     }
   }
+
   &__user-login {
     max-width: 395px;
     padding: 0 10px;
@@ -30,6 +34,7 @@
     transform: translate(-50%, -50%);
   }
 
+  // ページ下部の固定ボタン
   &__button-fixed {
     position: fixed;
     bottom: 0;
@@ -38,6 +43,8 @@
     background-color: $text-color;
     display: flex;
     justify-content: center;
+    padding-right: 160px;
+
     &-parent {
       padding-bottom: 6rem;
     }
