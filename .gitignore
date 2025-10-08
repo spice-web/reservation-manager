@@ -1,5 +1,7 @@
 /node_modules
-receipt_entry.php
 test.php
+receipt_entry.php
 include/footer.php
 /docs/*
+.vscode/*
+.DS_Store
