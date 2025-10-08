@@ -3,3 +3,5 @@ receipt_entry.php
 test.php
 include/footer.php
 /docs/*
+.vscode/*
+.DS_Store
