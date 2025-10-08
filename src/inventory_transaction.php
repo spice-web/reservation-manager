@@ -29,6 +29,12 @@
           <li id="buttonTwo" class="l-table-list--scroll__tab-item" onclick="">出庫</li>
         </ul>
 
+        <!-- 9/28追加 -->
+        <div class="c-calendar-exited">
+          2025年12月
+        </div>
+
+
         <div class="l-table-list--scroll__wrapper">
           <!-- 入庫一覧リスト -->
           <!-- trにaタグは無理なので data-href でリンク -->

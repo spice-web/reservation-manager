@@ -275,22 +275,30 @@
   border-bottom: 1px solid #b4b4b4;
 }
 .l-table-confirm th, .l-user-table-confirm th,
-.l-table-input th {
-  background: #fbfbfb;
-  font-weight: normal;
-  border-right: 1px solid #b4b4b4;
-  min-width: 100px;
-}
-.l-table-confirm th, .l-user-table-confirm th,
 .l-table-confirm td,
 .l-user-table-confirm td,
 .l-table-input th,
 .l-table-input td {
-  padding: 0.5rem;
+  padding: 0.5rem 0.25rem;
+}
+.l-table-confirm th, .l-user-table-confirm th,
+.l-table-input th {
+  background: #fbfbfb;
+  font-weight: normal;
+  border-right: 1px solid #b4b4b4;
+  min-width: 80px;
+}
+.l-table-confirm td, .l-user-table-confirm td,
+.l-table-input td {
+  min-width: 50px;
 }
 .l-table-confirm td:not(:last-child), .l-user-table-confirm td:not(:last-child),
 .l-table-input td:not(:last-child) {
   border-right: 1px solid #b4b4b4;
+}
+
+.l-table-confirm, .l-user-table-confirm {
+  font-size: 0.75rem;
 }
 
 .l-table-input th {
@@ -771,7 +779,7 @@
     flex-direction: row;
   }
 }
-.l-user-reserve-info__status {
+.l-user-reserve-info__status, .l-user-car-info__label--mark, .l-user-car-info__name--mark {
   color: white;
   background: var(--red);
   padding: 3px 0.5rem;
@@ -862,17 +870,6 @@
     max-width: 100%;
   }
 }
-.l-user-car-info__label {
-  font-weight: 500;
-}
-.l-user-car-info__label, .l-user-car-info__name {
-  font-size: 1.25rem;
-}
-@media screen and (min-width: 850px) {
-  .l-user-car-info__label, .l-user-car-info__name {
-    font-size: 1.5rem;
-  }
-}
 .l-user-car-info__item {
   display: grid;
   grid-template-columns: auto 120px;
@@ -889,9 +886,30 @@
 }
 @media screen and (min-width: 850px) {
   .l-user-car-info__item {
-    grid-template-columns: auto 1fr 130px;
+    grid-template-columns: 325px 1fr 130px;
+    gap: 0.5rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .l-user-car-info__item {
     gap: 2rem;
   }
+}
+.l-user-car-info__label {
+  font-weight: 500;
+}
+.l-user-car-info__label, .l-user-car-info__name {
+  font-size: 1.25rem;
+}
+@media screen and (min-width: 850px) {
+  .l-user-car-info__label, .l-user-car-info__name {
+    font-size: 1.5rem;
+  }
+}
+.l-user-car-info__label--mark, .l-user-car-info__name--mark {
+  background-color: #495cb9;
+  display: inline-block;
+  margin-left: 0.5rem;
 }
 .l-user-car-info__name {
   grid-column: 1/3;
@@ -901,7 +919,7 @@
     grid-column: 1/2;
   }
 }
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 1000px) {
   .l-user-car-info__detail {
     display: flex;
     gap: 1rem;

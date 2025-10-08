@@ -16,55 +16,85 @@
 
       <!-- 詳細情報入力 -->
       <div class="p-user-input-auto-output__wrap l-flex--item-end">
+
+        <!-- 9/22 MTG修正 過去に利用した車両を参照する -->
         <!-- 入力エリア -->
-        <div class="l-grid--col2-auto l-grid--cgap2 l-flex--column--md l-grid--cgap-md">
+        <div>
+          <!-- 過去に利用した車両を参照する -->
           <div>
-            <label for="maker">メーカー</label>
-            <!-- 車メーカーのselect -->
+            <label for="past_vehicle">過去に利用した車両を参照する</label>
             <div class="c-form-select-color">
-              <select name="maker" id="maker">
-                <option value="トヨタ">トヨタ</option>
-                <option value="日産">日産</option>
-                <option value="フォルクスワーゲン">フォルクスワーゲン</option>
-                <option value="アウディ">メルセデス・ベンツ</option>
+              <select name="past_vehicle" id="past_vehicle">
+                <optgroup>
+                  <option value="トヨタ　クラウン　1234　黒">
+                    トヨタトヨタトヨタ　クラウンクラウンクラウンクラウンクラウンクラウン　1234　黒
+                  </option>
+                  <option value="">
+                    新規入力
+                  </option>
+                </optgroup>
               </select>
             </div>
           </div>
-          <div>
-            <label for="car">車種</label>
-            <div class="c-form-select-color">
-              <select id="car" name="car">
-                <option value="選択してください" selected disabled>選択してください</option>
-                <option value="ダミーダミー">ダミーダミー</option>
-              </select>
+
+          <div class="l-grid--col2-auto l-grid--cgap2 l-flex--column--md l-grid--cgap-md">
+            <div>
+              <label for="maker">メーカー</label>
+              <!-- 車メーカーのselect -->
+              <div class="c-form-select-color">
+                <select name="maker" id="maker">
+                  <option value="" selected disabled> --- </option>
+                  <option value="トヨタ">トヨタ</option>
+                  <option value="日産">日産</option>
+                  <option value="フォルクスワーゲン">フォルクスワーゲン</option>
+                  <option value="アウディ">メルセデス・ベンツ</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <label for="car">車種</label>
+              <div class="c-form-select-color">
+                <select id="car" name="car">
+                  <option value="" selected disabled> --- </option>
+                  <option value="ダミーダミー">ダミーダミー</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <label for="color">色</label>
+              <div class="c-form-select-color">
+                <select id="color" name="color">
+                  <option value="" selected disabled> --- </option>
+                  <option value="ダミーダミー">ダミーダミー</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <label for="number">ナンバー（※4桁の数字）</label>
+              <input type="text" id="number" name="number" maxlength="4" minlength="4" class="u-w-full-wide">
+            </div>
+            <div>
+              <label for="arrival">到着便（例：JL200, NH300）</label>
+              <input type="text" id="arrival" name="arrival" class="u-w-full-wide">
+            </div>
+            <div>
+              <label for="date">到着日</label>
+              <input type="date" id="date" name="date" class="u-w-full-wide u-mb025">
+              <!-- NOT FOUNDの場合下記のクラスを付与してください。 -->
+              <!--
+                <p id="flight_no_not_found"
+                class="note text-left u-font--sm">
+                指定の到着便名が見つかりません。</p>
+              -->
+              <p class="c-label--lg">到着日がお迎え日と異なる</p><!-- 9/22MTG クラス追加 -->
+            </div>
+            <div>
+              <label for="people">ご利用人数</label>
+              <input type="text" id="people" name="people">
             </div>
           </div>
-          <div>
-            <label for="color">色</label>
-            <div class="c-form-select-color">
-              <select id="color" name="color">
-                <option value="選択してください" selected disabled>選択してください</option>
-                <option value="ダミーダミー">ダミーダミー</option>
-              </select>
-            </div>
-          </div>
-          <div>
-            <label for="number">ナンバー（※4桁の数字）</label>
-            <input type="text" id="number" name="number" maxlength="4" minlength="4" class="u-w-full-wide">
-          </div>
-          <div>
-            <label for="arrival">到着便（例：JL200，NH300）</label>
-            <input type="text" id="arrival" name="arrival" class="u-w-full-wide">
-          </div>
-          <div>
-            <label for="date">到着日</label>
-            <input type="date" id="date" name="date" class="u-w-full-wide u-mb025">
-            <p class="text-center u-mb1--md">到着日がお迎え日と異なる</p>
-          </div>
-          <div>
-            <label for="people">ご利用人数</label>
-            <input type="text" id="people" name="people">
-          </div>
+          <!-- 9/22 MTG修正 過去に利用した車両を参照する ここまで-->
+
         </div><!-- 入力エリア -->
 
         <!-- 自動出力 -->
@@ -80,7 +110,7 @@
             <dt>到着予定時間</dt>
             <dd class="text-right">18:20</dd>
           </dl>
-          <div>到着日がお迎え日と異なる</div>
+          <div class="c-label--lg">到着日がお迎え日と異なる</div><!-- 9/22MTG クラス追加 -->
         </div>
       </div>
 

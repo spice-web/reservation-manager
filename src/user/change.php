@@ -20,10 +20,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
 
   <!-- css -->
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/user/style.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/user/style.css">
   <!-- Optional - CSS SVG Icons (Font Awesome) -->
-  <link rel="stylesheet" type='text/css' media='all' href="/css/svg-icons.css">
+  <link rel="stylesheet" type='text/css' media='all' href="/assets/css/svg-icons.css">
 </head>
 
 <body>

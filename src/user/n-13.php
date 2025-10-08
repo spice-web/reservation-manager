@@ -21,10 +21,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
 
   <!-- css -->
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/user/style.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/user/style.css">
   <!-- Optional - CSS SVG Icons (Font Awesome) -->
-  <link rel="stylesheet" type='text/css' media='all' href="/css/svg-icons.css">
+  <link rel="stylesheet" type='text/css' media='all' href="/assets/css/svg-icons.css">
 </head>
 
 <body>
@@ -41,7 +41,7 @@
     <div class="l-flex--column">
       <div class="c-title__user">予約QR</div>
       <div class="l-flex--column l-flex--start l-flex--item-start l-grid--gap05 u-mb2 u-w140">
-        <img src="../images/dummy/dummy_qr.jpg" width="100%" height="auto" alt="">
+        <img src="../assets/images/dummy/dummy_qr.jpg" width="100%" height="auto" alt="">
         <div class="u-font--white u-horizontal-auto u-w80">
           <a href="/user/n-5.php" class="c-button--sm--text-color link-noBorder">戻る</a>
         </div>
@@ -61,7 +61,7 @@
       <tr>
         <th>入庫日時</th>
         <td>2024/2/1(木) 10:35</td>
-        <th>出庫予定日</th>
+        <th>出庫予定日</th><!-- 過去の予約の場合出庫日 -->
         <td>2024/2/1(木)</td>
         <th>利用日数</th>
         <td>5日</td>
@@ -162,7 +162,7 @@
       </thead>
       <tbody class="l-table-charge-detail__body">
         <tr>
-          <th>駐車料金</th>
+          <th>駐車料金（普通）</th> <!-- 駐車料金の後に「車両区分」を記載 -->
           <td class="u-font-nowrap">1,000円</td>
           <td>1</td>
           <td class="u-font-nowrap">5,000円</td>
@@ -203,7 +203,7 @@
 
     <!-- 各ボタン -->
     <div class="l-flex--column l-grid--rgap1 l-flex--center u-mt2">
-      <!-- 下二つ（変更・キャンセル）は過去の予約の場合非表示 -->
+      <!-- 下2つ（変更・キャンセル）は過去の予約の場合非表示 -->
       <a href="change.php" class="c-button--yellow u-w170 link-white">フライト情報変更</a>
       <a href="cancel.php" class="c-button--yellow u-w170 link-white">キャンセル</a>
       <a href="/user/dashboard.php" class="c-button--yellow u-w170 link-white">マイページに戻る</a>

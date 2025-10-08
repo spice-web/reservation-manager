@@ -17,8 +17,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
 
   <!-- css -->
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/user/style.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/user/style.css">
   <!-- Optional - CSS SVG Icons (Font Awesome) -->
   <link rel="stylesheet" type='text/css' media='all' href="/css/svg-icons.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -32,13 +32,13 @@
         <h2 class="c-title__user--lv2">マイページ</h2>
         <div class="p-user-head__wrap">
           <a href="" class="p-user-head__item--reserve">
-            <img src="/images/icon/icon-car.svg" alt="">新規予約はこちら
+            <img src="/assets/images/icon/icon-car.svg" alt="">新規予約はこちら
           </a>
           <a href="https://www.sunparking.co.jp/guide/" target="_blank" class="p-user-head__item--access">
-            <img src="/images/icon/icon-parking.svg" alt="">駐車場のアクセス
+            <img src="/assets/images/icon/icon-parking.svg" alt="">駐車場のアクセス
           </a>
           <a href="mailto:" class="p-user-head__item--contact">
-            <img src="/images/icon/icon-contact.svg" alt="">お問い合わせ
+            <img src="/assets/images/icon/icon-contact.svg" alt="">お問い合わせ
           </a>
         </div>
 
@@ -180,8 +180,13 @@
           <div class="l-user-car-info__wrap VehicleModal">
             <div class="l-user-car-info__label" id="VehicleInfo">車両情報</div>
             <div class="l-user-car-info__inner">
+
               <div class="l-user-car-info__item">
-                <div class="l-user-car-info__name"><span class="u-font--sm is-block">トヨタ</span>セルシオ</div>
+                <div class="l-user-car-info__name">
+                  <div class="u-font--sm is-block">トヨタ<span class="l-user-car-info__name--mark">デフォルト</span></div>
+                  <!-- 12文字以上は「...」で省略 -->
+                  長い車名長い車名長い車名...
+                </div>
                 <div class="l-user-car-info__detail">
                   <div>ナンバー: 1234</div>
                   <div>色: 黒</div>
@@ -243,7 +248,7 @@
     <div class="c-user-modal__content">
       <span class="c-user-modal__close">&times;</span>
       <figure class="c-user-modal__qr">
-        <img src="../images/dummy/dummy_qr.jpg" width="100%" height="auto" alt="QR">
+        <img src="../assets/images/dummy/dummy_qr.jpg" width="100%" height="auto" alt="QR">
       </figure>
     </div>
   </div>
