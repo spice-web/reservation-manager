@@ -249,6 +249,14 @@
       color: $text-color;
       padding: 2rem;
       cursor: pointer;
+
+      // オプションセレクト用
+      height: 100%;
+      display: flex;
+      align-items: center;
+      padding: 2rem 0;
+      /* flex-direction: column; */
+      justify-content: center;
     }
 
     &.--unselected {
