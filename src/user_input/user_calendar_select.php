@@ -1,5 +1,5 @@
 <!-- B-1-0 forward calendar
-<img src="../../images/svg/calendar_available.svg">         〇
+<img src="../assets/images/svg/calendar_available.svg">         〇
 <img src="../../images/svg/calendar_some-available.svg" alt="">    △
 <img src="../../images/svg/calendar_reserved.svg" alt="">          ×
 <img src="../../images/svg/calendar_none.svg" alt="">              -
@@ -52,288 +52,288 @@
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">5:00～</div>
                 <div class="p-reserve-selectedTime__bg c-calendar__available-icon">
-                  <img src="../../images/svg/calendar_available.svg">
+                  <img src="../assets/images/svg/calendar_available.svg">
                 </div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">5:15～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">5:30～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">5:45～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">6:00～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">6:15～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">6:30～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">6:45～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">7:00～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">7:15～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">7:30～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">7:45～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">8:00～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">8:15～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">8:30～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">8:45～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">9:00～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">9:15～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">9:30～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">9:45～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">10:00～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">10:15～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">10:30～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">10:45～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">11:00～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">11:15～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">11:30～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">11:45～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">12:00～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">12:15～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">12:30～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">12:45～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">13:00～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">13:15～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">13:30～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">13:45～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">14:00～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">14:15～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">14:30～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">14:45～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">15:00～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">15:15～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">15:30～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">15:45～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">16:00～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">16:15～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">16:30～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">16:45～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">17:00～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">17:15～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">17:30～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">17:45～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">18:00～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">18:15～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">18:30～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">18:45～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">19:00～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">19:15～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">19:30～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">19:45～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">20:00～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">20:15～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">20:30～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">20:45～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">21:00～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">21:15～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">21:30～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">21:45～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">22:00～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">22:15～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
               <li class="c-calendar-available-time__detail">
                 <div class="p-reserve-selectedTime__bg">22:30～</div>
-                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../../images/svg/calendar_available.svg"></div>
+                <div class="p-reserve-selectedTime__bg c-calendar__available-icon"><img src="../assets/images/svg/calendar_available.svg"></div>
               </li>
             </ul>
           </dd>
