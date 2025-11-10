@@ -31,9 +31,8 @@
 
         <!-- 9/28追加 -->
         <div class="c-calendar-exited">
-          2025年12月
+          2023年12月25日(火)
         </div>
-
 
         <div class="l-table-list--scroll__wrapper">
           <!-- 入庫一覧リスト -->

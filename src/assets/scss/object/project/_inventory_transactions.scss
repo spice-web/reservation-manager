@@ -4,6 +4,7 @@
 .incoming-inventory-list,
 .outgoing-inventory-list {
   display: none;
+
   &.is-active {
     display: block;
   }
@@ -22,6 +23,7 @@
 .p-inventoryTransactions-bulk-date {
   @extend .p-inventoryTransactions-toggle;
   column-gap: 2rem;
+
   // シンプルな日付選択
   &__simple-select-date {
     margin-left: 0.25rem;
@@ -29,6 +31,7 @@
     display: flex;
     gap: 0.5rem;
     align-items: center;
+
     input {
       background: white;
       margin-bottom: 0;
@@ -43,7 +46,9 @@
   display: flex;
   gap: 0.15rem;
   align-items: center;
+
   &__text {
+    color: #FFF;
     background: #ec00ec;
     padding: 0.15rem 0.25rem;
     font-weight: bold;
@@ -84,21 +89,26 @@
   &:hover {
     visibility: visible;
   }
+
   .fc {
     background-color: white;
     border: 1px solid #ccc;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     padding: 1rem;
+
     .fc-daygrid-day.fc-day-today {
       background: #ec00ec;
     }
   }
+
   a.fc-daygrid-day-number {
     font-size: 1rem;
   }
+
   .fc-daygrid-day-events {
-    display: none!important;
+    display: none !important;
   }
+
   .fc-daygrid-day-top {
     margin-top: 10px;
     margin-bottom: 10px;
