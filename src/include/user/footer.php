@@ -14,7 +14,7 @@
       <a href="mailto:" class="c-button-user__footer--contact">お問い合わせ</a>
     </div>
   </div>
-  <p class="l-footer-user__copy">© 2025 AIRPORT PARKING PRO</p>
+  <p class="l-footer-user__copy">© 2025 Sunport Co., Ltd.</p>
   <button id="gototop" class="c-button__button"><img src="/assets/images/icon/chevron-up.svg" width="18px" height="10px" alt=""></button>
 </footer>
 

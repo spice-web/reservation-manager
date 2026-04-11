@@ -45,6 +45,32 @@
         </div>
       </div>
 
+      <!-- お客様選択予約　ラジオボタン -->
+      <!-- 旅行保険への加入を検討していますか？ -->
+      <div class="p-user-input-optionSelect__wrap">
+        <p class="">旅行保険への加入を検討していますか？</p>
+        <div class="p-user-input-optionSelect__radio">
+          <label for="insurance_yes">
+            <input type="radio" id="insurance_yes" name="insurance" value="yes" class="c-button__radio--input">加入する
+          </label>
+          <label for="insurance_no">
+            <input type="radio" id="insurance_no" name="insurance" value="no" class="c-button__radio--input">加入しない
+          </label>
+        </div>
+      </div>
+      <div class="p-user-input-optionSelect__wrap u-mb0">
+        <!-- 洗車を検討いますか？ -->
+        <p class="">洗車を検討していますか？</p>
+        <div class="p-user-input-optionSelect__radio">
+          <label for="carwash_yes">
+            <input type="radio" id="carwash_yes" name="carwash" value="yes" class="c-button__radio--input">検討する
+          </label>
+          <label for="carwash_no">
+            <input type="radio" id="carwash_no" name="carwash" value="no" class="c-button__radio--input">検討しない
+          </label>
+        </div>
+      </div>
+
       <!-- pager -->
       <div class="c-button-group__form u-mt3">
         <a id="returnButton" class="c-button__pagination--return">前のページに戻る</a>

@@ -682,6 +682,10 @@
   margin-bottom: 1rem;
   margin-top: 0.25rem;
 
+  thead {
+    white-space: nowrap;
+  }
+
   tr:not(:last-child) {
     td {
       border-bottom: 1px solid #b4b4b4;

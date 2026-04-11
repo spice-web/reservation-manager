@@ -160,9 +160,10 @@
   }
 
   &__detail-total {
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 0;
+    padding: 1rem;
+    // padding-left: 0;
+    // padding-right: 0;
+    // padding-bottom: 0;
   }
 }
 
@@ -265,6 +266,39 @@
   // }
 }
 
+// ユーザー戦車等のオプション選択
+.p-user-input-optionSelect {
+  &__wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    padding: 0.25rem;
+    margin-bottom: 2rem;
+  
+    label, input, p {
+      margin-bottom: 0;
+    }
+    input {
+      margin-right: 0.25rem;
+    }
+
+  @media screen and (max-width: 849px) {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  }
+
+  &__radio {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    @media screen and (max-width: 849px) {
+      justify-content: center;
+    }
+  }
+}
+
 // 完了ページ
 .p-user-input-complete__text {
   font-size: 32px;
@@ -279,7 +313,6 @@
 
 // メディアクエリ
 @media screen and (max-width: 849px) {
-
   .p-user,
   .p-user-input {
     &__inner {
