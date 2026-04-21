@@ -186,10 +186,10 @@
     </table>
 
     <div class="l-table-charge-detail--second">
-      <div>消費税8%</div>
+      <div>消費税(8%)</div>
       <div>0円</div>
       <div></div>
-      <div>消費税10%</div>
+      <div>消費税(10%)</div>
       <div>750円</div>
       <div></div>
       <div colspan="2" class="text-right">合計金額</div>

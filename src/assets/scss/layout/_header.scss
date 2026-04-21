@@ -134,18 +134,57 @@
   flex-direction: column;
   gap: 0.25rem;
   justify-content: center;
-  height: 75px;
+  min-height: 75px;
+  height: auto;
   align-items: center;
-  padding: 0 1.5rem;
+  padding: 0.75rem 1.5rem;
   margin-bottom: 2rem;
   img {
     width: 187px;
   }
 
+  
   @media screen and (min-width: 850px) {
-    gap: 1rem;
-    flex-direction: row;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "left info"
+                         "title title";
+    gap: 0.25rem;
     margin-bottom: 2.5rem;
+
+    &__left {
+      grid-area: left;
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
   }
 }
+
+// ユーザー予約時ヘッダー
+.l-header-userReservation {
+  &__title {
+    grid-area: title;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.2em;
+  }
+
+  &__info {
+    grid-area: info;
+    font-size: 1rem;
+    display: grid;
+    justify-content: right;
+    padding-right: 1.5rem;
+  }
+
+  @media screen and (max-width: 849px) {
+  &__info {
+      padding-right: 0;
+    }
+  }
+}
+
+

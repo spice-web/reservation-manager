@@ -31,10 +31,14 @@
       display: flex;
       justify-content: center;
       gap: 10px;
-      margin-right: 27.5px;
+      margin-left: auto;
+      margin-right: auto;
       margin-bottom: 4rem;
+      padding-left: 10px;
+      padding-right: 37.5px;
     }
     &__item {
+      font-feature-settings: "palt";
       position: relative;
       width: min(32%, 300px);
       background-color: $light-green;
@@ -42,6 +46,7 @@
       font-size: 1.25rem;
       line-height: 55px;
       text-align: center;
+      padding-left: 1.25rem;
       // 左を三角形にする
       &::after {
         content: "";
@@ -64,6 +69,7 @@
         border-top: 27.5px solid transparent;
         border-bottom: 27.5px solid transparent;
         border-left: 27.5px solid $light-green;
+        z-index: 101;
       }
 
       &:first-child {
@@ -106,9 +112,14 @@
       margin-bottom: 2rem;
     }
     &__item {
+      height: 32px;
       font-size: 10px;
-      line-height: 32px;
       padding-left: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      line-height: 1;
       &::after {
         border-top: 16px solid rgba(0, 0, 0, 0);
         border-bottom: 16px solid rgba(0, 0, 0, 0);

@@ -16,25 +16,34 @@
     <form action="./user_login.php" method="POST">
       <!-- カレンダー選択 -->
       <div class="p-reserve__wrap">
-        <p class="text-center u-mb2 u-font--medium">入庫日を指定してください</p>
-        <div>
+        <p class="text-center u-mb2 u-font--lg">入庫日を指定してください</p>
+        <div class="l-flex--end u-mt1 u-mb1 u-font--sm u-font--medium">
+          <span class="c-calendar__available-icon--blue">青</span> ＝空車、<span class="c-calendar__available-icon--yellow">黄</span>＝残りわずか、<span class="c-calendar__available-icon--red">赤</span>＝満車
+        </div>
+        <!-- <div>
           <div class="c-title__calendar c-calendar-reserve">2021年1月</div>
-        </div>
+        </div> -->
         <div class="u-mb6">
-          <div id="my-calendar"></div>
+          <div id="my-calendar"><img src="../assets/images/dummy/dummy_calendar.png" alt=""></div>
         </div>
-        <p class="text-center u-mb2  u-font--medium">出庫日を指定してください</p>
+        <!-- 出庫日 -->
+        <p class="text-center u-mb2 u-font--lg u-font--medium">出庫日を指定してください</p>
         <div>
+        <div class="l-flex--end u-mt1 u-mb1 u-font--sm u-font--medium">
+          <span class="c-calendar__available-icon--blue">青</span> ＝空車、<span class="c-calendar__available-icon--yellow">黄</span>＝残りわずか、<span class="c-calendar__available-icon--red">赤</span>＝満車
+        </div>
           <div class="c-title__calendar c-calendar-reserve">2021年1月</div>
         </div>
       </div>
 
       <div class="p-reserve__wrap">
-        <p class="text-center u-mb2 u-font--medium">
+        <p class="text-center u-mb2 u-font--lg u-font--medium">
           入庫予定時間を指定してください
         </p>
+        <div class="l-flex--end u-mt1 u-mb1 u-font--sm u-font--medium">
+          <span class="c-calendar__available-icon--blue">青</span> ＝空車、<span class="c-calendar__available-icon--yellow">黄</span>＝残りわずか、<span class="c-calendar__available-icon--red">赤</span>＝満車
+        </div>
         <div class="c-title__calendar u-mb1">2024年2月</div>
-
         <!--
           変更ここから 2025/9/22
         -->
@@ -371,6 +380,9 @@
               <div>入庫日</div>
               <div>:</div>
               <div>10/10(水)</div>
+              <div>入庫時間</div>
+              <div>:</div>
+              <div>10:00</div>
               <div>出庫日</div>
               <div>:</div>
               <div>10/10(水)</div>

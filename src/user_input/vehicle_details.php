@@ -6,7 +6,7 @@
 <body>
 
   <?php
-  $step = "entry";
+  $step = "vehicle-info";
   include_once '../include/user_input/header_information.php';
   include_once '../include/step.php'; ?>
 
@@ -38,25 +38,28 @@
           </div>
 
           <div class="l-grid--col2-auto l-grid--cgap2 l-flex--column--md l-grid--cgap-md">
+            <!-- 車種 -->
+            <div>
+              <label for="car">車種</label>
+              <div class="c-form-select-color">
+                <select id="car" name="car">
+                  <option value="" selected disabled>選択してください</option>
+                  <option value="未定">未定</option>
+                  <option value="ダミーダミー">ダミーダミー</option>
+                </select>
+              </div>
+            </div>
+
             <div>
               <label for="maker">メーカー</label>
               <!-- 車メーカーのselect -->
               <div class="c-form-select-color">
                 <select name="maker" id="maker">
-                  <option value="" selected disabled> --- </option>
+                  <option value="" selected disabled>選択してください</option>
                   <option value="トヨタ">トヨタ</option>
                   <option value="日産">日産</option>
                   <option value="フォルクスワーゲン">フォルクスワーゲン</option>
-                  <option value="アウディ">メルセデス・ベンツ</option>
-                </select>
-              </div>
-            </div>
-            <div>
-              <label for="car">車種</label>
-              <div class="c-form-select-color">
-                <select id="car" name="car">
-                  <option value="" selected disabled> --- </option>
-                  <option value="ダミーダミー">ダミーダミー</option>
+                  <option value="アウディ">アウディ</option>
                 </select>
               </div>
             </div>
@@ -64,7 +67,8 @@
               <label for="color">色</label>
               <div class="c-form-select-color">
                 <select id="color" name="color">
-                  <option value="" selected disabled> --- </option>
+                  <option value="" selected disabled>選択してください</option>
+                  <option value="未定">未定</option>
                   <option value="ダミーダミー">ダミーダミー</option>
                 </select>
               </div>
@@ -89,8 +93,18 @@
               <p class="c-label--lg">到着日がお迎え日と異なる</p><!-- 9/22MTG クラス追加 -->
             </div>
             <div>
-              <label for="people">ご利用人数</label>
-              <input type="text" id="people" name="people">
+              <div>
+                <label for="people">ご利用人数</label>
+                <!-- ご利用人数のselect -->
+                <div class="c-form-select-color">
+                  <select name="people" id="people">
+                    <option value="" selected disabled>選択してください</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                </div>
+              </div>
             </div>
           </div>
           <!-- 9/22 MTG修正 過去に利用した車両を参照する ここまで-->

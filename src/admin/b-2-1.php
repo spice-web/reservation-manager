@@ -7,8 +7,6 @@
   <div class="l-wrap">
     <?php include_once '../include/header.php'; ?>
     <?php include_once '../include/nav.php'; ?>
-
-
     <main class="l-wrap__main l-container__main">
       <!-- パンくず -->
       <ul class="l-wrap__breadcrumb l-breadcrumb">

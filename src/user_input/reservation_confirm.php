@@ -27,7 +27,15 @@
         <tr>
           <th>入庫日時</th>
           <td>2024/2/1(木) 10:35</td>
+          <th>入庫予定日</th>
+          <td>2024/2/1(木)</td>
+          <th>入庫日</th>
+          <td>2024/2/1(木)</td>
           <th>出庫予定日</th>
+          <td>2024/2/1(木)</td>
+        </tr>
+        <tr>
+          <th>出庫日</th>
           <td>2024/2/1(木)</td>
           <th>利用日数</th>
           <td>5日</td>
@@ -152,11 +160,11 @@
 
       <div class="l-table-charge-detail--second">
         <div class="l-table-charge-detail--second__column">
-          <div>消費税8%</div>
+          <div>消費税(8%)</div>
           <div>0円</div>
           <div colspan="2" class="text-right">合計金額</div>
           <div class="u-font--lg u-font--medium">11,300 <span>円</span>（税抜）</div>
-          <div>消費税10%</div>
+          <div>消費税(10%)</div>
           <div>750円</div>
           <div class="u-font--lg u-font--medium l-grid--colspan2">12,500 <span>円</span>（税込）</div>
         </div>

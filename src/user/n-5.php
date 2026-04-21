@@ -292,6 +292,13 @@
           <label for="number">ナンバー（※4桁の数字）</label>
           <input type="text" id="number" name="number" maxlength="4" minlength="4" class="u-w-full-wide">
         </div>
+        <!-- チェックボックス追加 2026/04/15 -->
+        <div>
+          <label>
+            <input type="checkbox" name="mainVehicle" value="1">
+            この車両をメインにする
+          </label>
+        </div>
         <button class="c-button__submit u-mt1 u-mb1 u-horizontal-auto" type="submit">追加</button>
       </div>
     </div>
@@ -336,6 +343,12 @@
         <div>
           <label for="number">ナンバー（※4桁の数字）</label>
           <input type="text" id="number" name="number" maxlength="4" minlength="4" class="u-w-full-wide">
+        </div>
+        <div>
+          <label>
+            <input type="checkbox" name="mainVehicle" value="1">
+            この車両をメインにする
+          </label>
         </div>
         <button class="c-button__submit u-mt1 u-mb1 u-horizontal-auto" type="submit">変更</button>
       </div>

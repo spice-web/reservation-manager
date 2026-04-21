@@ -79,7 +79,7 @@
                 <div>小計 10%対象額（税抜）</div>
                 <div id="subTotal" class="p-register__optionPrice text-right">0<span class="u-font-yen">円</span></div>
 
-                <div>消費税 10%</div>
+                <div>消費税(10%)</div>
                 <div id="tax" class="p-register__optionPrice text-right">0<span class="u-font-yen">円</span></div>
 
                 <label>消費税対象外</label>

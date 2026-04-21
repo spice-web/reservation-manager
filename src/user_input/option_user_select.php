@@ -48,25 +48,25 @@
       <!-- お客様選択予約　ラジオボタン -->
       <!-- 旅行保険への加入を検討していますか？ -->
       <div class="p-user-input-optionSelect__wrap">
-        <p class="">旅行保険への加入を検討していますか？</p>
+        <p class="">万が一の時にも安心、安全な旅行保険への加入を検討していますか？</p>
         <div class="p-user-input-optionSelect__radio">
           <label for="insurance_yes">
-            <input type="radio" id="insurance_yes" name="insurance" value="yes" class="c-button__radio--input">加入する
+            <input type="radio" id="insurance_yes" name="insurance" value="yes" class="c-button__radio--input">はい
           </label>
           <label for="insurance_no">
-            <input type="radio" id="insurance_no" name="insurance" value="no" class="c-button__radio--input">加入しない
+            <input type="radio" id="insurance_no" name="insurance" value="no" class="c-button__radio--input">いいえ
           </label>
         </div>
       </div>
       <div class="p-user-input-optionSelect__wrap u-mb0">
-        <!-- 洗車を検討いますか？ -->
-        <p class="">洗車を検討していますか？</p>
+        <!-- 当店自慢の洗車をご希望されていますか？ -->
+        <p class="">当店自慢の洗車をご希望されていますか？</p>
         <div class="p-user-input-optionSelect__radio">
           <label for="carwash_yes">
-            <input type="radio" id="carwash_yes" name="carwash" value="yes" class="c-button__radio--input">検討する
+            <input type="radio" id="carwash_yes" name="carwash" value="yes" class="c-button__radio--input">はい
           </label>
           <label for="carwash_no">
-            <input type="radio" id="carwash_no" name="carwash" value="no" class="c-button__radio--input">検討しない
+            <input type="radio" id="carwash_no" name="carwash" value="no" class="c-button__radio--input">いいえ
           </label>
         </div>
       </div>
@@ -78,6 +78,8 @@
       </div>
     </form>
   </div>
+
+  <?php include_once '../include/user/footer.php'; ?>
 
   <!-- オプションをクリックしたら出てくるmodal -->
   <?php include_once '../include/option/option.php'; ?>

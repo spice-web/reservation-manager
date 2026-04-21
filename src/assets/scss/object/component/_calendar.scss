@@ -21,6 +21,18 @@
     align-items: center;
     justify-content: center;
 
+    &--blue {
+      color: #007bff;
+    }
+
+    &--yellow {
+      color: #ffc107;
+    }
+
+    &--red {
+      color: #dc3545;
+    }
+
     img {
       width: 25px;
       height: 25px;
