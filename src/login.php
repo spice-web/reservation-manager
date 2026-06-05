@@ -7,7 +7,7 @@
   <?php include_once 'include/header.php'; ?>
 
   <div class="l-container__admin">
-    <figure class="u-mb1"><img src="images/svg/logo.svg" alt="ロゴ" width="255px" height="auto" class="u-horizontal-auto is-block"></figure>
+    <figure class="u-mb1"><img src="images/logo/logo.png" alt="ロゴ" width="255px" height="auto" class="u-horizontal-auto is-block"></figure>
     <div class="c-form__admin--title">ユーザーログイン</div>
     <form action="" method="POST" class="c-form__admin">
       <div>

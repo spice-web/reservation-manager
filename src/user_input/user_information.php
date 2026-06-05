@@ -55,6 +55,8 @@
       </div>
     </form>
   </div><!-- ./p-user-input__inner -->
+
+  <?php include_once '../include/user/footer.php'; ?>
 </body>
 
 </html>

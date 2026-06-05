@@ -283,7 +283,7 @@
     font-size: 32px;
     text-align: center;
     line-height: 2;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
   }
   &__message {
     width: 100%;
@@ -293,6 +293,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: -5rem;
   }
   &__image {
     max-width: 600px;
@@ -341,15 +342,16 @@
     }
   }
 
-  .p-user-input-auto-output__wrap {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-  }
-
-  // 受付終了
-  .p-user-input-complete__text {
-    font-size: 20px;
-    // line-height: 1;
-    margin-bottom: 2rem;
+  .p-user-input-auto-output {
+    &__wrap {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto;
+    }
+    // 受付終了後の案内
+    &__text {
+      font-size: 20px;
+      // line-height: 1;
+      margin-bottom: 2rem;
+    }
   }
 }

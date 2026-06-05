@@ -1,0 +1,87 @@
+.p-error-page {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 40px 16px;
+    background:
+      radial-gradient(circle at top, rgba(63, 167, 140, 0.14), transparent 38%),
+      linear-gradient(180deg, #f7fbf8 0%, #eef6f1 100%);
+  }
+
+  .p-error-page__inner {
+    width: min(100%, 720px);
+    padding: 48px 32px;
+    border: 1px solid #d7e7de;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.94);
+    box-shadow: 0 24px 60px rgba(34, 73, 60, 0.12);
+    text-align: center;
+  }
+
+  .p-error-page__logo {
+    width: 180px;
+    max-width: 48vw;
+    margin-bottom: 24px;
+  }
+
+  .p-error-page__title {
+    margin: 0 0 12px;
+    color: #17372d;
+    font-size: clamp(1.5rem, 2vw, 2.25rem);
+    font-weight: 700;
+  }
+
+  .p-error-page__text {
+    margin: 0;
+    color: #456157;
+    font-size: 1rem;
+    line-height: 1.9;
+  }
+
+  .p-error-page__actions {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    color: #FFF;
+    margin-top: 32px;
+  }
+
+  .p-error-page__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+    min-height: 52px;
+    padding: 0 24px;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+  }
+
+  .p-error-page__button:hover {
+    transform: translateY(-1px);
+  }
+
+  .p-error-page__button--primary {
+    background: #2d8a70;
+    color: #fff;
+    box-shadow: 0 12px 24px rgba(45, 138, 112, 0.22);
+  }
+
+  @media (max-width: 640px) {
+    .p-error-page__inner {
+      padding: 40px 20px;
+      border-radius: 20px;
+    }
+
+    .p-error-page__actions {
+      gap: 12px;
+    }
+
+    .p-error-page__button {
+      width: 100%;
+    }
+  }

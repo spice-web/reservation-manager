@@ -1,15 +1,9 @@
-<!-- B-1-0 forward calendar
-<img src="../assets/images/svg/calendar_available.svg">         〇
-<img src="../../images/svg/calendar_some-available.svg" alt="">    △
-<img src="../../images/svg/calendar_reserved.svg" alt="">          ×
-<img src="../../images/svg/calendar_none.svg" alt="">              -
--->
-
 <!DOCTYPE html>
 <html lang="ja">
 <?php include_once '../include/head.php'; ?>
 
 <body>
+  <?php include_once '../include/user_input/header_information.php'; ?>
   <!-- css laravel環境では削除 -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.css">
   <div class="p-user-input__inner u-mt3">
@@ -24,7 +18,7 @@
           <div class="c-title__calendar c-calendar-reserve">2021年1月</div>
         </div> -->
         <div class="u-mb6">
-          <div id="my-calendar"><img src="../assets/images/dummy/dummy_calendar.png" alt=""></div>
+          <div id="my-calendar"><img src="../assets/images/dummy/dummy_calendar.png" alt="" width="100%"></div>
         </div>
         <!-- 出庫日 -->
         <p class="text-center u-mb2 u-font--lg u-font--medium">出庫日を指定してください</p>
@@ -438,6 +432,8 @@
     </form>
 
   </div>
+
+  <?php include_once '../include/user/footer.php'; ?>
   <!-- 表示非表示ボタン -->
   <script src="../js/close_button_toggle.js"></script>
 </body>

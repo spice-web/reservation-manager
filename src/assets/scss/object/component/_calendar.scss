@@ -85,6 +85,11 @@
   position: relative;
 }
 
+.calendar_section {
+  width: calc(100% - 60px);
+  margin: 0 auto;
+}
+
 // 出庫済みテーブル用カレンダー
 .c-calendar-exited {
   background-color: #EC00EC;

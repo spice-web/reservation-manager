@@ -53,15 +53,11 @@
             <div>
               <label for="maker">メーカー</label>
               <!-- 車メーカーのselect -->
-              <div class="c-form-select-color">
-                <select name="maker" id="maker">
-                  <option value="" selected disabled>選択してください</option>
-                  <option value="トヨタ">トヨタ</option>
-                  <option value="日産">日産</option>
-                  <option value="フォルクスワーゲン">フォルクスワーゲン</option>
-                  <option value="アウディ">アウディ</option>
-                </select>
-              </div>
+            <div class="c-form-select-color" data-select2-id="5">
+            <select name="car_maker_id" id="car_maker_id" data-select2-id="car_maker_id" tabindex="-1" class="select2-hidden-accessible" aria-hidden="true">            
+            </select>
+            <span class="select2 select2-container select2-container--default select2-container--below select2-container--open" dir="ltr" data-select2-id="1" style="width: calc(100% - 39px);"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="true" tabindex="0" aria-disabled="false" aria-labelledby="select2-car_maker_id-container" aria-owns="select2-car_maker_id-results"><span class="select2-selection__rendered" id="select2-car_maker_id-container" role="textbox" aria-readonly="true"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+          </div>
             </div>
             <div>
               <label for="color">色</label>
@@ -96,12 +92,14 @@
               <div>
                 <label for="people">ご利用人数</label>
                 <!-- ご利用人数のselect -->
-                <div class="c-form-select-color">
+                <div class="c-form-select-number">
                   <select name="people" id="people">
                     <option value="" selected disabled>選択してください</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
+                    <!-- 25まで -->
+                    <option value="25">25</option>
                   </select>
                 </div>
               </div>
