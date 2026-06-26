@@ -30,16 +30,19 @@
   padding: 0.25rem 0.5rem;
   display: inline-block;
   line-height: 1;
+
   &--delay {
     @extend .c-label;
     margin-left: 0.25rem;
   }
+
   &--lg {
     @extend .c-label;
     font-size: 0.875rem;
     padding: 5px 1rem;
     background-color: #d24045;
   }
+
   &__light-deep-gray {
     // ラベル(入庫済)のBG色
     @extend .c-label;
@@ -49,11 +52,13 @@
       background-color: $light-deep-gray;
     }
   }
+
   &__dark-gray {
     // ラベル(入庫済)のBG色
     @extend .c-label;
     background-color: $dark-gray;
   }
+
   &__deep-gray {
     // ラベル(有)のBG色
     @extend .c-label;
@@ -63,10 +68,12 @@
       /* 有の場合のテキストカラー */
     }
   }
+
   &__blue {
     @extend .c-label;
     background-color: $blue;
   }
+
   &__green {
     @extend .c-label;
     background-color: $green;
@@ -81,5 +88,12 @@
       border-radius: 11px;
       width: 100%;
     }
+  }
+
+  // requiredラベル
+  &--required {
+    color: #f00;
+    font-size: 0.75rem;
+    margin-left: 0.25rem;
   }
 }

@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>マイページ</title>
+  <title>マイページ | 成田空港駐車場 サンパーキング成田店</title>
   <!-- description -->
   <meta name="description" content="" />
   <!-- favicon -->

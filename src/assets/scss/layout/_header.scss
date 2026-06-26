@@ -178,6 +178,7 @@
     display: grid;
     justify-content: right;
     padding-right: 1.5rem;
+    font-feature-settings: "palt";
   }
 
   @media screen and (max-width: 849px) {

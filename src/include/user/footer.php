@@ -6,15 +6,14 @@
       </figure>
       成田空港駐車場サンパーキング<br>
       〒286-0121 千葉県成田市駒井野134<br>
-      TEL : 0476-33-1155<br>
-      ［営業時間］5：00～22：30<br class="br--sp" />（成田空港最終便到着まで対応）
+      ［営業時間］5：00～22：30<br class="is-none--md" />（成田空港最終便到着まで対応）
     </div>
     <div class="l-flex l-flex--item-start l-flex--center--md l-grid--gap1 u-font--white">
       <a href="https://www.sunparking.co.jp/guide/" target="_blank" class="c-button-user__footer--access">駐車場へのアクセス</a>
       <a href="mailto:" class="c-button-user__footer--contact">お問い合わせ</a>
     </div>
   </div>
-  <p class="l-footer-user__copy">© 2025 Sunparking Co., Ltd.</p>
+  <p class="l-footer-user__copy">© 2026 Sunparking Co., Ltd.</p>
   <button id="gototop" class="c-button__button"><img src="/assets/images/icon/chevron-up.svg" width="18px" height="10px" alt=""></button>
 </footer>
 

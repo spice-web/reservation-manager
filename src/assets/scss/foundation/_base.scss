@@ -47,10 +47,13 @@ li {
 }
 
 // リンク
-a:link,
+a {
+  color: inherit;
+}
+
 a:visited,
 a:active {
-  color: inherit;
+  // color: inherit;
 }
 
 a:hover {

@@ -26,71 +26,46 @@
         </tr>
         <tr>
           <th>入庫日時</th>
-          <td>2024/2/1(木) 10:35</td>
+          <td>2024/02/10(木) 10:35</td>
           <th>入庫予定日</th>
-          <td>2024/2/1(木)</td>
+          <td>2024/02/10(木)</td>
           <th>入庫日</th>
-          <td>2024/2/1(木)</td>
+          <td>2024/02/10(木)</td>
           <th>出庫予定日</th>
-          <td>2024/2/1(木)</td>
+          <td>2024/02/10(木)</td>
         </tr>
         <tr>
           <th>出庫日</th>
-          <td>2024/2/1(木)</td>
+          <td>2024/02/10(木)</td>
           <th>利用日数</th>
           <td>5日</td>
         </tr>
       </table>
 
-      <!-- 顧客情報 -->
-      <div class="c-title__table">顧客情報</div>
+      <!-- お客様情報 -->
+      <div class="c-title__table">お客様情報</div>
       <table class="l-table-confirm">
         <tr>
-          <th>顧客コード</th>
-          <td>01K5X8HBGQGKPCCB4JH3MYANB9</td>
-          <th>お客様氏名 </th>
-          <td>サン太郎 サン太郎</td>
+          <th>氏名 </th>
+          <td>サン　太郎</td>
           <th>ふりがな</th>
-          <td>さんたろう</td>
-          <th>利用回数</th>
-          <td>8回</td>
+          <td>さん　たろう</td>
         </tr>
         <tr>
-          <th>郵便番号</th>
-          <td>111-0000</td>
-          <th>電話番号</th>
+          <th>携帯番号</th>
           <td>090-1234-5678</td>
-          <!-- 以下2つは桁数次第ではレイアウトが崩れる分けてもよいかも -->
           <th>Mail</th>
           <td>testaaatestaaaatestaaatest@test.jp</td>
-          <th>LINE ID</th>
-          <td>sun123</td>
-        </tr>
-      </table>
-
-      <!-- 到着予定 -->
-      <div class="c-title__table">到着予定</div>
-      <table class="l-table-confirm">
-        <tr>
-          <th>到着予定日</th>
-          <td>2024/12/15(月)</td>
-          <th>到着予定時間</th>
-          <td>16：45</td>
-          <th>到着便</th>
-          <td>NH205</td>
-          <th>航空会社</th>
-          <td>ANA</td>
         </tr>
         <tr>
-          <th>出発空港</th>
-          <td>LAX</td>
-          <th>到着空港</th>
-          <td>NRT</td>
-          <th>到着ターミナル</th>
-          <td>2</td>
-          <td colspan="3" class="--mark">
-            <div class="c-label--lg">到着日とお迎え日が異なる</div>
-          </td>
+          <th>人数</th>
+          <td>3名</td>
+          <th>郵便番号</th>
+          <td>111-0000</td>
+        </tr>
+        <tr>
+          <th>備考</th>
+          <td colspan="3">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</td>
         </tr>
       </table>
 
@@ -121,14 +96,39 @@
         </tr>
       </table>
 
+      <!-- 到着予定 -->
+      <div class="c-title__table">
+        到着予定
+        <!-- 到着日とお迎え日が異なる場合に表示 -->
+        <div class="--mark c-label--lg">到着日とお迎え日が異なる</div>
+      </div>
+      <table class="l-table-confirm">
+        <tr>
+          <th>到着予定日</th>
+          <td>2024/12/15(月)</td>
+          <th>到着予定時間</th>
+          <td>16：45</td>
+        </tr>
+        <tr>
+          <th>航空会社</th>
+          <td>ANA</td>
+          <th>到着便</th>
+          <td>NH205</td>
+        </tr>
+        <tr>
+          <th>出発空港</th>
+          <td>LAX</td>
+          <th>到着空港</th>
+          <td>NRT</td>
+        </tr>
+      </table>
+
       <!-- 料金明細 -->
       <div class="c-title__table">料金明細</div>
       <table class="l-table-charge-detail">
         <thead class="l-table-charge-detail__head">
           <tr>
             <th>項目</th>
-            <th>単価</th>
-            <th>数量</th>
             <th>小計</th>
             <th>消費税</th>
           </tr>
@@ -136,38 +136,29 @@
         <tbody class="l-table-charge-detail__body">
           <tr>
             <th>駐車料金（大型）​</th>
-            <td class="u-font-nowrap">1,000円</td>
-            <td>1</td>
             <td class="u-font-nowrap">5,000円</td>
-            <td class="--tax">(税別10%)</td>
+            <td class="--tax">税別10%</td>
           </tr>
           <tr>
             <th>​WAX洗車（オプション料金）</th>
             <td class="u-font-nowrap">2,500円</td>
-            <td>2</td>
-            <td class="u-font-nowrap">2,500円</td>
-            <td class="--tax">(税別10%)</td>
+            <td class="--tax">税別10%</td>
           </tr>
           <tr>
             <th>​海外旅行保険（オプション料金）​</th>
             <td class="u-font-nowrap">3,800円</td>
-            <td>3</td>
-            <td class="u-font-nowrap">3,800円</td>
-            <td class="--tax">(対象外)</td>
+            <td class="--tax">対象外</td>
           </tr>
         </tbody>
       </table>
 
       <div class="l-table-charge-detail--second">
-        <div class="l-table-charge-detail--second__column">
-          <div>消費税(8%)</div>
-          <div>0円</div>
-          <div colspan="2" class="text-right">合計金額</div>
-          <div class="u-font--lg u-font--medium">11,300 <span>円</span>（税抜）</div>
-          <div>消費税(10%)</div>
-          <div>750円</div>
-          <div class="u-font--lg u-font--medium l-grid--colspan2">12,500 <span>円</span>（税込）</div>
-        </div>
+          <div class="l-table-charge-detail--second__head">合計金額</div>
+          <div class="u-font--lg u-font--medium">999,999 <span>円</span></div>
+          <div class="--tax">（税込）</div>
+          <div class="l-table-charge-detail--second__head">内消費税</div>
+          <div>99,999円</div>
+          <div></div><!-- ここに空白を入れることで、グリッドの列数を揃える -->
       </div>
 
       <!-- button -->
@@ -177,6 +168,8 @@
       </div>
     </form>
   </div><!-- ./p-user-input__inner -->
+
+  <?php include_once '../include/user/footer.php'; ?>
 </body>
 
 </html>

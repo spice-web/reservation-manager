@@ -19,8 +19,9 @@
 
         <!-- 9/22 MTG修正 過去に利用した車両を参照する -->
         <!-- 入力エリア -->
-        <div>
+        <div class="l-grid--col2-auto l-grid--gap2 l-flex--column--md">
           <!-- 過去に利用した車両を参照する -->
+          <!-- 一旦非表示
           <div>
             <label for="past_vehicle">過去に利用した車両を参照する</label>
             <div class="c-form-select-color">
@@ -36,11 +37,11 @@
               </select>
             </div>
           </div>
-
-          <div class="l-grid--col2-auto l-grid--cgap2 l-flex--column--md l-grid--cgap-md">
+          -->
+          <div class="l-grid--col2-auto l-grid--gap2 l-flex--column--md">
             <!-- 車種 -->
             <div>
-              <label for="car">車種</label>
+              <label for="car">車種<span class="c-label--required">※必須</span></label>
               <div class="c-form-select-color">
                 <select id="car" name="car">
                   <option value="" selected disabled>選択してください</option>
@@ -49,18 +50,19 @@
                 </select>
               </div>
             </div>
-
+            <!-- メーカー -->
             <div>
               <label for="maker">メーカー</label>
               <!-- 車メーカーのselect -->
-            <div class="c-form-select-color" data-select2-id="5">
-            <select name="car_maker_id" id="car_maker_id" data-select2-id="car_maker_id" tabindex="-1" class="select2-hidden-accessible" aria-hidden="true">            
-            </select>
-            <span class="select2 select2-container select2-container--default select2-container--below select2-container--open" dir="ltr" data-select2-id="1" style="width: calc(100% - 39px);"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="true" tabindex="0" aria-disabled="false" aria-labelledby="select2-car_maker_id-container" aria-owns="select2-car_maker_id-results"><span class="select2-selection__rendered" id="select2-car_maker_id-container" role="textbox" aria-readonly="true"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-          </div>
+              <div class="c-form-select-color" data-select2-id="5">
+                <select name="car_maker_id" id="car_maker_id" data-select2-id="car_maker_id" tabindex="-1" class="select2-hidden-accessible" aria-hidden="true">            
+                </select>
+              </div>
             </div>
+
+            <!-- 色 -->
             <div>
-              <label for="color">色</label>
+              <label for="color">色<span class="c-label--required">※必須</span></label>
               <div class="c-form-select-color">
                 <select id="color" name="color">
                   <option value="" selected disabled>選択してください</option>
@@ -69,14 +71,30 @@
                 </select>
               </div>
             </div>
+
             <div>
-              <label for="number">ナンバー（※4桁の数字）</label>
+              <label for="number">ナンバー（※4桁の数字）<span class="c-label--required">※必須</span></label>
               <input type="text" id="number" name="number" maxlength="4" minlength="4" class="u-w-full-wide">
             </div>
+
+            <!-- 到着便航空会社 -->
             <div>
-              <label for="arrival">到着便（例：JL200, NH300）</label>
+              <label for="car_color_id">到着便航空会社</label>
+              <div class="c-form-select-color">
+                <select id="airline_id" name="airline_id">
+                  <option value="選択してください" disabled>選択してください</option>
+                    <option value="">
+                    </option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label for="arrival">到着便名（例：200,300）</label>
               <input type="text" id="arrival" name="arrival" class="u-w-full-wide">
             </div>
+
+            <!-- 到着日 -->
             <div>
               <label for="date">到着日</label>
               <input type="date" id="date" name="date" class="u-w-full-wide u-mb025">
@@ -88,20 +106,19 @@
               -->
               <p class="c-label--lg">到着日がお迎え日と異なる</p><!-- 9/22MTG クラス追加 -->
             </div>
+
+            <!-- ご利用人数 -->
             <div>
-              <div>
-                <label for="people">ご利用人数</label>
-                <!-- ご利用人数のselect -->
-                <div class="c-form-select-number">
-                  <select name="people" id="people">
-                    <option value="" selected disabled>選択してください</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <!-- 25まで -->
-                    <option value="25">25</option>
-                  </select>
-                </div>
+              <label for="num_members">ご利用人数</label>
+              <div class="c-form-select-number">
+                <select name="" id="">
+                  <option value="" selected disabled>選択してください</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <!-- 25まで -->
+                  <option value="25">25</option>
+                </select>
               </div>
             </div>
           </div>
@@ -133,6 +150,8 @@
       </div>
     </form>
   </div><!-- ./p-user-input__inner -->
+
+  <?php include_once '../include/user/footer.php'; ?>
 </body>
 
 </html>

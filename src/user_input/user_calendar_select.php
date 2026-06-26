@@ -6,7 +6,12 @@
   <?php include_once '../include/user_input/header_information.php'; ?>
   <!-- css laravel環境では削除 -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.css">
+
+
   <div class="p-user-input__inner u-mt3">
+    <ul class="p-reserve__wrap u-mb3 u-font--sm">
+      <li>●ご予約前には必ず『<a href="https://www.sunparking.co.jp/menseki/" target="_blank" rel="noopener" class="u-font--red">免責約款</a>』をご確認下さい。<br class="is-none--md">お申し込み頂いた時点で同意頂いたものとさせて頂きます。</li>
+    </ul>
     <form action="./user_login.php" method="POST">
       <!-- カレンダー選択 -->
       <div class="p-reserve__wrap">
@@ -345,7 +350,7 @@
 
       <div class="p-input-user-total-parking-charges">
         <!-- 代理店コード -->
-        <div class=" u-mb4">
+        <!-- <div class=" u-mb4">
           <p class="text-center u-mb2 u-font--medium">
             代理店コードをお持ちの方は入力してください。
           </p>
@@ -357,9 +362,8 @@
             <button class="c-button__apply">検索</button>
           </div>
           <div class="note u-font--sm u-mb1">※クーポンコードとは異なります。</div>
-          <!-- 代理店コードを送信後、該当するものがあれば表示 -->
           <div>代理店名: HIS</div>
-        </div>
+        </div> -->
 
         <!-- 202/09/22追加 -->
         <button type="submit" class="c-button--green u-horizontal-auto u-mb2">
@@ -373,13 +377,13 @@
             <div class="p-input-user-total-parking-charges__head">
               <div>入庫日</div>
               <div>:</div>
-              <div>10/10(水)</div>
+              <div>2026/10/10(水)</div>
               <div>入庫時間</div>
               <div>:</div>
               <div>10:00</div>
               <div>出庫日</div>
               <div>:</div>
-              <div>10/10(水)</div>
+              <div>2026/10/10(水)</div>
               <div>利用日数</div>
               <div>:</div>
               <div>6日間</div>
@@ -393,35 +397,39 @@
                 <div type="button" class="p-input-user-total-parking-charges__detail-close-button" id="close_button"><img src="../images/icon/closeButton.svg" width="15" height="15" /></div>
               </div>
               <div class="p-input-user-total-parking-charges__detail-list">
-                <div>10/10(水)</div>
+                <div>2026/10/10(水)</div>
                 <div>¥1,000</div>
-                <div>10/11(木)</div>
+                <div>2026/10/11(木)</div>
                 <div>¥1,000</div>
-                <div>10/12(金)</div>
+                <div>2026/10/12(金)</div>
                 <div>¥1,500</div>
-                <div>10/13(土)</div>
+                <div>2026/10/13(土)</div>
                 <div>¥2,000</div>
-                <div>10/14(日)</div>
+                <div>2026/10/14(日)</div>
                 <div>¥2,000</div>
-                <div>10/15(月)</div>
+                <div>2026/10/15(月)</div>
                 <div>¥300</div>
               </div>
               <div class="p-input-user-total-parking-charges__detail-list-total">
-                <div>6日間</div>
-                <div>￥7,800</div>
+                <div>100日間</div>
+                <div>￥999,999</div>
               </div>
             </div>
 
             <!-- 料金明細 -->
-            <div class="u-mt3 u-pt3 u-border--top p-input-user-total-parking-charges__detail-total">
-              <div>消費税(10%)</div>
-              <div>¥1,780</div>
-              <!-- 駐車料金（[区分]）合計 -->
-              <!-- まだここでは車両区分を選択していないので「普通」と表示 -->
-              <div>駐車料金(普通)合計</div>
-              <div>¥9999,999<br>(税込)</div>
+            <div class="u-mt3 u-border--top p-input-user-total-parking-charges__detail-total">
+              <div>駐車料金合計</div>
+              <div>¥9999,999(税込)</div>
+              <div>シーズン料金</div>
+              <div>¥9999,999(税込)</div>
             </div>
-
+            <div class="u-border--top p-input-user-total-parking-charges__detail-total">
+              <div>合計</div>
+              <div>¥9999,999(税込)</div>
+              <div>内消費税(10%)</div>
+              <div>¥99,999</div>
+            </div>
+            <!-- 料金詳細 ./fin -->
           </div><!-- /.p-input-user-total-parking-charges__inner -->
 
           <button type="submit" class="c-button__submit u-horizontal-auto">予約に進む</button>

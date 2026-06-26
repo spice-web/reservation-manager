@@ -7,8 +7,8 @@
   <!-- 予約情報 -->
   <h1 class="l-header-userReservation__title">受付入力</h1>
   <div class="l-header-userReservation__info">
-    <div>利用日：2024/2/1(木)〜2024/2/4(日)</div>
-    <div>利用料金：4,500円</div>
+    <div>利用期間（利用日数）：<br>2026/07/22(水)〜2026/07/23(木)（2日間）</div>
+    <div>利用料金（税込）：4,500円</div>
   </div>
 </header>
 

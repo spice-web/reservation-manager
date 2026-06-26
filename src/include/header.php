@@ -2,7 +2,7 @@
   <!-- logo -->
   <div class="l-header-logo">
     <div class="l-header-logo__inner">
-      <img src="/assets/images/svg/logo.svg" width="100%" alt="logo">
+      <img src="/assets/images/logo/logo.png" width="100%" alt="logo">
       <p class="u-font--medium u-font--14">ダミーパーキング成田店</p>
       <p class="l-header-logo--right">
         （R4 事業再構築 機-R0000E00000000）

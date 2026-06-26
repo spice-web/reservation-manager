@@ -406,19 +406,21 @@
                       <div>¥300</div>
                     </div>
                     <div class="p-input-user-total-parking-charges__detail-list-total">
-                      <div>6日間</div>
-                      <div>￥7,800</div>
+                      <div>100日間</div>
+                      <div>￥999,999</div>
                     </div>
                   </div>
 
                   <!-- 料金明細 -->
-                  <div class="u-mt3 u-pt3 u-border--top p-input-user-total-parking-charges__detail-total">
-                    <div>消費税(10%)</div>
-                    <div>¥1,780</div>
-                    <!-- 駐車料金（[区分]）合計 -->
-                    <!-- まだここでは車両区分を選択していないので「普通」と表示 -->
-                    <div>駐車料金(普通)合計</div>
-                    <div>¥9999,999<br>(税込)</div>
+                  <div class="u-mt3 u-pt2 u-border--top p-input-user-total-parking-charges__detail-total">
+                    <div>駐車料金合計</div>
+                    <div>¥9999,999(税込)</div>
+                    <div>シーズン料金</div>
+                    <div>¥9999,999(税込)</div>
+                    <div>合計</div>
+                    <div>¥9999,999(税込)</div>
+                    <div>内消費税(10%)</div>
+                    <div>¥99,999</div>
                   </div>
 
                 </div><!-- /.p-input-user-total-parking-charges__inner -->
